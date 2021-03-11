@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--    <link rel="stylesheet" href="css/animate.css">-->
+    <title>生傳畢製懶人包</title>
+
+    <style>
+        
+        /* width */
+::-webkit-scrollbar {
+  width: 16px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px rgba(70,40,88,0.5); 
+    background: #264a95;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #e91e63; 
+  border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    box-shadow:inset 3px 4px 8px rgba(250,150,150,0.6);
+    border-top: 2px solid rgba(255,255,255,0.5);
+    border-bottom: 2px solid rgba(55,55,55,0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30042; 
+}
+        p {
+            font-size: 14px;
+            color: #A5DEE4;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.8)
+        }
+        h2 {
+            font-weight: bold;
+        }
+
+        h2,
+        h2,
+        h4,
+        h5 {
+            color: #A5DEE4;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        .fullpage {
+            visibility: hidden;
+            background-color: #264a95;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slideup {
+            animation-name: slideup;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            visibility: visible;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .slideout {
+            animation-name: slideout;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            position: relative;
+        }
+
+        @keyframes slideup {
+            0% {
+                /*                opacity: 0;*/
+                transform: translateY(70%);
+            }
+
+            80% {
+                /*                opacity: 0;*/
+                transform: translateY(-5%);
+            }
+
+            100% {
+                /*                opacity: 1;*/
+                transform: translateY(0%);
+
+            }
+        }
+
+        @keyframes slideout {
+            0% {
+                opacity: 1;
+                transform: translateY(80%);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(0%);
+
+            }
+        }
+
+
+        .fix_bg {
+            /*                        background-attachment: fixed;*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+        .fp {
+            padding: 0px;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        
+        .fp2 {
+            padding: 0px;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .fp div {
+            z-index: 12;
+        }
+
+        .fp::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#f04 ,#c34d75, #9659a0);
+            clip-path: circle(25% at right 70%);
+        }
+
+        .fp::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#2196f3, #9659a0,#e91e63 );
+            clip-path: circle(16% at 10% 10%);
+        }
+
+        #navbarResponsive ul {
+            padding: 0px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #navbarResponsive a {
+            padding-right: 10px;
+            font-weight: bold;
+        }
+
+        #navbarResponsive a:hover {
+            color: #462858;
+            transition: all 1s ease;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            width: 100%;
+            transform: translateX(-3%)
+        }
+
+        #mainNav:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            -moz-backdrop-filter: blur(10px);
+            transition: all 1s ease;
+            
+        }
+
+
+        #list-example a {
+            height: 15vh;
+            background-color: rgba(255, 255, 255, 0.2);
+            overflow-wrap: break-word;
+            transition: all 1s ease;
+            border: none;
+        }
+
+
+
+        #mainNav a.active {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #00ffff;
+            text-shadow: 0px 0px 3px white;
+        }
+
+
+
+
+        .slideloop1 {
+            animation: slideloop1 3s .3s infinite linear forwards;
+        }
+
+        @keyframes slideloop1 {
+            0% {
+                opacity: 1;
+
+            }
+
+            50% {
+                opacity: 0.6;
+            }
+
+            100% {
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .typeanimate {
+            overflow: hidden;
+            border-right: .05em solid;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 2s steps(7),
+                caret 1s step-end infinite;
+
+        }
+
+        #list1 li {
+            border-left: .1em solid;
+            color: white;
+            height: 30px;
+            padding-left: 8px;
+            margin: 8px auto;
+        }
+
+        #pjlist {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .container .card {
+            position: relative;
+            width: 240px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.05);
+            margin: 20px;
+            box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 10px;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            align-items: center;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            -moz-backdrop-filter: blur(10px);
+        }
+
+        .container .card .content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+
+        .container .card:hover .content {
+            opacity: 1;
+        }
+
+        .container .card .content .contentbox h3 {
+            color: #fff;
+            margin: 20px 0 10px;
+            line-height: 1.2em;
+            font-weight: bold;
+
+        }
+
+        .container .card .content .contentbox h3 a {
+            color: #fff;
+        }
+
+        .container .card .content .contentbox h3 a:hover {
+            text-decoration: none;
+        }
+
+        .container .card .content .contentbox h3 span {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .container .card .cap {
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+
+        }
+
+        .container .card .cap p {
+            margin: 0 10px;
+            transform: translateY(40px);
+            transition: 1s;
+            opacity: 0;
+
+        }
+
+        .container .card:hover .cap p {
+            transform: translateY(15px);
+            opacity: 1;
+        }
+
+
+        .accordion {
+            background-color: rgba(165, 222, 238, 0.6);
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            font-size: 18px;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.8s;
+        }
+
+        button.active {
+            border: none;
+        }
+
+        .accordion.active {
+            border: none;
+        }
+
+
+        .active,
+        .accordion:hover {
+            background-color: rgba(185, 242, 248, 0.8);
+            border: none;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: rgba(255, 255, 255, 0.8);
+            max-height: 0;
+
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border: none;
+        }
+
+        .panel p {
+            color: black;
+            padding-top: 5px;
+        }
+
+        .accordion:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 10px;
+            color: #fff;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .accordion.active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+
+
+        #logo:hover {
+            color: #4E4F97;
+            transition: 0.8s;
+        }
+        
+         .slideloop6 {
+     animation: slideloop6 1.5s .3s infinite linear forwards;
+ }
+        
+         @keyframes slideloop6 {
+     0% {
+         opacity: 0.2;
+         transform: translateY(0%);
+     }
+
+     50% {
+         opacity: 0.5;
+         transform: translateY(39%)
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(50%);
+     }
+ }
+        .fadeout {
+       visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+    transform: none;
+    animation-iteration-count: 1;
+ }
+        #end a {
+            color: #00ffff;
+        }
+        
+    </style>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive" id="page-top" style="font-family: sans-serif;overflow-x: hidden;background-color:linear-gradient(135deg, #FEDFE1, #7B90D2,#0B346E);height: 100vh;width: 100vw;">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="100%">
+        <div class="container-fluid" style="width: 100%;margin: 0 auto;">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" id="logo">生傳系畢業製作計畫</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0 col-12" style="margin-right:0px;">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">計畫緣起</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#info">策展說明</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onclick="fun1" href="#projects">專案介紹</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mnp">行銷與公關</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#joinus">加入我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div  style="height:100vh;position:absolute;top: 0px;z-index: 999" class="text-center col-12" id="tip">
+            <div  class="col-12  text-center" style="height: 100vh;" >
+                <p  class=" slideloop6 light" style="position: relative;top: 82%;  ">Scroll</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" style="position: relative;top: 82%" class=" bi bi-chevron-double-down slideloop6" viewBox="0 0 16 16">
+                    <path  fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    <path  fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+
+
+        </div>
+
+    <div class="container-fluid fp2" style="height:100vh;background-color:#264a95;position: fixed;top: 0px;left: 0px; z-index: 0;">
+        <div class="col-xs-12 text-center " style="height:100vh;width:100vw;position:relative;top: 30%;;align-items: center;">
+            <div class="col-12">
+                <h2 class="typeanimate" style="width: 7em;">生傳系畢業製作</h2>
+            </div>
+            <div class="col-12">
+                <h1 class="animate__animated animate__backInDown col-12" style="animation-delay: 1s">吾感再噪</h1>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div style="height: 100vh"></div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw;; z-index: 1" id="about">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100%;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;position: absolute;margin-top: -30px;top: 20%;">
+                <h1 class="" style="width: 4em;">計畫緣起</h1>
+                <h2 class="" style="">「從生傳的視角出發，我們怎麼看這世界？」</h2>
+                <p>
+                    「生傳是多元的」，我們如此相信並希望證實它。<br>
+                    我們拒絕受限於某個特定的框架，轉而面對生活中的各個議題，從更新穎、獨特的面向切入思考。<br>
+                    此次展覽，除了希望讓更多人有機會到接觸生傳系，更重要的是傳遞我們對於與我們生活密切相關確曾被忽視那些議題，透過「生傳」的角度，我們能有什麼樣的詮釋或可能，又能從中呈現一個如何不一樣的社會與文化樣貌？期待透過跨領域的結合以及在生傳系四年所學的專業，創造一個全新的觀展體驗，讓觀眾可以對這些議題有更深、更全面的了解。
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 2">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;position: absolute;margin-top: -30px;top: 20%;">
+                <h1 class="" style="">我們的目標</h1>
+                <button class="accordion">產生社會影響力與永續性</button>
+                <div class="panel">
+                    <p>
+                        透過社會設計與策展、跨領域與跨議題，連結生傳的專業領域與社會議題，嘗試用我們的話來說那些容易被忽略的故事，讓更多人聽到，用這些故事改變這個社會一點點，翻轉並且找出可以延續的價值。</p>
+                </div>
+
+                <button class="accordion">讓更多人認識生傳</button>
+                <div class="panel">
+                    <p>厭倦了每次都要重新介紹自己的科系了嗎？就像面試一樣，讓別人認識自己最快的辦法，就是拿出自己的作品集。透過實際創造一些部一樣的東西，讓別人看到生傳的亮點與可能性，也能成為未來履歷的一環喔！</p>
+                </div>
+
+                <button class="accordion">留下具有商業價值的成果</button>
+                <div class="panel">
+                    <p>雖然說是公益辦展，但策展內容也必須是具有競爭性的！除了挑戰作為台大第一個此類型的畢業製作外，各種體驗設計、專案內容、商業合作、媒體曝光等都在我們的努力範圍，以期透過可轉換的價值來證明成果。</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 3" id="info">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+            <div class="row" style="height:100vh;width:100vw;position: absolute;margin-top: -30px;top: 20%;">
+                <div class="col-md-6 px-5" style="height: 180px">
+                    <h1>時間與地點</h1>
+                    <h3>4/30~5/2</h3>
+                    <h3>@花博流行館</h3>
+                </div>
+                <div class="col-md-6 px-5" style="">
+                    <img src="img/a1.jpg" style="height: 32vh;position: relative;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 4">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw; ">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;">
+                <h1>策展主題</h1>
+                <h2>吾感再噪</h2>
+                <p>
+                    取”吾”與”五“的諧音，吾感即可為「我的五感」；<br>
+                    取”再噪”與”再造”之意，即為對於感官的重新理解、
+                    解構、組裝，來對於我們身處的社會進行心的審視與發聲。
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 5">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;">
+                <h1>我們有什麼</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style="font-weight: bold;">團隊組成</h3>
+
+                        <h5>六大專案</h5>
+                        <h5>行銷部</h5>
+                        <h5>公關部</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 style="font-weight: bold;">主題專案/系列活動</h3>
+                        <h5>跨領域主題應用</h5>
+                        <h5>開幕式</h5>
+                        <h5>專案相關活動</h5>
+                        <h5>其他現場活動</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 style="font-weight: bold;">指導教授與相關資源</h3>
+                        <h5>總指導：立沛主任</h5>
+                        <h5>策展指導：明道老師</h5>
+                        <h5>各專案指導教授</h5>
+                        <h5>其他業界資源</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 6" id="projects">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:90vh;max-width: 1200px;;top: 15%;position: absolute;margin-top: -30px;overflow-y: scroll;">
+                <h1>六大專案</h1>
+                <div class="row container" id="pjlist">
+                    <div class="card " style=";">
+                        <div class="content">
+                            <div class="contentbox">
+                                <h3><a class="js-scroll-trigger" href="#pj1">新市力</a><br><span>前進市場</span></h3>
+                            </div>
+                        </div>
+                        <div class="cap">
+                            <p>#傳統市場<br> #市場菜鳥<br> #菜市場生存法則</p>
+                        </div>
+                    </div>
+                    <div class="card " style=";">
+                        <div class="content js-scroll-trigger">
+                            <div class="contentbox">
+                                <h3><a class="js-scroll-trigger" href="#pj2">品味調香室</a><br><span>重新調配印象的組成</span></h3>
+                            </div>
+                        </div>
+                        <div class="cap">
+                            <p>#調香<br>#氣味故事<br>#社會刻板印象</p>
+                        </div>
+                    </div>
+                    <div class="card " style=";">
+                        <div class="content js-scroll-trigger">
+                            <div class="contentbox">
+                                <h3><a class="js-scroll-trigger" href="#pj3">微電影劇組</a><br><span>第一次劇組就上手</span></h3>
+                            </div>
+                        </div>
+                        <div class="cap">
+                            <p>#飲食<br>#農村<br>#自我追求</p>
+                        </div>
+                    </div>
+                    <div class="card " style=";">
+                        <div class="content">
+                            <div class="contentbox">
+                                <h3><a class="js-scroll-trigger" href="#pj4">XYZ</a><br><span>世代解放</span></h3>
+                            </div>
+                        </div>
+                        <div class="cap">
+                            <p>#壓力<br>#人生歷程<br>#自我覺察</p>
+                        </div>
+                    </div>
+                    <div class="card " style=";">
+                        <div class="content">
+                            <div class="contentbox">
+                                <h3><a class="js-scroll-trigger" href="#pj5">112星球</a><br><span>走進台大的想像與真實</span></h3>
+                            </div>
+                        </div>
+                        <div class="cap">
+                            <p>#台大<br>#光環<br>#陰影</p>
+                        </div>
+                    </div>
+                    <div class="card " style=";">
+                        <div class="content">
+                            <div class="contentbox">
+                                <h3><a class="js-scroll-trigger" href="#pj6">二二俱樂部</a><br><span>20 Something</span></h3>
+                            </div>
+                        </div>
+                        <div class="cap">
+                            <p>#20something<br>#心靈探索<br>#adulting</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 7" id="pj1">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12  px-5" style="height:80vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;overflow-y: scroll;">
+                <h1>新市力</h1>
+                <div class="typing">
+                    <h2>「讓市場菜鳥走進市場，成為『新市力』！」</h2>
+
+                </div>
+
+                <p>
+                    負責人：志中、謹華 <br>
+                    我們活在充滿文字與標籤的社會中，然而在傳統菜市場，一個幾乎沒有文字資訊、沒有標價、沒有告訴你保存期限的地方，我們只能在語言間的問與答中找到最好的「生存方式」。
+                    如果你不知道為什麼要進入傳統菜市場看看，或不知道該怎麼在菜市場中挑選到最好的貨品、或不知道可以跟攤販聊什麼才不尷尬，那你可能需要來點「新市力」！
+                    新市力記錄了台灣菜市場豐富的生命脈動，將帶給觀展者如臨菜市場的觀展體驗，並藉由展內資訊，觀展者可以獲得新的想法與「菜市場生存法則」，帶著這份勇氣，進入傳統市場探索。
+
+                </p>
+                <br>
+                <br>
+
+                <h5>可以學到的:市場文化、田野調查、資料蒐集...</h5>
+                <h5>主要工作:協助資料蒐集、實體內容產出與其它支援</h5>
+                <p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 8" id="pj2">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:80vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;overflow-y: scroll;">
+                <h1>品味調香室－重新調配印象的組成</h1>
+                <h2>「在香氣的交融間，了解他們的故事。」</h2>
+                <p>
+                    負責人：詠心、若庭 <br>
+                    太過於快速的網路時代，生命僅僅是萍水相逢的一面之緣。有很多時候我們來不及好好的坐下來認識一個人、一件事、或一個群體，片面的認知造成了太多的隔閡和錯誤的刻板印象。在品味調香室，我們希望人們可以走進來，好好地打開感官，聞嗅去感受，用心去體驗，了解社會底層群體所共同面臨的社會問題與承受的刻板壓力，在香氣的交融間，更全面了解他們背後的故事。當生命的氣味分子來回碰撞，重新演繹出另一種姿態，也許他們在你的世界裡，也能以另一種形象再生。
+
+                </p>
+                <br>
+                <h5>可以學到的:調香、以嗅覺轉譯生命故事</h5>
+                <h5>*初選不開放，歡迎洽詢負責人</h5>
+                <p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw;  background-color:#28102d;z-index: 9" id="pj3">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;">
+                <h1>微電影劇組</h1>
+                <h2>「從微電影走進在地。」</h2>
+                <p>
+                    負責人：詩芮<br>
+                    生傳系為結合農業、行銷、傳播三大領域的跨領域科系，在生傳系四年的課程中，不同的課程和老師用不同方式帶領我們認識到許多地方、農村、土地面對的問題，並且用行銷、傳播等方式討論這些議題，但卻較少有機會透過動態影像的方式來呈現。然而，台灣地方的環境、人、產業、生態、社群等，卻是富有故事性與價值，且能令人感動的，因此，希望用微電影的方式，傳達對土地的認識與關懷給更多大眾。
+
+                </p>
+                <br>
+                <h5>可以學到的:跟劇組的經驗(編劇、導演、製片等基礎)</h5>
+                <h5>主要工作:美術、造型、燈光、錄音等支援</h5>
+                <p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 10" id="pj4">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:80vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;overflow-y: scroll;">
+                <h1>XYZ</h1>
+                <h2>「面對壓力、接受壓力、處理壓力、放下壓力。」</h2>
+                <p>
+                    負責人：廖琳、孟婕 <br>
+                    XYZ 分別代表著三個不同世代出生的人，年齡從 20 歲橫跨至 60 歲以上，每個人都有各自獨一無二的生活經驗，在不同的人生階段需要面臨不同的壓力。<br>
+                    <br>
+
+                    那麼～這些壓力的來源到底是什麼呢～？ʕ•ᴥ•ʔ<br>
+                    <br>
+
+                    本展覽分成兩大區塊，第一區塊將展示我們與各世代的人深度對談後，理解並轉譯他們的壓力來源和紓壓方式，讓觀眾除了能夠了解他人的壓力來源，也能審視自己平時生活中所面臨的壓力，進而產生共鳴。第二區塊則是邀請觀眾參與創作，裝飾「壓力貢丸」，跟其他觀眾一起將壓力具象化。
+                </p>
+                <br>
+                <h5>可以學到的:參與式創作、質化分析、心理...</h5>
+                <h5>主要工作:協助訪談與資料蒐集、實體內容產出與其它支援</h5>
+                <p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 11" id="pj5">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:80vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;overflow-y: scroll;">
+                <h1>112星球：走進台大的想像與真實</h1>
+                <h2>「走進台大的想像與真實。」</h2>
+                <p>
+                    負責人：彥甄 <br>
+                    台大生是什麼樣子？很會讀書？人生勝利組？你台大的連這個都不會嗎？台大的耶了不起？社會大眾、媒體對於台大生，似乎有既定的想像。一代一代的高中生前仆後繼的想考進這所台灣第一名的大學，但事實上，考上台大之後，人生就一帆風順了嗎？補習班老師、高中老師沒有告訴你的事！台大生容易被放大檢視、承受特別高的期待、同儕間高度競爭，這些都反映在心理、情緒壓力上。以一個台大生的角度出發，打造一個感官體驗，讓大家可以實際走進想像，看到真實。
+                </p>
+                <br>
+                <h5>可以學到的:多媒體實務、頂大迷思...</h5>
+                <h5>主要工作:音效、靜動態影像製作、佈展設計與製作</h5>
+                <p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 12" id="pj6">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top:20%;position: absolute;margin-top: -30px;">
+                <h1>二二俱樂部 20 Something</h1>
+                <h2>「歡迎收聽 22俱樂部 twenty something 。」</h2>
+                <p>
+                    負責人：怡茜、愉薇 <br>
+                    二十二，是逼近畢業的歲數。<br>
+                    六位準畢業生經過三年半的迷惘、<br>
+                    追尋和成長， 透過《二二俱樂部》<br>
+                    Podcast 節目，漫談正值或曾經二<br>
+                    十二歲人們的困擾和心境。
+
+                </p>
+                <br>
+                <br>
+                <h5>可以學到的:Podcast實務</h5>
+                <h5>*初選不開放，歡迎洽詢負責人</h5>
+                <p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 13" id="mnp">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top:20%;position: absolute;margin-top: -30px;">
+                <h1>行銷部</h1>
+                <h2>亮麗門面</h2>
+                <p>
+                    負責人：許湘其<br>
+                    負責一系列線上與線下行銷宣傳活動，旨在最大化畢展曝光效益。<br>
+                    包含主視覺、社群推廣、文宣品、實體活動、主題網站、募資活動等。<br>
+                    不過行銷人力貴精不貴多，想加入前可先洽詢一下喔
+
+                </p>
+                <br>
+                <br>
+                <h5>可以學到的:社群行銷、平面設計、IMC、網頁設計基礎...</h5>
+                <h5>主要工作:協助各項目設計、產出與操作</h5>
+                <p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 14">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top:20%;position: absolute;margin-top: -30px;">
+                <h1>公關部</h1>
+                <h2>衣食父母</h2>
+                <p>
+                    負責人：鍾怡陽<br>
+                    負責規劃贊助方案、尋找合作單位、安排相關公關活動、媒體發稿、廣邀媒體參加開幕式，<br>
+                    同時確保畢製經費來源與曝光來源，並配合行銷部進行相關合作宣傳活動、主題網頁等。
+                </p>
+                <br>
+                <br>
+                <h5>可以學到的:公關洽談實務、媒體發稿...</h5>
+                <h5>主要工作:協助公關洽談、完成聯絡等任務</h5>
+                <p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 15" id="joinus">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;">
+                <h1>還沒要畢業，可以參加嗎?</h1>
+                <p>
+                    當然可以!<br>
+                    我們希望畢製能成為生傳系的重要傳承，因此歡迎所有生傳人都能參加與學習 <br>
+                    除了希望學弟妹可以協助我們完成這個挑戰 <br>
+                    也希望能給大家一個不一樣的經驗，期待未來畢製可以更好
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid fp" style="height:100vh;width:100vw; background-color:#28102d;z-index: 16">
+        <div class="fp fullpage fix_bg" style="height:100vh; width:100vw; background-color:#8b3b92;">
+
+            <div class="col-xs-12 px-5" style="height:100vh;width:100vw;top: 20%;position: absolute;margin-top: -30px;" id="end">
+                <h2>報名表單</h2>
+                <a href="https://forms.gle/vp9CgwxrBExJ39fA8" target="_blank" title="前往表單(新視窗)">https://forms.gle/vp9CgwxrBExJ39fA8
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>聯絡資訊</h2>
+                <p>
+                    鄒凱宇 <a href="mailto:b06610001@ntu.edu.tw">b06610001@ntu.edu.tw</a> <br>
+                    廖彥甄 <a href="mailto:yenchenliao53@gmail.com">yenchenliao53@gmail.com</a> <br>
+                </p>
+                <br>
+                <br>
+                <p style="text-align: right;font-size: 130%;margin-top: 100px;">
+                    之後還會有說明會喔!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid" style="height:100vh;background-color:dimgray"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+    <script>
+        var scrolled = $(window).scrollTop();
+        console.log(scrolled);
+    </script>
+
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var winh = $(window).height();
+                var scrolled = $(window).scrollTop();
+                $(".fullpage").each(function() {
+                    var objpos = $(this).offset().top;
+                    var par = $(this).parent().offset().top
+                    if (scrolled > objpos - winh * 0.15 && scrolled < objpos + winh * 0.8) {
+                        $(this).addClass("slideup");
+                    }
+                    if (scrolled > objpos + winh * 0.8) {
+                        $(this).removeClass("slideup");
+                        $(this).addClass("slideout");
+                    }
+
+                    if (scrolled < par) {
+                        $(this).removeClass("slideup");
+                    }
+                });
+            });
+        });
+    </script>
+   -->
+
+
+    */
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var winh = $(window).height();
+                var scrolled = $(window).scrollTop();
+                $(".type").each(function() {
+                    var objpos = $(this).offset().top;
+                    var par = $(this).parent().offset().top;
+                    var next = $(this).next().offset().top;
+                    if (scrolled > next + winh * 0.8) {
+                        $(this).addClass("typeanimate");
+
+                    };
+
+                });
+
+            });
+
+        });
+    </script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+    <script>
+        var s3 = document.getElementById("projects");
+        var btn = document.getElementById("myBtn")
+
+        function fun1() {
+
+        }
+    </script>
+    <script data-brackets-id='166346' data-brackets-id='250159'>
+        $(function() {
+            $(window).scroll(function() {
+                $("#tip").each(function() {
+                    var winTop = $(window).scrollTop();
+                    var winh = $(window).height();
+                    var objpos = $(this).offset().top;
+                    if (winTop > 5) {
+                        $(this).addClass("fadeout");
+                    }
+
+                    if (winTop == 0) {
+                        $(this).removeClass("fadeout");
+                    }
+                });
+            });
+        });
+    </script>
+    <!--
+    
+        <script>
+        $(function() {
+            $(window).scroll(function() {
+                $("animatein").each(function() {
+                    var winTop = $(window).scrollTop();
+                    var winh = $(window).height();
+                    var objpos = $(this).offset().top;
+                    var par = $(this).parent().offset().top;
+                    var next = $(this).next().offset().top;
+                    if ( winTop > par - winh * 0.2 && winTop < par + winh * 0.8) {
+                        $(this).addClass("animate__backInRight");
+                    }
+                });
+            });
+        });
+    </script>
+-->
+
+</body>
+
+</html>
