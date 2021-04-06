@@ -168,7 +168,8 @@ body{font-family:'Source Sans Pro'}.btn-xl{padding:1.25rem 2.5rem}.content-secti
         margin-left: 3rem;
         margin-right: 3rem;
         margin-bottom: 3rem;
-        width: 80%
+        width: 80%;
+        opacity: 70%;
     }
     
         .portfolio-item:hover .caption .caption-content {
@@ -177,6 +178,7 @@ body{font-family:'Source Sans Pro'}.btn-xl{padding:1.25rem 2.5rem}.content-secti
         margin-right: 3rem;
         margin-bottom: 5rem;
         width: 80%;
+            opacity: 100%;
     }
     
         .portfolio-item:hover img {
@@ -196,7 +198,8 @@ body{font-family:'Source Sans Pro'}.btn-xl{padding:1.25rem 2.5rem}.content-secti
         transition: opacity .25s;
         margin-left: 3rem;
         margin-right: 3rem;
-        margin-bottom: 3rem
+        margin-bottom: 3rem;
+            opacity: 70%;
     }
 
     .portfolio-item img {
@@ -212,6 +215,7 @@ body{font-family:'Source Sans Pro'}.btn-xl{padding:1.25rem 2.5rem}.content-secti
         margin-left: 3rem;
         margin-right: 3rem;
         margin-bottom: 5rem;
+            opacity: 100%;
     }
 
     .portfolio-item:hover img {
@@ -240,12 +244,14 @@ body{font-family:'Source Sans Pro'}.btn-xl{padding:1.25rem 2.5rem}.content-secti
         margin-right: 3rem;
         margin-bottom: 2rem;
             width: 100%;
+            opacity: 70%;
     }
         .portfolio-item:hover .caption .caption-content {
         transition: all .3s ease;
         margin-left: 3rem;
         margin-right: 3rem;
         margin-bottom: 3.5rem;
+            opacity: 100%;
     }
 }
 
