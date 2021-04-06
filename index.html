@@ -3,83 +3,167 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="台大生傳 鄒凱宇">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="台大生傳 鄒凱宇">
 
-  <title>台大生傳畢業製作</title>
+    <title>台大生傳畢業製作</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+    <style>
+        .dropdown-content {
+            display: none;
+            transition: all 1s ease !important;
+            opacity: 0% !important;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.2);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+
+
+        .dropdown-content a:hover {
+            width: 85% !important;
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            transform: translateX(0%) !important;
+        }
+
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            transition: all 1s ease !important;
+            opacity: 100% !important;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+
+        #girl:hover {
+            transform: scale(20%)
+        }
+
+        #mt3:hover,
+        #mt4:hover,
+        #mt5:hover {
+            transform: translateY(-20%);
+        }
+
+        #mt1:hover,#mt2:hover {
+            filter: hue-rotate(90deg)drop-shadow(1px 1px 6px rgba(255,255,255,0.6));
+        }
+        
+        #knowmore:hover {opacity: 100% !important;padding-left: 20%;}
+
+        .tt {
+            transition: all 0.8s ease;
+        }
+    </style>
 
 
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
+<body id="page-top" data-spy="scroll" data-target="#navbarResponsive" style="overflow-x: hidden;max-width: 100vw;">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
-            <div class="container " style="">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">吾感再噪</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" ><span class="navbar-toggler-icon dark"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
-                    <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
-                        <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#about">策展緣起</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#video">形象片</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">專案一覽</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#info">活動資訊</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">贊助</a></li>
-                    </ul>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
+        <div class="container " style="">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">吾感再噪</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#about">策展緣起</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#video">形象片</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link js-scroll-trigger " href="#projects">專案一覽</a>
+                        <div class="dropdown-content">
+                            <a href="market.html">新市力</a>
+                            <a href="Incense.html">品味調香室</a>
+                            <a href="XYZ.html">XYZ</a>
+                            <a href="112.html">112星球</a>
+                            <a href="One-Shot.html">One-Shot劇組</a>
+                            <a href="20Something.html">二二俱樂部</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#info">活動資訊</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">贊助</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+        <div class="container my-auto">
+            <img src="img/tittle3.png" class="index-header tt" style="width: 28%;left: 48%;top: 20%;z-index: 3" id="mt3">
+            <img src="img/tittle1.png" class="index-header looph1 tt" style="width: 30%;left: 57%;top: 28%" id="mt1">
+            <img src="img/tittle2.png" class="index-header looph2 tt" style="width: 28%;left: 53%;top: 52%;" id="mt2">
+            <img src="img/tittle4.png" class="index-header tt" style="width: 18%;left: 48%;top: 70%;" id="mt4">
+            <img src="img/tittle5.png" class="index-header tt" style="width: 20%;left: 70%;top: 80%;" id="mt5">
+            <img src="img/p1.png" class="index-header loopv1 exsm-hide" style="width: 25%;left: 12%;top: 20%;" id="girl">
+            <img src="img/v1.png" class="index-header sm-hide" style="width: 29.5%;left: -5.5%;top: 14%;">
+            <img src="img/v2.png" class="index-header sm-hide" style="width: 48%;left: 22%;top:-6%;">
+            <h1 class="mb-1 tittle1" style="visibility: hidden">吾感再噪</h1>
+            <h3 class="mb-5" style="visibility: hidden">
+                <em>掀起你的感官革命</em>
+            </h3>
+            <a class="btn btn-primary btn-xl js-scroll-trigger sm-hide glass" href="#about" style="position: absolute; bottom: 10%;;opacity: 50%;transition: all 0.8s ease" id="knowmore">了解更多</a>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- 活動簡介 -->
+    <section class="content-section bg-light " id="about">
+        <div class="container" style="height: 60vh;">
+            <img src="img/tree0.png" class="index-header tittle m-hide" style="width: 26%;left:10%;bottom:-90vh;z-index: 0">
+            <img src="img/f1-1.png" id="f1-1" class="index-header tittle" style="width: 15%;right:10%;bottom:-90vh;z-index: 0">
+            <img src="img/t6-1.png" id="t6-1" class="index-header tittle" style="width: 20%;right:10%;bottom:-90vh;z-index:0">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="tittle">策展緣起</h1>
+                    <h3 style="color: #462857">
+                        「從生傳的視角出發，我們怎麼看這世界？」
+                    </h3>
+                    <p class="lead mb-5">取”吾”與”五“的諧音，吾感即可為「我的五感」；
+                        取”再噪”與”再造”之意，<br>
+                        即為對於感官的重新理解、 解構、組裝，來對於我們身處的社會進行心的審視與發聲。
+                        <br>
+
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#video" style="margin-top:10px">形象片</a>
                 </div>
             </div>
-        </nav>
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1 tittle1">吾感再噪</h1>
-      <h3 class="mb-5">
-        <em>掀起你的感官革命</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">了解更多</a>
-    </div>
-    <div class="overlay"></div>
-  </header>
-
-  <!-- 活動簡介 -->
-  <section class="content-section bg-light " id="about">
-    <div class="container text-center" style="height: 60vh;">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h1 class="tittle">策展緣起</h1>
-            <h3>
-                「從生傳的視角出發，我們怎麼看這世界？」
-            </h3>
-          <p class="lead mb-5">取”吾”與”五“的諧音，吾感即可為「我的五感」；
-取”再噪”與”再造”之意，即為對於感官的重新理解、 解構、組裝，來對於我們身處的社會進行心的審視與發聲。
-            <br>
-              
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#video">形象片</a>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!--  -->
-   <!--   <section class="content-section bg-primary text-white text-center" id="services">
+    <!--  -->
+    <!--   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
         <h3 class="text-secondary mb-0">Services</h3>
@@ -128,168 +212,177 @@
     </div>
   </section> -->
 
-  <!-- Callout -->
-  <section class="callout-sm" id="video">
-    <div class="container text-center">
-      <h2 class=" mb-5 tittle" style="margin: auto;">
-          行象片!</h2>
-        <iframe width="1080" height="630" src="https://www.youtube.com/embed/1kpdhPIcaVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#projects" style="margin-top: 30px;">看專案</a>
+    <!-- Callout -->
+    <section class="callout-sm" id="video">
+        <div class="container text-center">
+            <h2 class=" mb-5 tittle" style="margin: auto;visibility: hidden">
+                形象片</h2>
+            <iframe width="100%" height="630" src="https://www.youtube.com/embed/1kpdhPIcaVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:-5%;"></iframe>
+            <br>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#projects" style="margin-top: 30px;">看專案</a>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="content-section" id="projects">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0 ">Recent Projects</h3>
+                <h2 class="mb-5">專案一覽</h2>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="market.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">新市力</div>
+                                <p class="mb-0">讓市場菜鳥走進市場，成為『新市力』！</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-1.jpg" alt="新市力">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="Incense.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">品味調香室</div>
+                                <p class="mb-0">「在香氣的交融間，了解他們的故事。」</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-2.jpg" alt="品味調香室">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="XYZ.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">XYZ</div>
+                                <p class="mb-0">「面對壓力、接受壓力、處理壓力、放下壓力。」</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-3.jpg" alt="XYZ">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="112.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">112星球</div>
+                                <p class="mb-0">「走進台大的想像與真實。」</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-4.jpg" alt="112星球">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="20Something.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">二二俱樂部</div>
+                                <p class="mb-0">「歡迎收聽 22俱樂部 twenty something 。」</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-3.jpg" alt="二二俱樂部">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="One-Shot.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">One-Shot劇組</div>
+                                <p class="mb-0">「從微電影走進在地。」</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-4.jpg" alt="One-Shot劇組">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white" id="info">
+        <div class="container text-center">
+            <div class="tittle m-hide" style="position: absolute;margin-top:-1%;width: 100%;padding: 0;margin-left:0;z-index: 0">
+                <img src="img/bd1.png" style="position: relative; width: 20%;left: -40%;top:-6%;z-index: 3">
+                <img src="img/b3.png" style="position: relative; width: 20%;left: 30%;top:-6%;z-index: 3">
+            </div>
+            <h2 class="mb-4 tittle">活動資訊</h2>
+            <h4>4/30~5/2 @台北圓山花博流行館</h4>
+            <p>台大生傳畢業製作，免費展覽與體驗活動</p>
+
+            <a href="Activities.html" class="btn btn-xl btn-light mr-4" style="position: relative;z-index: 4">了解詳情</a>
+            <a href="#!" class="btn btn-xl btn-dark" style="position: relative;z-index: 4">馬上分享</a>
+
+
+        </div>
+    </section>
+
+    <!-- Map -->
+    <div id="contact" class="map" style="height: 400px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9332796384865!2d121.52063506500691!3d25.070250433955465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a94f1a47a861%3A0x6308c01a79dad945!2z6Ie65YyX6Iqx5Y2a6YGg5p2x5rWB6KGM6aSo!5e0!3m2!1szh-TW!2stw!4v1617363408288!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br />
+        <small>
+            <a href="https://goo.gl/maps/YrARRBrov9oGYvSBA"></a>
+        </small>
     </div>
-  </section>
 
-  <!-- Portfolio -->
-  <section class="content-section" id="projects">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0 ">專案一覽</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="market.html">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">新市力</div>
-                <p class="mb-0">讓市場菜鳥走進市場，成為『新市力』！</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="新市力">
-          </a>
+    <!-- Footer -->
+    <footer class="footer text-center" style="height: 220px;">
+        <div class="container">
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo">
+                        <i class="icon-social-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
+                        <i class="icon-heart"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white socialbtm" href="#!">
+                        <i class="icon-share"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; NTU BICD 2021</p>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="Incense.html">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">品味調香室</div>
-                <p class="mb-0">「在香氣的交融間，了解他們的故事。」</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="品味調香室">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="XYZ.html">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">XYZ</div>
-                <p class="mb-0">「面對壓力、接受壓力、處理壓力、放下壓力。」</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="XYZ">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="112.html">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">112星球</div>
-                <p class="mb-0">「走進台大的想像與真實。」</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="112星球">
-          </a>
-        </div>
-<div class="col-lg-6">
-          <a class="portfolio-item" href="20Something.html">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">二二俱樂部</div>
-                <p class="mb-0">「歡迎收聽 22俱樂部 twenty something 。」</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="二二俱樂部">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="One-Shot.html">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">One-Shot劇組</div>
-                <p class="mb-0">「從微電影走進在地。」</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="One-Shot劇組">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white" id="info">
-    <div class="container text-center">
-      <h2 class="mb-4 tittle">活動資訊</h2>
-      <a href="Activities.html" class="btn btn-xl btn-light mr-4">了解詳情</a>
-      <a href="#!" class="btn btn-xl btn-dark">馬上分享</a>
-    </div>
-  </section>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Map -->
-  <div id="contact" class="map" style="height: 400px;">
-    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Footer -->
-  <footer class="footer text-center" style="height: 220px;">
-    <div class="container">
-      <ul class="list-inline mb-4">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
-            <i class="icon-heart"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white socialbtm" href="#!">
-            <i class="icon-share"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; NTU BICD 2021</p>
-    </div>
-  </footer>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/popper.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <script>
-         $(function() {
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $("#mainNav").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled >  winh * 0.3 ) {
+                    if (scrolled > winh * 0.3) {
                         $(this).addClass("navbar-scrolled");
                         $(this).addClass("navbar-light");
                         $(this).removeClass("navbar-dark");
@@ -305,25 +398,25 @@
             });
         });
     </script>
-    
+
     <script>
-         $(function() {
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $(".tittle").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled > objpos - winh * 0.7 ) {
+                    if (scrolled > objpos - winh * 0.7) {
                         $(this).addClass("slidein");
-                    } 
+                    }
 
                 });
             });
         });
     </script>
-    
-    
-    
+
+
+
 
 </body>
 
