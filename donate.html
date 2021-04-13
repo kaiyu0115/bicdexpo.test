@@ -22,6 +22,17 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    
+    <style>
+        
+        .myinput {
+            transition: all .8s ease !important; 
+        }
+        .myinput:hover {
+            transition: all 0.8s ease !important; 
+            background-color: rgba(238,176,51,0.3);
+        }
+    </style>
 
 
 
@@ -52,7 +63,7 @@
 
   <!-- 活動簡介 -->
   <section class="content-section bg-light " id="event">
-      <div class="container text-center" style="height: 180vh;">
+      <div class="container text-center" style="height: 300vh;">
           <div class="row">
               <div class="col-lg-10 mx-auto">
 
@@ -69,21 +80,37 @@
 
                   <div style="height: 75vh">
                       <h1>商業合作</h1>
-                      <form method="post" autocomplete="off" name="hello-sheet">
-                          <label for="name">姓名</label><br>
-                          <input type="text" id="name" name="name" placeholder="您的姓名"><br>
-                          <label for="org">代表單位</label><br>
-                          <input type="text" id="org" name="org" placeholder="單位名稱"><br>
-                          <label for="email">電子信箱</label><br>
-                          <input type="email" id="email" name="email" placeholder="電子郵件"><br>
-                          <label for="message">訊息</label><br>
-                          <textarea id="message" name="message" style="width: 100%;height: 25vh" ></textarea>
-                          <br><br>
-                          <input class="todonate btn btn-primary" type="submit" value="送出訊息">
+                      <form method="post" autocomplete="off" name="hello-sheet" class="row px-5 py-3">
+                          <div class="col-md-6">
+                              <label for="name">姓名</label><br>
+                              <input type="text" id="name" name="name" placeholder="您的姓名" style="width: 60%" class="myinput"><br><br>
+                              <label for="org">代表單位</label><br>
+                              <input type="text" id="org" name="org" placeholder="單位名稱" style="width: 60%;" class="myinput"><br><br>
+                              <label for="email">電子信箱</label><br>
+                              <input type="email" id="email" name="email" placeholder="電子郵件" style="width: 60%;" class="myinput"><br>
+                          </div>
+                          <div class="col-md-6">
+                              <label for="message">訊息</label><br>
+                              <textarea id="message" name="message" style="width: 80%;height:86%" class="myinput"></textarea>
+                          </div>
+                          
+                          
+                          
+                          <input class="todonate btn btn-primary" type="submit" value="送出訊息" style="margin-top: 5vh;margin-left: auto;margin-right: auto;">
                       </form>
                       
                       <br><br><br><br>
-                      <h2>特別感謝</h2>
+                      <hr class="hr-black">
+                      <div class="container" style="height: 75vh">
+                          <h2>協辦單位</h2>
+                      </div>
+                      
+                      <br><br><br><br>
+                      <hr class="hr-black">
+                      <div class="container" style="height: 75vh">
+                          <h2>特別感謝</h2>
+                      </div>
+                      
 
                   </div>
 

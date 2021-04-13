@@ -24,18 +24,241 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
     <style>
-        .vl {
-            width: 4px;
-            height: 200%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-right: 2px dotted black;
-            background-color: transparent;
-            padding-left: -2px;
-            padding-top: -50px;
-            border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+        .banner {
+            width: 100vw;
+            position: sticky;
+            background-color: black;
+            border: none;
+        }
 
+        .banner img {
+            border: none;
+            box-shadow: 5px 5px 10px 10px black inset;
+
+
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            width: 100%;
+            border: 1px solid #ccc;
+            background-color: #462857;
+            display: flex;
+        }
+
+        .tab.row .tablinks {
+            border: none;
+            outline: none;
+            margin: 0 auto;
+            width: 20%;
+        }
+
+        .tab .tablinks {
+            border: none;
+            outline: none;
+            margin: 0 auto;
+            width: 25%;
+        }
+
+        .tab .tablinks img {
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.6s ease;
+            width: 100%;
+            opacity: 50%;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.6s ease;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab .tablinks:hover img {
+            opacity: 100%;
+        }
+
+        /* Create an active/current tablink class */
+        .tab .tablinks.active img {
+            opacity: 100%;
+        }
+
+        .tabct {
+            display: block;
+            height: 36vh;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: none;
+        }
+
+        .tab.row .tablinks .tabinfo {
+            position: absolute;
+            z-index: 88;
+            text-align: center;
+            color: white;
+            width: 20%;
+            margin: 0 auto;
+            transition: all 0.6s ease;
+            opacity: 0;
+            transform: translateY(-60%);
+
+        }
+
+        .tab .tablinks:hover .tabinfo {
+            transition: all 0.6s ease;
+            opacity: 100%;
+            transform: translateY(-90%);
+
+        }
+        
+        .filminfo {
+            position: relative;
+            margin: 0 auto;
+            padding: 0;
+            z-index: 199;
+            background-color: #ccc;
+        }
+        
+        .shadow {
+            background-color: black;
+            width: 30%;
+            right: 0;
+           box-shadow: 0px 0px 8px 50px #000;
+            filter: drop-shadow(0px 0px 20px 20px #000);
+        }
+        
+        #shadows {
+            width: 30%;
+            right: 0;
+           box-shadow: 0px 0px 50px 36px #000;
+        }
+        
+        .hide {display: none}
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            border: 1px solid #ccc;
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-fill-mode: forwards;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
         }
     </style>
 
@@ -43,7 +266,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
+<body id="page-top" data-spy="scroll" data-target="#navbarResponsive" style="overflow-x: hidden;">
 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
@@ -54,38 +277,213 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead d-flex">
-        <div class="container text-center my-auto">
-            <h1 class="mb-1">One-Shot劇組</h1>
-            <h3 class="mb-5">
-                <em>「從微電影走進在地。」</em>
+    <header class="d-flex" style="height: 500vh;background-color: black;color: white;">
+
+        <div class="banner" style="height: 300vh">
+            <img src="img/os1.jpg" class="opa img-fluid door" data-seq="1" style="z-index: 100; opacity: 1;position: fixed;height: 100vh;">
+            <img src="img/os2.jpg" class="opa  door" data-seq="3" style="z-index: 99; opacity: 3;position: fixed;height: 100vh;">
+            <img src="img/os3.jpg" class="opa  door" data-seq="5" style="z-index: 98; opacity: 5;position: fixed;height: 100vh;">
+        </div>
+        <div class="shadow" style="position:fixed;z-index: 105;height: 300vh;text-align:right">
+            
+
+            <h1 class="mr-5" style="position: relative;padding-top: 50vh;z-index: 3">One-Shot劇組</h1>
+            <h3 class="mr-5" style="position: relative;z-index: 4">
+                「從微電影走進在地。」
             </h3>
+            <div id="shadows" style="position: absolute;height: 100%;width: 100%;top: 0;z-index: -10"></div>
 
         </div>
+
+
         <div class="overlay"></div>
     </header>
 
     <!-- 簡介 -->
-    <section class="content-section bg-light " id="event">
-        <div class="container text-center" style="height: 230vh;">
+    <section class="content-section bg-light " id="event" style="position: relative;z-index: 110">
+        <div class="container" style="height:auto">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <article>
-                        <h1>專案簡介</h1>
+                    <article class="col-lg-4">
+                        <h3>創作動機</h3>
                         <p>
-                           生傳系為結合農業、行銷、傳播三大領域的跨領域科系，在生傳系四年的課程中，不同的課程和老師用不同方式帶領我們認識到許多地方、農村、土地面對的問題，並且用行銷、傳播等方式討論這些議題，但卻較少有機會透過動態影像的方式來呈現。然而，台灣地方的環境、人、產業、生態、社群等，卻是富有故事性與價值，且能令人感動的，因此，希望用微電影的方式，傳達對土地的認識與關懷給更多大眾。
+                            生傳系結合農業、行銷、傳播三大領域，在生傳系四年的課程中，不同的課程用不同方式帶領我們認識到許多地方、農村、土地面對的問題，並且用行銷、傳播等方式討論這些議題。我們相信台灣地方的環境、人、產業、生態、社群等，富有故事性與價值，因此，希望用微電影的方式，傳達對土地的認識與關懷給更多大眾。
+                        </p>
+                        <h3>劇情簡介</h3>
+                        <p>
+                            這首歌中，到底少了哪一味？
+                            新生代創作歌手周曉，在出道走紅沒多久後就遇到創作瓶頸，為了挽回聽眾，她勇敢嘗試了各種曲風，無奈只換來更多差評。在看似沒有盡頭的黑夜中，突然，在老家鄉下做料理職人的哥哥周朗，打來了一通電話……
                         </p>
 
                     </article>
+                    <div class="col-lg-8">
+                    </div>
 
                     <div class="hline" style="height: 3vh;"></div>
+                    <hr>
+
+                    <div class="col-lg-10 mx-auto my-5" style="height: 80vh">
+                        <h1>角色介紹</h1>
+                        <!-- Tab links -->
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'ZHOUXIAO')"><img src="img/ZHOUXIAO.jpg"></button>
+                            <button class="tablinks" onclick="openCity(event, 'ZHOULANG')"><img src="img/ZHOULANG.jpg"></button>
+                            <button class="tablinks" onclick="openCity(event, 'mrdong')"><img src="img/mrdong.jpg"></button>
+                            <button class="tablinks" onclick="openCity(event, 'msdong')"><img src="img/msdong.jpg"></button>
+
+                        </div>
+
+                        <!-- Tab content -->
+                        <div class="tabct">
+                            <div id="ZHOUXIAO" class="tabcontent">
+                                <h3>周曉 (文晨伊 飾)</h3>
+                                <p>23歲，年輕的音樂人。<br>
+
+                                    高中畢業後不顧父親的反對，隻身一人前往台北追夢。剛出道時以民謠的曲風為主，搭配清新的嗓音頗受好評，一度掀起熱潮，但隨即因為難有突破而聲量下滑，頗具才華與實力的她嘗試以各種主流風格挽回，卻並無起色。認真卻又有點固執的她一旦認定某件事，就不願輕易放棄，於是她堅信一定有某種適合自己且最多聽眾喜歡的風格，不停嘗試著各種創作，卻同時累積了許多不安與自我懷疑。在哥哥的建議下，決定回家鄉尋找她想要的『答案』。.</p>
+                            </div>
+
+                            <div id="ZHOULANG" class="tabcontent">
+                                <h3>周朗 (王惟漢 飾)</h3>
+                                <p>28歲，周曉的哥哥。<br>
+
+                                    年輕的料理人，接手父親的地方餐館，並持續加入各種創新改變，即使一仍經營地很好。手藝出色，涉獵廣泛，喜歡利用在地食材進行嘗試與創新，希望將在地美味推廣給更多人。雖然愛開玩笑，有時講話較壞心，實際上卻是善解人心的溫柔青年，與鄰居關係良好，與小冬哥一家是好友。聽說周曉狀況不佳，非常擔心，於是邀請她回家轉換心情，並試圖解開曉愛的心結。.</p>
+                            </div>
+
+
+                            <div id="mrdong" class="tabcontent">
+                                <h3>小冬哥 (李佳航 飾)</h3>
+                                <p>38歲，周朗的好友、如同大哥般的存在。<br>
+
+                                    原在科技公司當工程師，32歲時因受不了工程師日復一日的工作，在偶然的機緣下，決定回鄉接手爸媽的農田，想不到憑著一股衝勁熱情與創新想法，靠著種植多種作物自產自銷，成功發展自己的品牌，35歲時就獲選十大青農。為人豪爽，心直口快，在粗枝大葉下卻藏著工程師的敏銳。</p>
+                            </div>
+
+                            <div id="msdong" class="tabcontent">
+                                <h3>冬嫂 (蔡佩君 飾)</h3>
+                                <p>30歲，小冬哥的妻子。<br>
+
+                                    從生傳系畢業後，到了食農雜誌社當編輯，在27歲採訪十大青農時認識了小冬哥，兩人相戀並結婚。雖然在都市長大，她卻意外地適應農村生活，並與丈夫將在地品牌經營地有聲有色。對於食農頗有研究的她，對於風土與料理也有一些看法，平常時不時會與周朗切磋討論。</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="hline" style="height: 5vh;"></div>
                     <hr class="hr-black">
 
-                    <div>
-                        <h1 class="tittle">專案內容</h1>
+                    <div class="col-lg-12 mx-auto my-5 row" style="height: 100vh">
+                        <div class="col-lg-6">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1>One-Shot劇組</h1>
+                            <p>這是介紹</p>
+                        </div>
                         <br>
-                        <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
+                        <hr>
+                        <div class="tab row">
+                            <button class="tablinks"><img src="img/ZHOUXIAO.jpg">
+                                <div class="tabinfo">
+                                    <h2>曾越</h2>
+                                    <p>導演/攝影/剪輯</p>
+                                </div>
 
+                            </button>
+                            <button class="tablinks"><img src="img/ZHOULANG.jpg">
+                                <div class="tabinfo">
+                                    <h2>林詩芮</h2>
+                                    <p>專案負責人/副導演</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/mrdong.jpg">
+                                <div class="tabinfo">
+                                    <h2>鄒凱宇</h2>
+                                    <p>編劇/劇照師</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/msdong.jpg">
+                                <div class="tabinfo">
+                                    <h2>蔡雨潔</h2>
+                                    <p>場記</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/ZHOUXIAO.jpg">
+                                <div class="tabinfo">
+                                    <h2>林軒澤</h2>
+                                    <p>攝影</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/ZHOULANG.jpg">
+                                <div class="tabinfo">
+                                    <h2>曾靖雯</h2>
+                                    <p>美術</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/mrdong.jpg">
+                                <div class="tabinfo">
+                                    <h2>黃薰萱</h2>
+                                    <p>美術</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/msdong.jpg">
+                                <div class="tabinfo">
+                                    <h2>梁毓茹 yuru</h2>
+                                    <p>製片</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/ZHOUXIAO.jpg">
+                                <div class="tabinfo">
+                                    <h2>林培祺</h2>
+                                    <p>製片</p>
+                                </div>
+                            </button>
+                            <button class="tablinks"><img src="img/ZHOULANG.jpg">
+                                <div class="tabinfo">
+                                    <h2>陳彥杰</h2>
+                                    <p>製片/收音師</p>
+                                </div>
+                            </button>
+
+                        </div>
+                    </div>
+                    
+                    <div class="hline" style="height: 5vh;"></div>
+                    <hr class="hr-black">
+
+                    <div class="col-lg-12 mx-auto my-5">
+                        <h2 class="mb-3">劇照</h2>
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="img/os1.jpg" style="width:100%">
+                                <div class="text">Caption Text</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="img/os2.jpg" style="width:100%">
+                                <div class="text">Caption Two</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="img/os3.jpg" style="width:100%">
+                                <div class="text">Caption Three</div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
 
                     </div>
 
@@ -93,14 +491,28 @@
             </div>
         </div>
     </section>
+    
+    <section class="filminfo" style="height: auto">
+        <div class="col-lg-12 mx-auto row py-5" style="height: 80vh">
+            <div class="col-5">
+            </div>
+            <div class="col-7">
+                <h1>播放資訊</h1>
+                <p>
+                    這是播放資訊
+                </p>
+            </div>
+        </div>
+    
+    </section>
 
 
 
 
 
     <!-- Footer -->
-    <footer class="footer text-center" style="height: 220px;">
-        <div class="container">
+    <footer class="footer text-center" style="height: 220px;z-index: 955;position: absolute;display: flex;justify-content: center;align-items: center;margin: 0 auto;width: 100%;background-color: white">
+        <div class="container" style="margin: 0 auto;width: 100%;">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
@@ -152,7 +564,7 @@
                 var scrolled = $(window).scrollTop();
                 $("#mainNav").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled > winh * 0.3) {
+                    if (scrolled > winh * 5) {
                         $(this).addClass("navbar-scrolled");
                         $(this).addClass("navbar-light");
                         $(this).removeClass("navbar-dark");
@@ -162,11 +574,11 @@
                         $(this).removeClass("navbar-light");
                     }
 
-
-
                 });
             });
         });
+        
+
     </script>
 
     <script>
@@ -183,6 +595,71 @@
                 });
             });
         });
+
+        $(window).scroll(function() {
+            var scrolled = $(document).scrollTop();
+            var winh = $(window).height();
+            $(".opa").each(function() {
+                var opRange = $(this).parent().height() / 3;
+                $(this).css({
+                    "opacity": ($(this).data("seq") * opRange - scrolled) / opRange
+                });
+            });
+        });
+
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
     </script>
 
 

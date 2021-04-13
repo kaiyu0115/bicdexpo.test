@@ -3,40 +3,184 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="台大生傳 鄒凱宇">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="台大生傳 鄒凱宇">
 
-  <title>台大生傳畢業製作</title>
+    <title>台大生傳畢業製作</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
     <style>
-        .vl {
-            width: 4px;
-            height: 200%;
-            display: flex;align-items: center;justify-content: center;
-            border-right: 2px dotted black;
-            background-color: transparent;
-            padding-left: -2px;
-            padding-top: -50px;
-            border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+        header {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 99;
+            background-image: url(img/bg-masthead.jpg)
+        }
+
+        .trigger {
+            position: absolute;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.6s ease;
+        }
+
+        .trigger:hover {
+            opacity: 0.7;
+        }
+
+        #maptri {
+            width: 10%;
+            top: 50%;
+            left: 20%;
+        }
+
+        #qtri {
+            width: 10%;
+            top: 40%;
+            left: 80%;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5);
+            margin: 4% auto;
+            /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            height: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content,
+        #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.2)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            transition: all 0.4s ease;
+            color: #aaa;
+            text-align: end;
+            float: right;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .questions {
+            width: 80%;
+            height: 60%;
+            margin: 0 auto;
             
         }
-    
-    
+        
+        @media (max-width:992px) {
+            .modal-content {
+            height: auto;
+            
+        }
+            
+            .question {
+                height: 30vh !important;
+            }
+            .questions .as {
+                position: absolute;
+                 ;
+            }
+            
+        }
+        
+        .question {
+            padding: 0px;
+            margin: 10px auto;
+            border: 10px solid black;
+            height: 50%;
+            transition: all 0.6s ease;
+            overflow-y: hidden;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .question:hover .as {
+            transform: translateY(-100%);
+        }
+        
+        .question .qz {
+            height: 100%;
+            width: 100%;
+            background-color: skyblue;
+            transition: all 0.6s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .question .as {
+            height: 100%;
+            width: 100%;
+            background-color: forestgreen;
+            transition: all 0.6s ease;
+            display: flex;
+             align-items: center;
+            justify-content: center;
+        }
+        
     </style>
 
 
@@ -45,114 +189,208 @@
 
 <body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">吾感再噪</a>
-                
-            </div>
-        </nav>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">吾感再噪</a>
 
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">新市力</h1>
-      <h3 class="mb-5">
-        <em>「讓市場菜鳥走進市場，成為『新市力』！」</em>
-      </h3>
-        
-    </div>
-    <div class="overlay"></div>
-  </header>
+        </div>
+    </nav>
 
-  <!-- 簡介 -->
-  <section class="content-section bg-light " id="event">
-    <div class="container text-center" style="height: 230vh;">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-            <article>
-            <h1>專案簡介</h1>
-                <p>
-                    我們活在充滿文字與標籤的社會中，然而在傳統菜市場，一個幾乎沒有文字資訊、沒有標價、沒有告訴你保存期限的地方，我們只能在語言間的問與答中找到最好的「生存方式」。 如果你不知道為什麼要進入傳統菜市場看看，或不知道該怎麼在菜市場中挑選到最好的貨品、或不知道可以跟攤販聊什麼才不尷尬，那你可能需要來點「新市力」！ 新市力記錄了台灣菜市場豐富的生命脈動，將帶給觀展者如臨菜市場的觀展體驗，並藉由展內資訊，觀展者可以獲得新的想法與「菜市場生存法則」，帶著這份勇氣，進入傳統市場探索。         
-                </p>
-            
-            </article>
-            
-            <div class="hline" style="height: 3vh;"></div>
-            <hr class="hr-black">
-            
-            <div>
-                <h1 class="tittle">專案內容</h1>
-                <br>
-                <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
-                
-            
-            </div>
-          
-            </div>
-      </div>
+    <!-- Header -->
+    <header class="d-flex">
+        <div class="container text-center my-auto">
+            <h1 class="mb-1">新市力</h1>
+            <h3 class="mb-5">
+                <em>「讓市場菜鳥走進市場，成為『新市力』！」</em>
+            </h3>
+            <img class="trigger" src="img/b1.png" id="maptri">
+            <img class="trigger" src="img/b2.png" id="qtri">
+
+        </div>
+        <div class="overlay">
+
+        </div>
+    </header>
+
+    <div id="mapModal" class="modal" style="z-index: 888">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="closeMap">&times;</span>
+            <p>Some text in the Modal1</p>
+        </div>
+
     </div>
-  </section>
     
-   
+    <div id="QModal" class="modal" style="z-index: 889">
 
- 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="closeQ">&times;</span>
+            <p>Some text in the Modal2</p>
+            <div class="row questions">
+                <div class="question col-lg-3 col-md-6" id="q1">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+                
+                <div class="question col-lg-3 col-md-6" id="q2">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+                <div class="question col-lg-3 col-md-6" id="q3">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+                <div class="question col-lg-3 col-md-6" id="q4">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+                <div class="question col-lg-3 col-md-6" id="q5">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+                <div class="question col-lg-3 col-md-6" id="q6">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+                <div class="question col-lg-3 col-md-6" id="q7">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+                <div class="question col-lg-3 col-md-6" id="q8">
+                    <div class="qz">
+                        <h3>問題</h3>
+                    </div>
+                    <div class="as">
+                        <h3>答案</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- Footer -->
-  <footer class="footer text-center" style="height: 220px;">
-    <div class="container">
-      <ul class="list-inline mb-4">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
-            <i class="icon-home"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white socialbtm" href="#!">
-            <i class="icon-link"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; NTU BICD 2021</p>
     </div>
-  </footer>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <!-- 簡介 -->
+    <section class="content-section bg-light " id="event">
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <div class="container text-center" style="height: 230vh;">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <article>
+                        <h1>專案簡介</h1>
+                        <p>
+                            我們活在充滿文字與標籤的社會中，然而在傳統菜市場，一個幾乎沒有文字資訊、沒有標價、沒有告訴你保存期限的地方，我們只能在語言間的問與答中找到最好的「生存方式」。 如果你不知道為什麼要進入傳統菜市場看看，或不知道該怎麼在菜市場中挑選到最好的貨品、或不知道可以跟攤販聊什麼才不尷尬，那你可能需要來點「新市力」！ 新市力記錄了台灣菜市場豐富的生命脈動，將帶給觀展者如臨菜市場的觀展體驗，並藉由展內資訊，觀展者可以獲得新的想法與「菜市場生存法則」，帶著這份勇氣，進入傳統市場探索。
+                        </p>
+
+                    </article>
+
+                    <div class="hline" style="height: 3vh;"></div>
+                    <hr class="hr-black">
+
+                    <div>
+                        <h1 class="tittle">專案內容</h1>
+                        <br>
+                        <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center" style="height: 220px;">
+        <div class="container">
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
+                        <i class="icon-social-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
+                        <i class="icon-home"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white socialbtm" href="#!">
+                        <i class="icon-link"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; NTU BICD 2021</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/popper.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <script>
-         $(function() {
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $("#mainNav").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled >  winh * 0.3 ) {
+                    if (scrolled > winh * 0.3) {
                         $(this).addClass("navbar-scrolled");
                         $(this).addClass("navbar-light");
                         $(this).removeClass("navbar-dark");
@@ -168,23 +406,79 @@
             });
         });
     </script>
-    
+
     <script>
-         $(function() {
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $(".tittle").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled > objpos - winh * 0.7 ) {
+                    if (scrolled > objpos - winh * 0.7) {
                         $(this).addClass("slidein");
-                    } 
+                    }
 
                 });
             });
         });
     </script>
+
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("mapModal");
+
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("maptri");
+
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn1.onclick = function() {
+            modal1.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
+            modal1.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event1) {
+            if (event1.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+    </script>
     
+    <script>
+        // Get the modal
+        var modal2 = document.getElementById("QModal");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("qtri");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementById("closeQ");
+
+        // When the user clicks on the button, open the modal
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event2) {
+            if (event2.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+
 
 </body>
 

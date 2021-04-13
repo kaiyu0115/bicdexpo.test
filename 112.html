@@ -22,21 +22,37 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    
 
     <style>
-        .vl {
-            width: 4px;
-            height: 200%;
-            display: flex;
+        * {
+            box-sizing: border-box;
+        }
+        .cardo {
+            text-align: center;
+            margin: 0 auto;
+            height: 100vh;
+        }
+        
+        .cardo:hover .face{
+            box-shadow: 0px 0px 2px rgba(0,0,0,0.4)
+        }
+
+        .cardo .face {
+            width: 90%;
+            margin-left: 5%;
+            height: 95%;
+            transition: all 0.6s ease;
+            font-size: 36pt;
+        }
+        
+        .musicplayer {
+            background-color: gray;
             align-items: center;
             justify-content: center;
-            border-right: 2px dotted black;
-            background-color: transparent;
-            padding-left: -2px;
-            padding-top: -50px;
-            border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
-
         }
+        
+        
     </style>
 
 
@@ -54,7 +70,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead d-flex">
+    <header class="masthead d-flex" style="height: 50vh;">
         <div class="container text-center my-auto">
             <h1 class="mb-1">112星球</h1>
             <h3 class="mb-5">
@@ -66,30 +82,138 @@
     </header>
 
     <!-- 簡介 -->
-    <section class="content-section bg-light " id="event">
-        <div class="container text-center" style="height: 230vh;">
+    <section class="content-section bg-light " id="main112" style="padding: 0">
+        <div class="container text-center py-5" style="height: 110vh;">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <article>
-                        <h1>專案簡介</h1>
-                        <p>
-                           台大生是什麼樣子？很會讀書？人生勝利組？你台大的連這個都不會嗎？台大的耶了不起？社會大眾、媒體對於台大生，似乎有既定的想像。一代一代的高中生前仆後繼的想考進這所台灣第一名的大學，但事實上，考上台大之後，人生就一帆風順了嗎？補習班老師、高中老師沒有告訴你的事！台大生容易被放大檢視、承受特別高的期待、同儕間高度競爭，這些都反映在心理、情緒壓力上。以一個台大生的角度出發，打造一個感官體驗，讓大家可以實際走進想像，看到真實。
-                        </p>
-
-                    </article>
-
-                    <div class="hline" style="height: 3vh;"></div>
-                    <hr class="hr-black">
-
-                    <div>
-                        <h1 class="tittle">專案內容</h1>
-                        <br>
-                        <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
-
-
-                    </div>
-
+                <div class="col-3 cardo">
+                        <a class="face js-scroll-trigger btn" href="#A112">A</a>
                 </div>
+                <div class="col-3 cardo">
+                    <a class="face js-scroll-trigger btn" href="#B112">B</a>
+                </div>
+                <div class="col-3 cardo">
+                    <a class="face js-scroll-trigger btn" href="#C112">C</a>
+                </div>
+                <div class="col-3 cardo">
+                    <a class="face js-scroll-trigger btn" href="#D112">D</a>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div class="container text-center py-5" style="height: 100vh;" id="A112">
+            <div class="row" style="height: 100%">
+                <div class="col-6 cardo" style="height: 90%">
+                    <div class="face">
+                        <h1>A</h1>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
+                        <div class="musicplayer" style="height: 100%;width: 35%">
+                            <audio controls class="audiplay" style="width: 100%;">
+                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>標題文字</h2>
+                        </div>
+                    </div>
+                    <div class="card" style="height: 50%;margin-top: 2rem">
+                        <p>
+                            內文
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        
+        <div class="container text-center py-5" style="height: 100vh;" id="B112">
+            <div class="row" style="height: 100%">
+                <div class="col-6 cardo" style="height: 90%">
+                    <div class="face">
+                        <h1>B</h1>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
+                        <div class="musicplayer" style="height: 100%;width: 35%">
+                            <audio controls class="audiplay" style="width: 100%;">
+                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>標題文字</h2>
+                        </div>
+                    </div>
+                    <div class="card" style="height: 50%;margin-top: 2rem">
+                        <p>
+                            內文
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        
+        <div class="container text-center py-5" style="height: 100vh;" id="C112">
+            <div class="row" style="height: 100%">
+                <div class="col-6 cardo" style="height: 90%">
+                    <div class="face">
+                        <h1>C</h1>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
+                        <div class="musicplayer" style="height: 100%;width: 35%">
+                            <audio controls class="audiplay" style="width: 100%;">
+                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>標題文字</h2>
+                        </div>
+                    </div>
+                    <div class="card" style="height: 50%;margin-top: 2rem">
+                        <p>
+                            內文
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        
+        <div class="container text-center py-5" style="height: 100vh;" id="D112">
+            <div class="row" style="height: 100%">
+                <div class="col-6 cardo" style="height: 90%">
+                    <div class="face">
+                        <h1>D</h1>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
+                        <div class="musicplayer" style="height: 100%;width: 35%">
+                            <audio controls class="audiplay" style="width: 100%;">
+                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>標題文字</h2>
+                        </div>
+                    </div>
+                    <div class="card" style="height: 50%;margin-top: 2rem">
+                        <p>
+                            內文
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -145,6 +269,7 @@
     <script src="js/popper.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    
     <script>
         $(function() {
             $(window).scroll(function() {

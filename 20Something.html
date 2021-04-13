@@ -24,18 +24,202 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
     <style>
-        .vl {
-            width: 4px;
-            height: 200%;
+        
+        .navbar-scrolled {
+            display:none !important;
+        }
+        
+        .content-section {
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100vw !important;
+            overflow-x: hidden !important;
+        }
+
+        .maindiv {
+            height: 100%;
+            width: 100vw !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .divmid,
+        .divleft,
+        .divright {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: block;
+
+        }
+
+        .divmid {
+            background-color: grey;
+        }
+
+        .listen ul li {
+            list-style: none;
+            width: 80%;
+            border-left: 1px solid black;
+            padding-left: 10px;
+            margin-left: -25px;
+            transition: all 0.8s ease;
+        }
+
+        .listen ul li:hover {
+            border-left: 6px solid black;
+        }
+
+        .eps {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            width: 80%;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-right: 2px dotted black;
-            background-color: transparent;
-            padding-left: -2px;
-            padding-top: -50px;
-            border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+            margin: 0 auto;
+        }
 
+        .ep {
+            width: 80%;
+            height: 30px;
+            opacity: 70%;
+            display: inline-grid;
+            border-radius: 1rem;
+            text-align: left;
+            align-items: center;
+            padding-left: 15px;
+            transition: all 0.8s ease;
+            background-color: grey;
+            border: none;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+
+        }
+
+
+
+        .ep:hover {
+            opacity: 1;
+            width: 90%;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .ep i {
+            float: right;
+            padding-top: 5px;
+
+        }
+
+        .mclist {
+            height: 30px;
+            width: 80%;
+            margin: 5px auto;
+            padding-left: 5px;
+        }
+
+        .mclist-lg {
+            height: 50px !important;
+            margin: 0;
+        }
+
+        .mclist-lg a {
+            height: 40px !important;
+            width: 40px !important;
+            margin-right: 10px !important;
+
+        }
+
+        .mclist a {
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .MCs {
+            width: 90% !important;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eplabel {
+            width: 50px;
+            height: 40px;
+            padding: 0px;
+            align-self: center;
+            background-color: white;
+            border: 2px solid black;
+            position: relative;
+        }
+        
+        .eplabel:hover,.eplabel.active {
+            color: black;
+            border: 4px solid black;
+        }
+        
+        .eplabel:hover a {
+            color: black;
+            font-weight: 800;
+        }
+
+        .eplabel  a {
+            color: gray;
+        }
+
+        .eplabel  a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        .eplabel.active  a {
+            color: black;
+            font-weight: 800;
+        }
+
+        .MCs .card {
+            height: auto;
+            width: 30% !important;
+            padding: 0 !important;
+            margin: 5px auto;
+        }
+
+        #logo22 {
+            border: 1px solid gray;
+            display: block;
+            height: 25vh;
+            width: 25vh;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            transition: all 0.8s ease;
+        }
+
+        #logo22:hover {
+            transform: rotate(-45deg);
+        }
+
+        #logo22 h2 {
+            text-align: center;
+            font-size: 18pt;
+            margin: 0 auto;
+            transition: all 0.8s ease;
+        }
+
+        #logo22:hover h2 {
+            transform: rotate(45deg);
+        }
+
+        #title22 {
+            text-align: left;
         }
     </style>
 
@@ -43,7 +227,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
+<body id="page-top" data-spy="scroll" data-target="#navbartt" style="overflow-x: hidden;">
 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
@@ -53,8 +237,8 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead d-flex">
+    <!-- Header 
+    <header class="masthead d-flex" style="display: none !important;">
         <div class="container text-center my-auto">
             <h1 class="mb-1">二二俱樂部</h1>
             <h3 class="mb-5">
@@ -64,46 +248,439 @@
         </div>
         <div class="overlay"></div>
     </header>
+    
+    -->
 
     <!-- 簡介 -->
-    <section class="content-section bg-light " id="event">
-        <div class="container text-center" style="height: 230vh;">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <article>
-                        <h1>專案簡介</h1>
-                        <p>
-                            二十二，是逼近畢業的歲數。<br>
-                            六位準畢業生經過三年半的迷惘、<br>
-                            追尋和成長， 透過《二二俱樂部》<br>
-                            Podcast 節目，漫談正值或曾經二<br>
-                            十二歲人們的困擾和心境。<br>
-                        </p>
+    <section class="content-section bg-light " id="main22" style="position: absolute; z-index: 199">
+        <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
+            <div class="maindiv row" style="">
+                <div class="divleft col-md-3">
 
-                    </article>
+                    <div class="mt-5" id="logo22" style="">
+                        <h2>二二俱樂部</h2>
+                    </div>
+                    <div class="pt-5 pl-4" id="title22">
+                        <h5 style="font-size: 15pt">二二俱樂部|20 Something</h5>
+                        <p>專案介紹</p>
+                    </div>
+                    <div class="pt-5 pl-4 listen" id="title22">
+                        <h4>收聽平台</h4>
+                        <p>馬上搜尋</p>
+                        <ul>
+                            <li><a>spotify</a></li>
+                            <li><a>spotify</a></li>
+                            <li><a>spotify</a></li>
+                            <li><a>spotify</a></li>
 
-                    <div class="hline" style="height: 3vh;"></div>
-                    <hr class="hr-black">
+                        </ul>
+                    </div>
+                </div>
+                <div class="divmid col-md-4">
 
-                    <div>
-                        <h1 class="tittle">專案內容</h1>
-                        <br>
-                        <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
-
-
+                    <div style="" class="mt-5 mb-3 eps">
+                        <h2 style="margin: 5px auto;">集數</h2>
                     </div>
 
+                    <button class="ep" style=""><a>ep1<i class="icon-control-play"></i></a></button>
+                    <div class="mclist row">
+                        <a><img>1</a>
+                        <a><img>2</a>
+                        <a><img>3</a>
+                    </div>
+                    <button class="ep"><a>ep2<i class="icon-control-play"></i></a></button>
+                    <div class="mclist row">
+                        <a><img>1</a>
+                        <a><img>2</a>
+                        <a><img>3</a>
+                    </div>
+                    <button class="ep"><a>ep3<i class="icon-control-play"></i></a></button>
+                    <div class="mclist row">
+                        <a><img>1</a>
+                        <a><img>2</a>
+                        <a><img>3</a>
+                    </div>
+                    <button class="ep"><a>ep4<i class="icon-control-play"></i></a></button>
+                    <div class="mclist row">
+                        <a><img>1</a>
+                        <a><img>2</a>
+                        <a><img>3</a>
+                    </div>
+                    <button class="ep"><a>ep5<i class="icon-control-play"></i></a></button>
+                    <div class="mclist row">
+                        <a><img>1</a>
+                        <a><img>2</a>
+                        <a><img>3</a>
+                    </div>
+                    <button class="ep"><a>ep6<i class="icon-control-play"></i></a></button>
+                    <div class="mclist row">
+                        <a><img>1</a>
+                        <a><img>2</a>
+                        <a><img>3</a>
+                    </div>
+                    <button class="ep"><a>ep7<i class="icon-control-play"></i></a></button>
+                    <div class="mclist row">
+                        <a><img>1</a>
+                        <a><img>2</a>
+                        <a><img>3</a>
+                    </div>
+
+
                 </div>
+                <div class="divright col-md-5" style="">
+                    <h1 class="pt-3">主持群</h1>
+                    <h2>20 Something</h2>
+                    <div class="row MCs">
+                        <div class="card col-5">
+                            <h3>Angela</h3>
+                            <h6>1999</h6>
+                            <p>自我介紹</p>
+                        </div>
+                        <div class="card col-5">
+                            <h3>Angela</h3>
+                            <h6>1999</h6>
+                            <p>自我介紹</p>
+                        </div>
+                        <div class="card col-5">
+                            <h3>Angela</h3>
+                            <h6>1999</h6>
+                            <p>自我介紹</p>
+                        </div>
+                        <div class="card col-5">
+                            <h3>Angela</h3>
+                            <h6>1999</h6>
+                            <p>自我介紹</p>
+                        </div>
+                        <div class="card col-5">
+                            <h3>Angela</h3>
+                            <h6>1999</h6>
+                            <p>自我介紹</p>
+                        </div>
+                        <div class="card col-5">
+                            <h3>Angela</h3>
+                            <h6>1999</h6>
+                            <p>自我介紹</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>台大新聞所</h4>
+                    <h4>生傳畢製</h4>
+                </div>
+
             </div>
         </div>
+    </section>
+
+    <section class="content-section bg-light row" id="main22eps" style="height: 700vh;">
+        <h1 class="" style="width: 40px;height: 100vh;display: flex;align-items: center;position:fixed;right: 10px;top: 0%;z-index: 99">二二俱樂部</h1>
+        <div class="" style="border: 1px solid black;height:80vh;width:300px;position:fixed;top: 10%;right: -150px;border-radius:100%;text-align: left;display:inline-grid;z-index: 99" id="navbartt">
+            <button style="left: 40px" class="eplabel" id="label1"><a class="js-scroll-trigger" href="#ep1main">Ep1</a></button>
+            <button style="" class="eplabel" id="label2"><a class="js-scroll-trigger" href="#ep2main">Ep2</a></button>
+            <button style=";left: -20px " class="eplabel" id="label3"><a class=" js-scroll-trigger" href="#ep3main">Ep3</a></button>
+            <button style=";left: -20px" class="eplabel" id="label4"><a class=" js-scroll-trigger" href="#ep4main">Ep4</a></button>
+            <button style="" class="eplabel" id="label5"><a class=" js-scroll-trigger" href="#ep5main">Ep5</a></button>
+            <button style="left: 40px" class="eplabel" id="label6"><a class="js-scroll-trigger" href="#ep6main">Ep6</a></button>
+
+        </div>
+
+
+
+        <section class="content-section bg-light " style="height: 100vh"></section>
+        <section class="content-section bg-light " id="ep1main">
+            <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
+                <div class="maindiv row" style="">
+                    <div class="divleft col-md-3">
+
+                        <div class="mt-5" id="logo22" style="">
+                            <h2>第一集</h2>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <p>集數介紹</p>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h4>主持群</h4>
+                            <div class="mclist mclist-lg row">
+                                <a><img>1</a>
+                                <a><img>2</a>
+                                <a><img>3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divmid col-md-9" style="text-align: left ">
+
+                        <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
+                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                        </div>
+                        <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
+                            <p class="p-4">
+                                這是一段簡介
+                            </p>
+
+                        </div>
+                        <div class="pt-5 pl-4 listen" id="">
+                            <h4>收聽平台</h4>
+                            <p>馬上搜尋</p>
+                            <ul>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-light " id="ep2main">
+            <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
+                <div class="maindiv row" style="">
+                    <div class="divleft col-md-3">
+
+                        <div class="mt-5" id="logo22" style="">
+                            <h2>第二集</h2>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <p>集數介紹</p>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h4>主持群</h4>
+                            <div class="mclist mclist-lg row">
+                                <a><img>1</a>
+                                <a><img>2</a>
+                                <a><img>3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divmid col-md-9" style="text-align: left ">
+
+                        <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
+                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                        </div>
+                        <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
+                            <p class="p-4">
+                                這是一段簡介
+                            </p>
+
+                        </div>
+                        <div class="pt-5 pl-4 listen" id="">
+                            <h4>收聽平台</h4>
+                            <p>馬上搜尋</p>
+                            <ul>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-light " id="ep3main">
+            <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
+                <div class="maindiv row" style="">
+                    <div class="divleft col-md-3">
+
+                        <div class="mt-5" id="logo22" style="">
+                            <h2>第三集</h2>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <p>集數介紹</p>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h4>主持群</h4>
+                            <div class="mclist mclist-lg row">
+                                <a><img>1</a>
+                                <a><img>2</a>
+                                <a><img>3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divmid col-md-9" style="text-align: left ">
+
+                        <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
+                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                        </div>
+                        <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
+                            <p class="p-4">
+                                這是一段簡介
+                            </p>
+
+                        </div>
+                        <div class="pt-5 pl-4 listen" id="">
+                            <h4>收聽平台</h4>
+                            <p>馬上搜尋</p>
+                            <ul>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-light " id="ep4main">
+            <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
+                <div class="maindiv row" style="">
+                    <div class="divleft col-md-3">
+
+                        <div class="mt-5" id="logo22" style="">
+                            <h2>第四集</h2>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <p>集數介紹</p>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h4>主持群</h4>
+                            <div class="mclist mclist-lg row">
+                                <a><img>1</a>
+                                <a><img>2</a>
+                                <a><img>3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divmid col-md-9" style="text-align: left ">
+
+                        <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
+                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                        </div>
+                        <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
+                            <p class="p-4">
+                                這是一段簡介
+                            </p>
+
+                        </div>
+                        <div class="pt-5 pl-4 listen" id="">
+                            <h4>收聽平台</h4>
+                            <p>馬上搜尋</p>
+                            <ul>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-light " id="ep5main">
+            <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
+                <div class="maindiv row" style="">
+                    <div class="divleft col-md-3">
+
+                        <div class="mt-5" id="logo22" style="">
+                            <h2>第五集</h2>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <p>集數介紹</p>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h4>主持群</h4>
+                            <div class="mclist mclist-lg row">
+                                <a><img>1</a>
+                                <a><img>2</a>
+                                <a><img>3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divmid col-md-9" style="text-align: left ">
+
+                        <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
+                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                        </div>
+                        <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
+                            <p class="p-4">
+                                這是一段簡介
+                            </p>
+
+                        </div>
+                        <div class="pt-5 pl-4 listen" id="">
+                            <h4>收聽平台</h4>
+                            <p>馬上搜尋</p>
+                            <ul>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-light " id="ep6main">
+            <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
+                <div class="maindiv row" style="">
+                    <div class="divleft col-md-3">
+
+                        <div class="mt-5" id="logo22" style="">
+                            <h2>第六集</h2>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <p>集數介紹</p>
+                        </div>
+                        <div class="pt-5 pl-4" id="title22">
+                            <h4>主持群</h4>
+                            <div class="mclist mclist-lg row">
+                                <a><img>1</a>
+                                <a><img>2</a>
+                                <a><img>3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divmid col-md-9" style="text-align: left ">
+
+                        <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
+                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                        </div>
+                        <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
+                            <p class="p-4">
+                                這是一段簡介
+                            </p>
+
+                        </div>
+                        <div class="pt-5 pl-4 listen" id="">
+                            <h4>收聽平台</h4>
+                            <p>馬上搜尋</p>
+                            <ul>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+                                <li><a>spotify</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </section>
 
 
 
 
 
+
+
     <!-- Footer -->
-    <footer class="footer text-center" style="height: 220px;">
+    <footer class="footer text-center" style="height: 220px;z-index:999;position: absolute;width: 100%;background-color: white">
         <div class="container">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
@@ -168,6 +745,69 @@
 
 
 
+                });
+            });
+        });
+    </script>
+    
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var winh = $(window).height();
+                var ep1 = document.getElementById("label1");
+                var ep2 = document.getElementById("label2");
+                var ep3 = document.getElementById("label3");
+                var ep4 = document.getElementById("label4");
+                var ep5 = document.getElementById("label5");
+                var ep6 = document.getElementById("label6");
+                var scrolled = $(window).scrollTop();
+                $("#ep1main").each(function() {
+                    var eppos = $(this).offset().top;
+                    if (scrolled > eppos && scrolled < eppos + winh) {
+                        $(ep1).addClass("active");
+                    } else {
+                        $(ep1).removeClass("active");
+                    }
+                });
+                $("#ep2main").each(function() {
+                    var eppos = $(this).offset().top;
+                    if (scrolled > eppos && scrolled < eppos + winh) {
+                        $(ep2).addClass("active");
+                    } else {
+                        $(ep2).removeClass("active");
+                    }
+                });
+                $("#ep3main").each(function() {
+                    var eppos = $(this).offset().top;
+                    if (scrolled > eppos && scrolled < eppos + winh) {
+                        $(ep3).addClass("active");
+                    } else {
+                        $(ep3).removeClass("active");
+                    }
+                });
+                $("#ep4main").each(function() {
+                    var eppos = $(this).offset().top;
+                    if (scrolled > eppos && scrolled < eppos + winh) {
+                        $(ep4).addClass("active");
+                    } else {
+                        $(ep4).removeClass("active");
+                    }
+                });
+                $("#ep5main").each(function() {
+                    var eppos = $(this).offset().top;
+                    if (scrolled > eppos && scrolled < eppos + winh) {
+                        $(ep5).addClass("active");
+                    } else {
+                        $(ep5).removeClass("active");
+                    }
+                });
+                $("#ep6main").each(function() {
+                    var eppos = $(this).offset().top;
+                    if (scrolled > eppos && scrolled < eppos + winh) {
+                        $(ep6).addClass("active");
+                    } else {
+                        $(ep6).removeClass("active");
+                    }
                 });
             });
         });

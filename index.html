@@ -63,24 +63,34 @@
         }
 
 
-        #girl:hover {
-            transform: scale(20%)
-        }
 
         #mt3:hover,
         #mt4:hover,
-        #mt5:hover {
+        #mt5:hover
+         {
             transform: translateY(-20%);
         }
-
-        #mt1:hover,#mt2:hover {
-            filter: hue-rotate(90deg)drop-shadow(1px 1px 6px rgba(255,255,255,0.6));
-        }
         
-        #knowmore:hover {opacity: 100% !important;padding-left: 20%;}
+        #t6-1:hover,#bd1:hover,#b3:hover {transform: translateY(-10%)!important}
+
+        #mt1:hover,
+        #mt2:hover {
+            filter: hue-rotate(90deg)drop-shadow(1px 1px 6px rgba(255, 255, 255, 0.6));
+        }
+
+        #knowmore:hover {
+            opacity: 100% !important;
+            padding-left: 20%;
+        }
 
         .tt {
             transition: all 0.8s ease;
+        }
+
+
+        #seevideo:hover,
+        #seepj:hover {
+            opacity: 100% !important;
         }
     </style>
 
@@ -135,19 +145,19 @@
                 <em>掀起你的感官革命</em>
             </h3>
             <a class="btn btn-primary btn-xl js-scroll-trigger sm-hide glass" href="#about" style="position: absolute; bottom: 10%;;opacity: 50%;transition: all 0.8s ease" id="knowmore">了解更多
-                        <i class="icon-arrow-down" style="padding-left: 5px"></i>
-                    </a>
+                <i class="icon-arrow-down" style="padding-left: 5px"></i>
+            </a>
         </div>
         <div class="overlay"></div>
     </header>
 
     <!-- 活動簡介 -->
     <section class="content-section bg-light " id="about">
-        <div class="container" style="height: 60vh;">
-            <img src="img/tree0.png" class="index-header tittle m-hide" style="width: 26%;left:10%;bottom:-90vh;z-index: 0">
-            <img src="img/f1-1.png" id="f1-1" class="index-header tittle" style="width: 15%;right:10%;bottom:-90vh;z-index: 0">
-            <img src="img/t6-1.png" id="t6-1" class="index-header tittle" style="width: 20%;right:10%;bottom:-90vh;z-index:0">
-            <div class="row">
+        <div class="container" style="height: 80vh;">
+            <img src="img/tree0.png" class="index-header tittle m-hide" style="width: 32%;left:10%;bottom:-100vh;z-index: 0">
+            <img src="img/f1-1.png" id="f1-1" class="index-header tittle" style="min-width: 100px !important;width: 15%;left:43%;bottom:-99.5vh;z-index: 3">
+            <img src="img/t6.png" id="t6-1" class="index-header tt" style="width: 20%;left:45%;bottom:-99.5vh;z-index:5">
+            <div class="row" style="height: 100%">
                 <div class="col-lg-10 mx-auto">
                     <h1 class="tittle">策展緣起</h1>
                     <h3 style="color: #462857">
@@ -158,7 +168,7 @@
                         即為對於感官的重新理解、 解構、組裝，來對於我們身處的社會進行心的審視與發聲。
                         <br>
 
-                        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#video" style="margin-top:10px">形象片<i class="icon-arrow-down" style="padding-left: 5px"></i></a>
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#video" style="margin-top:10px;position: absolute;bottom: -10%;right: 1%;opacity: 50%;" id="seevideo">形象片<i class="icon-arrow-down" style="padding-left: 5px"></i></a>
                 </div>
             </div>
         </div>
@@ -221,7 +231,7 @@
                 形象片</h2>
             <iframe width="100%" height="630" src="https://www.youtube.com/embed/1kpdhPIcaVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:-5%;"></iframe>
             <br>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#projects" style="margin-top: 30px;">看專案<i class="icon-arrow-down" style="padding-left: 5px"></i></a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#projects" style="margin-top: 30px;opacity: 50%;" id="seepj">看專案<i class="icon-arrow-down" style="padding-left: 5px"></i></a>
         </div>
     </section>
 
@@ -307,8 +317,8 @@
     <section class="content-section bg-primary text-white" id="info">
         <div class="container text-center">
             <div class="tittle m-hide" style="position: absolute;margin-top:-1%;width: 100%;padding: 0;margin-left:0;z-index: 0">
-                <img src="img/bd1.png" style="position: relative; width: 20%;left: -40%;top:-6%;z-index: 3">
-                <img src="img/b3.png" style="position: relative; width: 20%;left: 30%;top:-6%;z-index: 3">
+                <img src="img/bd1.png" style="position: relative; width: 15%;left: -36%;top:-6%;z-index: 3" id="bd1" class="tt">
+                <img src="img/b3.png" style="position: relative; width: 20%;left: 24%;top:-6%;z-index: 3" id="b3" class="tt">
             </div>
             <h2 class="mb-4 tittle">活動資訊</h2>
             <h4>4/30~5/2 @台北圓山花博流行館</h4>

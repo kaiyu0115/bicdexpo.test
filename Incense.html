@@ -35,6 +35,50 @@
             border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
             
         }
+        
+        .decrt {
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            border: 1px solid black;
+        }
+        
+        .btnic {
+            width: 30%;
+            transition: all 0.6s ease;
+            color: #EBB471;
+            border: 2px solid #EBB471;
+            
+        }
+        
+        .btnic:hover {
+            background-color: #EBB471;
+            color: white;
+        }
+        
+        .btnic  h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            
+        }
+        
+        .navs  {
+            color: black;
+            width: 20%;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 16pt;
+            transition: all 0.6s ease;
+            font-weight: 700;
+        }
+        
+        .navs:hover {
+            color: #A96360;
+            text-decoration: none;
+            font-weight: 700;
+        }
     
     
     </style>
@@ -43,56 +87,148 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
+<body id="page-top" data-spy="scroll" data-target="#navbarResponsive" style="overflow-x: hidden">
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">吾感再噪</a>
-                
             </div>
         </nav>
 
   <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">品味調香室</h1>
-      <h3 class="mb-5">
-        <em>重新調配印象的組成</em>
-      </h3>
-        
-    </div>
-    <div class="overlay"></div>
+  <header class="masthead d-flex" style="background: #fff;height: 60vh">
+      <div class="decrt" style="top: 20px;left: 20px;"></div>
+      <div class="decrt" style="top: 20px;left: 50px;"></div>
+      <div class="decrt" style="top: 50px;left: 20px;"></div>
+      <div class="container text-center my-auto" >
+          <img src="img/logo_ic_bl.png" style="width: 30%;min-width: 200px">
+          <div class="container" style="width:100vw;margin: 0 auto;padding: 0">
+              <div class="pt-4" id="navbaric" style="text-align:center;width: 100%;margin-left: -1%;padding-left: -35%;color: black">
+                  <a class="navs js-scroll-trigger" href="#aboutincense">專案理念</a>
+                <a class="navs js-scroll-trigger" href="#incensespecial">專案亮點</a>
+                <a class="navs js-scroll-trigger" href="#mcincense">角色香調</a>
+              </div>
+          </div>
+      </div>
   </header>
-
+    
   <!-- 簡介 -->
-  <section class="content-section bg-light " id="event">
-    <div class="container text-center" style="height: 230vh;">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
+  <section class="content-section bg-light " id="aboutincense" style="height: 100vh;padding:0;margin: 0;display:grid;align-items: center;justify-content:center;">
+    <div class="container-fluid text-center" style="height:100%;width: 100vw !important;display:flex;align-items: center;justify-content:center;background-color: darksalmon">
+        <div class="col-lg-10 mx-auto" style="width: 100%;">
             <article>
-            <h1>專案簡介</h1>
+            <h1 style="color:#884C3A">「歡迎光臨，品味調香室」</h1>
                 <p>
-                    太過於快速的網路時代，生命僅僅是萍水相逢的一面之緣。有很多時候我們來不及好好的坐下來認識一個人、一件事、或一個群體，片面的認知造成了太多的隔閡和錯誤的刻板印象。在品味調香室，我們希望人們可以走進來，好好地打開感官，聞嗅去感受，用心去體驗，了解社會底層群體所共同面臨的社會問題與承受的刻板壓力，在香氣的交融間，更全面了解他們背後的故事。當生命的氣味分子來回碰撞，重新演繹出另一種姿態，也許他們在你的世界裡，也能以另一種形象再生。         
+                    繁忙的日子裡，空出一段時光<br>
+                    邀請您好好打開趕官嗅聞<br>
+                    品嘗每一縷氣味背後蘊藏的人生故事<br><br>
+                    再香氣的交融間找尋人物的真實<br>
+                    用更接近的眼光認識他們所面臨的困難與壓力<br>
                 </p>
-            
             </article>
-            
-            <div class="hline" style="height: 3vh;"></div>
-            <hr class="hr-black">
-            
-            <div>
-                <h1 class="tittle">專案內容</h1>
-                <br>
-                <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
-                
-            
-            </div>
-          
-            </div>
       </div>
     </div>
   </section>
+    
+  <section class="content-section bg-light " id="incensespecial" style="height: 100vh">
+    <div class="container text-center" style="height:100%;">
+      
+        <div class="col-lg-10 mx-auto">
+        
+            <h1 style="text-align: left">專案亮點</h1>
+            
+            <div class="row pt-4">
+                <div class="col-4">
+                    <img src="img/xyzalpha.png" style="width: 100%">
+                    <h3 class="pt-4">3段角色故事</h3>
+                </div>
+                <div class="col-4">
+                    <img src="img/xyzalpha.png" style="width: 100%">
+                    <h3 class="pt-4">12種香氛</h3>
+                </div>
+                <div class="col-4">
+                    <img src="img/xyzalpha.png" style="width: 100%">
+                    <h3 class="pt-4">3種展間設計</h3>
+                </div>
+            </div>
+            
+      </div>
+    </div>
+  </section>
+    
+      <section class="content-section bg-light " id="mcincense" style="height: 560vh">
+          <div class="container-fluid" style="background-color: grey;height: 80vh">
+              <h1 style="font-size: 100pt;width: 20%;padding-left: -20%;margin-left: -5%">角色香調</h1>
+
+          </div>
+          <div class="container text-center" style="height:380vh;">
+
+              <div class="col-lg-10 mx-auto" style="height:60vh;margin:10% auto">
+                  <h1>引言</h1>
+
+                  <p>
+                      在品味調香室，我們將為您介紹三種角色香水<br>
+                      每一支角色香水，將蘊涵三種不同風味的特質香調，代表組織成人了三種不同特質。<br>
+                      <br>
+                      旨在透過氣味的演繹，以嗅覺形式再現，讓三種角色能以另類形式予社會認識。<br>
+                      本室希望搭配文字說明跨越線上障礙。請您試著發揮想像，打開感官，一同品嚐意會。
+
+                  </p>
+              </div>
+              <div class="col-lg-10 mx-auto" style="height:100vh">
+                  <a href="#" class="btn btnic mb-3"><h1>飛行少年記</h1></a>
+                  
+                  
+                  <div class="row">
+                <div class="col-4">
+                    <h3>社會抽離</h3>
+                </div>
+                <div class="col-4">
+                    <h3>歸屬感</h3>
+                </div>
+                <div class="col-4">
+                    <h3>自力更生</h3>
+                </div>
+            </div>
+              </div>
+              <div class="col-lg-10 mx-auto" style="height:100vh">
+                  <a href="#" class="btn btnic mb-3"><h1>移工之旅</h1></a>
+                  
+                  <div class="row">
+                <div class="col-4">
+                    <h3>異國風情</h3>
+                </div>
+                <div class="col-4">
+                    <h3>刻苦耐勞</h3>
+                </div>
+                <div class="col-4">
+                    <h3>思鄉情懷</h3>
+                </div>
+            </div>
+              </div>
+              <div class="col-lg-10 mx-auto" style="height:100vh">
+                  <a href="#" class="btn btnic mb-3"><h1>虛實之鏡</h1></a>
+                  
+                  <div class="row">
+                <div class="col-4">
+                    <h3>工作挫折</h3>
+                </div>
+                <div class="col-4">
+                    <h3>自信美</h3>
+                </div>
+                <div class="col-4">
+                    <h3>堅強韌性</h3>
+                </div>
+            </div>
+              </div>
+          </div>
+          <div class="container-fluid text-center mt-5" style="height:60vh;width:100vw !important;background-color: darksalmon;padding: 0;">
+              <h5 class="" style="color:#884C3A;width: 100%;margin: 0 auto;padding-top: 10%">想了解這些群體的故事及味道，歡迎到品味調香室！</h5>
+              <img src="img/logo_ic_wh.png" style="width: 20%;min-width: 150px">
+          
+          </div>
+      </section>
     
    
 
