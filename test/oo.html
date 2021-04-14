@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KaiYu Tsou</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+    
+<!-- Home Start -->
+    <div id="Home"class="offset">
+    
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="navbarResponsive">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" href="#intro">
+                        <a class="nav-link active" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item" href="#intro">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item" href="#intro">
+                        <a class="nav-link" href="#Photography">Photography</a>
+                    </li>
+                    <li class="nav-item" href="#intro">
+                        <a class="nav-link" href="#Design">Design</a>
+                    </li>
+                    <li class="nav-item" href="#intro">
+                        <a class="nav-link" href="#intro">Special</a>
+                    </li>
+                     <li class="nav-item" href="#intro">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+<!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="3500">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/IMG_6857-2.jpg" alt="test1">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justicfy-content-center">
+                            <div class="col-8 bg-custom d-none d-md-block py-4 px-0">
+                                <h1>攝影‧影音</h1>
+                                <div class="border primary border-top  w-50 mx-auto my-3 "></div>
+                                <button type="button" class="btn btn-outline-light btn-lg mr-2">View More</button>
+                                <button type="button" class="btn btn-primary btn-lg ml-2">Request</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/IMG_6956-2.jpg" alt="test2">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justicfy-content-center">
+                            <div class="col-8 bg-custom d-none d-md-block py-4 px-0">
+                                <h1>案例經驗</h1>
+                                <div class="border primary border-top  w-50 mx-auto my-3 "></div>
+                                <button type="button" class="btn btn-outline-light btn-lg mr-2">View More</button>
+                                <button type="button" class="btn btn-primary btn-lg ml-2">Request</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/IMG_6881-2.jpg" alt="test3">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justicfy-content-center">
+                            <div class="col-8 bg-custom d-none d-md-block py-4 px-0">
+                                <h1>設計‧繪圖</h1>
+                                <div class="border primary border-top  w-50 mx-auto my-3 "></div>
+                                <button type="button" class="btn btn-outline-light btn-lg mr-2">View More</button>
+                                <button type="button" class="btn btn-primary btn-lg ml-2">Request</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+<!-- Left and right controls -->
+         <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+            <span class="fas fa-chevron-left fa-2x"></span>
+        </a>
+        <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+            <span class="fas fa-chevron-right fa-2x"></span>
+        </a>
+    </div>
+
+        
+        </div>
+<!--- Home End -->
+
+<!-- About Start -->
+    <div id="About" class="offset">
+<!--- About Me Section -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center" id="AboutMe">
+            <div class="col-12">
+                <button data-toggle="collapse" data-target="#about" class="btn btn-outline-primary btn-lg">關於我</button>
+
+
+                <h3 class="text-dark">在地視野到斜槓人生</h3>
+                
+            </div>
+            <hr>
+            <div class="col-12">
+                <div id="about" class="collapse">
+                    我叫鄒凱宇，摩羯座，A型。
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!--- About Me Three Column Section -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h2>okok</h2>
+                <p>dedededede</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h2>okok</h2>
+                <p>dedededede</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fab fa-css3"></i>
+                <h2>okok</h2>
+                <p>dedededede</p>
+            </div>
+        </div>
+        <hr class="my-4">
+
+    </div>
+
+
+    </div>
+<!-- About End -->
+    
+    
+<!-- Photography Start -->
+    <div id="Photography" class="offset">
+<!--- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-4 mb-4 my-lg-auto" id="row4">
+                <h1 class="text-dark font-weight-bold mb-3 ml-5">攝影‧影音</h1>
+                <p class="mb-4 ml-5">pppppp</p>
+                <br>
+                <a href="#" target="_blank" class="btn btn-primary btn-lg ml-5">Learn More</a>
+            </div>
+            <div class="col-lg-8">
+                <img src="assets/IMG_6946-2.jpg" alt="ok" class="img-fluid">
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    </div>
+<!-- Photography End -->
+
+    
+<!-- Design Start -->
+    <div id="Design" class="offset">
+<!--- Top Navbar -->
+<a class="navbar bg-primary sticky-top emoji" href="#emoji" role="button" data-toggle="collapse" ></a>
+<!--- Fixed background -->
+    <div class="fixed-background">
+        
+        <div class="row text-light py-5">
+            <div class="col-12 text-center">
+                <h1>設計‧繪圖</h1>
+                <h3 class="py-2">因為我很棒</h3>
+                <button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-primary btn-lg mr-2">Request</button>
+                <button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-danger btn-lg ml-2">Request</button>
+            </div>
+        </div>
+        
+        <div class="fixed-wrap">
+            <div class="fixed"></div>
+        </div>
+    </div>
+
+<!--- Modal Popup -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!--- Emoji Section -->
+    <!--- Buttom Navbar -->
+     <a class="navbar bg-primary sticky-top emoji" href="#emoji" role="button" data-toggle="collapse" >
+        <i class="fas fa-adjust"></i>
+    </a>
+     <!--- emoji bar -->
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/gif/panda.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/gif/poo.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/gif/unicorn.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/gif/chicken.gif">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+<!-- Design End -->
+   
+    
+<!-- Contact Start -->
+    <div id="Contact" class="offset">
+<!--- Meet the team -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1>團隊夥伴</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+<!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/team1.png">
+                    <div class="card-body">
+                        <h4 class="card-tittle">card</h4>
+                        <p class="card-text">this is a card.</p>
+                        <a href="#" class="btn btn-primary ">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/team2.png">
+                    <div class="card-body">
+                        <h4 class="card-tittle">card</h4>
+                        <p class="card-text">this is a card.</p>
+                        <a href="#" class="btn btn-primary ">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/team3.png">
+                    <div class="card-body">
+                        <h4 class="card-tittle">card</h4>
+                        <p class="card-text">this is a card.</p>
+                        <a href="#" class="btn btn-primary ">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+ <!--- Two Column Section -->
+    <hr class="my-4">
+
+<!--- Connect -->
+    <div class="container-fluid padding">
+        <div class="jumbotron text-center">
+            <div class="col-12">
+                <h1>聯絡我</h1>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+<!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center ">
+                <div class="col-md-4">
+                    <img src="assets/w3newbie.png">
+                    <hr class="light">
+                    <p>0966-050-345</p>
+                    <p>kev80814@gmail.com</p>
+                    <p>新北市板橋區忠孝路190巷16號8樓</p>
+                    <p>LINE id: myshang</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h4>服務時間</h4>
+                    <hr class="light">
+                    <p>星期一 10:00~17:00</p>
+                    <p>星期三13:00~17:00</p>
+                    <p>星期四 13:00~17:00</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h4>服務地點</h4>
+                    <hr class="light">
+                    <p>星期一 10:00~17:00</p>
+                    <p>星期三13:00~17:00</p>
+                    <p>星期四 13:00~17:00</p>
+                </div>
+                <hr class="light-100">
+                <div class="col-12">
+
+                    <h5>&copy;kaiyutsou.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    </div>
+<!-- Contact End -->
+<!-- Script Source Files -->
+
+<!-- jQuery -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<!-- Bootstrap 4.5 JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+<!-- Font Awesome -->
+<script src="js/all.min.js"></script>
+<!-- pixi -->
+<script src="pixi/pixi.min.js"></script>
+  <script type="text/javascript">
+    let type = "WebGL"
+    if(!PIXI.utils.isWebGLSupported()){
+      type = "canvas"
+    }
+
+    PIXI.utils.sayHello(type)
+  </script>
+</body>
+
+</html>

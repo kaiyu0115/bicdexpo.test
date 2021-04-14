@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>test</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+    
+    <style>
+        #fullpage {
+            position:fixed;
+            top: 100px;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0" style="background-color: aqua;">
+		<h1>fullPage.js</h1>
+		<p>Configure the CSS3 easing effect!</p>
+		<img src="imgs/fullPage.png" alt="fullPage" />
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<img src="imgs/1.png" alt="Cool" />
+			<h1>easeOutBack</h1>
+			<p>This example is working with `easeOutBack` effect instead of the default</p>
+			<p>You can see more about them <a href="http://jqueryui.com/resources/demos/effect/easing.html" target="_blank">here</a></p>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Cool uh?</h1>
+			<p>Choose the best easing effect for your site!</p>
+		</div>
+	</div>
+</div>
+
+
+
+ <!-- Footer -->
+  <footer class="footer text-center" style="position: fixed;z-index: 999;bottom:0px;">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="#!">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+
+        //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+        easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+    });
+</script>
+
+</body>
+
+</html>
