@@ -94,10 +94,9 @@ h6 {
     padding-top: 8rem;
     padding-bottom: 8rem;
     background: linear-gradient(90deg, rgba(150, 88, 160, 1) 0, rgba(219, 153, 123, 1) 100%);
-    background-image: url(/img/bg.jpg);
+    background-image: url(/bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-
     background-size: auto
 }
 
