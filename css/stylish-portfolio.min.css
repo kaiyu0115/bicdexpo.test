@@ -636,14 +636,13 @@ a:hover {
     backface-visibility: hidden;
     transition: all 1s ease;
     transform: rotateY(0deg);
-    overflow-x: hidden;
     background-color: #fff;
 }
 
 .cardo:hover .face.front {
     transform: perspective(500px) rotateY(180deg);
     transition: all 1s ease;
-    overflow-x: hidden;
+
     
 }
 
@@ -655,13 +654,12 @@ a:hover {
     transition: all 1s ease;
     background-color: #000;
     color: #fff;
-    overflow-x: hidden;
+
 }
 
 .cardo:hover .face.back {
     transform: perspective(500px) rotateY(360deg);
     transition: all 1s ease;
-    overflow-x: hidden;
 }
 
 .glass {
@@ -672,7 +670,7 @@ a:hover {
 
 .cardicon {
     height: 100px;
-    position: relative;
+    position: absolute;
     z-index: 999;
     width: 100px;
     display: flex;
@@ -903,6 +901,7 @@ a:hover {
 
 }
 
+
 @media (max-width:992px) {
     body {
         overflow-x: hidden !important;
@@ -918,18 +917,21 @@ a:hover {
     }
 
     .act1 {
-        margin-left: -25vw;
-        top: 60% !important;
+        top: 40% !important;
+        width: 160px;
+        min-width: 160px !important;
     }
 
     .act2 {
-        margin-left: -30vw;
-        top: 70% !important;
+        top: 50% !important;
+        width: 160px;
+        min-width: 160px !important;
     }
 
     .act3 {
-        margin-left: -25vw;
-        top: 40% !important;
+        top: 20% !important;
+        width: 160px;
+        min-width: 160px !important;
     }
 
     .m-hide {
@@ -937,11 +939,15 @@ a:hover {
     }
 
     #t6-1 {
-        bottom: -70vh !important;
+        bottom: -80vh !important;
+        left: 12% !important ;
+        position: absolute !important;
     }
 
     #f1-1 {
-        bottom: -70vh !important;
+        bottom: -80vh !important;
+        left: 10% !important ;
+        width: 150px !important;
     }
 
     #bear {
@@ -977,9 +983,6 @@ a:hover {
         display: none !important;
     }
 
-    .tt {
-        margin-left: -36vw;
-    }
 
     #girl {
         top: 20% !important;
@@ -988,12 +991,30 @@ a:hover {
 }
 
 @media (max-width:376px) {
+    
+        .act1 {
+        top: 60% !important;
+            left: 10% !important;
+            width: 100px !important;
+    }
+
+    .act2 {
+        top: 65% !important;
+         left: 20% !important;
+
+    }
+
+    .act3 {
+        top: 50% !important;
+         left: 20% !important;
+    }
+    
     #t6-1 {
-        bottom: -44vh !important;
+        bottom: -80vh !important;
     }
 
     #f1-1 {
-        bottom: -44vh !important;
+        bottom: -80vh !important;
     }
 
     .exsm-hide {

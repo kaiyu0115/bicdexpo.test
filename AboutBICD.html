@@ -47,10 +47,14 @@
             border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
 
         }
-        
+
+        .cardicon {
+            transform-style: preserve-3d;
+        }
+
         .masthead {
 
-    background: linear-gradient(90deg, rgba(150, 88, 160, 1) 0, rgba(219, 153, 123, 1) 100%) url(/bg.jpg) !important;
+            background: linear-gradient(90deg, rgba(150, 88, 160, 1) 0, rgba(219, 153, 123, 1) 100%) url(/bg.jpg) !important;
 
         }
 
@@ -136,7 +140,7 @@
                 </p>
             </div>
             <div class="list-inline tab" style="width: 40%;height:8vh">
-                <a class="btn rounded-circle tablinks " onmouseover="openCity(event, 'about1')" style="height:30px;width: 30px;margin-right: 10%" id="defaultOpen"></a>
+                <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about1')" style="height:30px;width: 30px;margin-right: 10%" id="defaultOpen"></a>
                 <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about2')" style="height:30px;width: 30px;margin-right: 10%" href=""></a>
                 <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about3')" style="height:30px;width: 30px;" href=""></a>
             </div>
@@ -169,7 +173,7 @@
                             <button class="accordion">農業</button>
                             <div class="panel">
                                 <p>農業基本概念與廣泛農業相關議題，包含食農、地方創生等，強調生產與消費端的連結。<br>
-                                代表課程:農業發展、社區發展與傳播、食農教育、六級產業</p>
+                                    代表課程:農業發展、社區發展與傳播、食農教育、六級產業</p>
                             </div>
 
                         </div>
@@ -182,53 +186,60 @@
                             <div class="col-3" style="margin: 0 auto;">
                                 <h3 class="">行銷</h3>
                                 <div class="cardo" style="">
-                                    <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
-                                    <i class="icon-graph" style="font-size:32px"></i>
-                                </div>
-
                                     <div class="face front">
                                         <p class="infoes">行銷理論基礎與實務操作，包含基本組織管理概念，並且稍側重在傳播推廣上。</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-graph" style="font-size:32px"></i>
+                                        </div>
                                     </div>
                                     <div class="face back">
                                         <p class="infoes">代表課程：行銷學、整合行銷傳播、傳播企劃、數位行銷</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-graph" style="font-size:32px"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-3" style="margin: 0 auto;">
                                 <h3 class="">傳播</h3>
-                                
-                                <div class="cardo" style="">
-                                    <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
-                                    <i class="icon-camrecorder" style="font-size:32px"></i>
-                                </div>
 
+                                <div class="cardo" style="">
+                                    
                                     <div class="face front">
                                         <p class="infoes">傳播理論基礎，較側重實務端，實務部分以文案、平面影像為主，強調與行銷的結合。</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-camrecorder" style="font-size:32px"></i>
+                                        </div>
                                     </div>
                                     <div class="face back">
                                         <p class="infoes">代表課程:傳播學、媒介概論、媒體寫作、視覺傳播</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-camrecorder" style="font-size:32px"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-3" style="margin: 0 auto;">
                                 <h3 class="">農業</h3>
-                                
-                                <div class="cardo" style="">
-                                    <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
-                                    <i class="fas fa-seedling" style="font-size:32px"></i>
-                                </div>
 
+                                <div class="cardo" style="">
                                     <div class="face front">
                                         <p class="infoes">農業基本概念與廣泛農業相關議題，包含食農、地方創生等，強調生產與消費端的連結。</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                        <i class="fas fa-seedling" style="font-size:32px"></i>
+                                    </div>
                                     </div>
                                     <div class="face back">
                                         <p class="infoes">代表課程:農業發展、社區發展與傳播、食農教育、六級產業</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                        <i class="fas fa-seedling" style="font-size:32px"></i>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                         <div class="row tittle m-hide c1" style="padding: 10px;">
@@ -251,22 +262,22 @@
 
                         <div class="row tittle " style="padding: 10px;">
                             <h3 style="margin: 0 auto;padding: 20px" class="lg-hide">主要出路</h3>
-                            <button class="accordion">行銷</button>
-                            <div class="panel">
+                            <button class="accordion lg-hide">行銷</button>
+                            <div class="panel lg-hide">
                                 <p>Lorem ipsum...</p>
                             </div>
 
-                            <button class="accordion">傳播</button>
-                            <div class="panel">
+                            <button class="accordion lg-hide">傳播</button>
+                            <div class="panel lg-hide">
                                 <p>Lorem ipsum...</p>
                             </div>
 
-                            <button class="accordion">農業</button>
-                            <div class="panel">
+                            <button class="accordion lg-hide">農業</button>
+                            <div class="panel lg-hide">
                                 <p>Lorem ipsum...</p>
                             </div>
-                            <button class="accordion">跨領域</button>
-                            <div class="panel">
+                            <button class="accordion lg-hide">跨領域</button>
+                            <div class="panel lg-hide">
                                 <p>Lorem ipsum...</p>
                             </div>
 
@@ -416,6 +427,9 @@
     </script>
 
     <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").onmouseover();
+
         function openCity(evt, cityName) {
             // Declare all variables
             var i, tabcontent, tablinks;
@@ -435,33 +449,30 @@
             // Show the current tab, and add an "active" class to the link that opened the tab
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
+
+
         }
     </script>
 
     <script>
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").onmouseover();
-    </script>
-    
-    <script>
         var acc = document.getElementsByClassName("accordion");
-var i;
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
     </script>
 
 

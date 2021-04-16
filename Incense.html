@@ -44,10 +44,11 @@
         }
         
         .btnic {
-            width: 30%;
+
             transition: all 0.6s ease;
             color: #EBB471;
             border: 2px solid #EBB471;
+            margin-bottom: 60px;
             
         }
         
@@ -74,10 +75,70 @@
             font-weight: 700;
         }
         
+        .incensespecial {
+                height: 100vh;
+            }
+        
         .navs:hover {
             color: #A96360;
             text-decoration: none;
             font-weight: 700;
+        }
+        
+        .brhide {
+            display: none;
+        }
+        
+        @media (max-width:768px) {
+            .tess {
+                width: 240px !important;
+            }
+            
+            .incensespecial {
+                height: auto!important;
+            }
+            
+            .brhide {
+                display: inline;
+
+            }
+        }
+        
+        @media (max-width:564px) {
+            
+            html {
+                overflow-x: hidden!important;
+                width: 100vw!important;
+            }
+            
+            .footertext {
+                font-size: 16pt !important;
+            }
+            
+            .container , .container-fluid {
+                padding-right: 0  !important;
+            }
+            
+            .navbaricp {
+                position: absolute !important;
+                bottom: 1%  !important ;
+                
+            }
+            
+            
+        }
+        
+        @media (max-width:380px) {
+            .footertext {
+                font-size: 14pt !important;
+            }
+            
+            #navbaric {
+                margin-left: -20px !important;
+                
+            }
+            
+
         }
     
     
@@ -102,8 +163,8 @@
       <div class="decrt" style="top: 20px;left: 50px;"></div>
       <div class="decrt" style="top: 50px;left: 20px;"></div>
       <div class="container text-center my-auto" >
-          <img src="img/logo_ic_bl.png" style="width: 30%;min-width: 200px">
-          <div class="container" style="width:100vw;margin: 0 auto;padding: 0">
+          <img src="img/logo_ic_bl.png" style="width: 30%;min-width: 200px;margin-top: -4%">
+          <div class="container navbaricp" style="width:100vw;margin: 0 auto;padding: 0">
               <div class="pt-4" id="navbaric" style="text-align:center;width: 100%;margin-left: -1%;padding-left: -35%;color: black">
                   <a class="navs js-scroll-trigger" href="#aboutincense">專案理念</a>
                 <a class="navs js-scroll-trigger" href="#incensespecial">專案亮點</a>
@@ -118,37 +179,37 @@
     <div class="container-fluid text-center" style="height:100%;width: 100vw !important;display:flex;align-items: center;justify-content:center;background-color: darksalmon">
         <div class="col-lg-10 mx-auto" style="width: 100%;">
             <article>
-            <h1 style="color:#884C3A">「歡迎光臨，品味調香室」</h1>
+            <h1 style="color:#884C3A">「歡迎光臨，<br class="brhide">品味調香室」</h1>
                 <p>
                     繁忙的日子裡，空出一段時光<br>
                     邀請您好好打開趕官嗅聞<br>
                     品嘗每一縷氣味背後蘊藏的人生故事<br><br>
                     再香氣的交融間找尋人物的真實<br>
-                    用更接近的眼光認識他們所面臨的困難與壓力<br>
+                    用更接近的眼光認識他們所面臨的<br class="brhide">困難與壓力<br>
                 </p>
             </article>
       </div>
     </div>
   </section>
     
-  <section class="content-section bg-light " id="incensespecial" style="height: 100vh">
-    <div class="container text-center" style="height:100%;">
+  <section class="content-section bg-light " id="incensespecial" style="">
+    <div class="container text-center" style="height:auto">
       
         <div class="col-lg-10 mx-auto">
         
             <h1 style="text-align: left">專案亮點</h1>
             
             <div class="row pt-4">
-                <div class="col-4">
-                    <img src="img/xyzalpha.png" style="width: 100%">
+                <div class="col-md-4">
+                    <img src="img/xyzalpha.png" style="width: 100%" class="tess">
                     <h3 class="pt-4">3段角色故事</h3>
                 </div>
-                <div class="col-4">
-                    <img src="img/xyzalpha.png" style="width: 100%">
+                <div class="col-md-4">
+                    <img src="img/xyzalpha.png" style="width: 100%" class="tess">
                     <h3 class="pt-4">12種香氛</h3>
                 </div>
-                <div class="col-4">
-                    <img src="img/xyzalpha.png" style="width: 100%">
+                <div class="col-md-4">
+                    <img src="img/xyzalpha.png" style="width: 100%" class="tess">
                     <h3 class="pt-4">3種展間設計</h3>
                 </div>
             </div>
@@ -177,55 +238,55 @@
                   </p>
               </div>
               <div class="col-lg-10 mx-auto" style="height:100vh">
-                  <a href="#" class="btn btnic mb-3"><h1>飛行少年記</h1></a>
+                  <a href="#" class="btn btnic mb-5"><h1>飛行少年記</h1></a>
                   
                   
                   <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>社會抽離</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>歸屬感</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>自力更生</h3>
                 </div>
             </div>
               </div>
               <div class="col-lg-10 mx-auto" style="height:100vh">
-                  <a href="#" class="btn btnic mb-3"><h1>移工之旅</h1></a>
+                  <a href="#" class="btn btnic mb-5"><h1>移工之旅</h1></a>
                   
                   <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>異國風情</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>刻苦耐勞</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>思鄉情懷</h3>
                 </div>
             </div>
               </div>
               <div class="col-lg-10 mx-auto" style="height:100vh">
-                  <a href="#" class="btn btnic mb-3"><h1>虛實之鏡</h1></a>
+                  <a href="#" class="btn btnic mb-5"><h1>虛實之鏡</h1></a>
                   
                   <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>工作挫折</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>自信美</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3>堅強韌性</h3>
                 </div>
             </div>
               </div>
           </div>
           <div class="container-fluid text-center mt-5" style="height:60vh;width:100vw !important;background-color: darksalmon;padding: 0;">
-              <h5 class="" style="color:#884C3A;width: 100%;margin: 0 auto;padding-top: 10%">想了解這些群體的故事及味道，歡迎到品味調香室！</h5>
-              <img src="img/logo_ic_wh.png" style="width: 20%;min-width: 150px">
+              <h5 class="footertext" style="color:#884C3A;width: 100%;margin: 0 auto;position:relative;top: 40%">想了解這些群體的故事及味道，<br class="brhide">歡迎到品味調香室！</h5>
+              <img src="img/logo_ic_wh.png" style="width: 20%;min-width: 150px;position: relative;top: 35%">
           
           </div>
       </section>

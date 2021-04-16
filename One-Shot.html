@@ -34,8 +34,44 @@
         .banner img {
             border: none;
             box-shadow: 5px 5px 10px 10px black inset;
+        }
+        
+        @media (max-width:768px) {
+            
+            header h1 {
+                margin-top: 10%;
+            }
+            
+            .banner img {
+                height: 70vh !important;
+                margin-right: 20% !important;
+                padding-right: 20% !important;
+                right: 30% 20% !important;
+            }
+            
+            .shadow {
+                width: 100% !important;
+                background-color: rgba(0,0,0,0.5) !important;
+            }
+            
+            .tabct {
+            height: 50vh !important;
+            }
+            
+            .tab.row .tablinks {
 
-
+            width: 50% !important;
+            }
+            
+            .osteam {
+                height: auto!important;
+            }
+            
+            .tabinfo {
+                margin: 0 auto !important;
+                width: 45%  !important;;
+            }
+            
         }
 
         /* Style the tab */
@@ -135,6 +171,10 @@
             background-color: #ccc;
         }
         
+        .osteam .tab.row{
+            margin: 0 auto;
+        }
+        
         .shadow {
             background-color: black;
             width: 30%;
@@ -144,9 +184,21 @@
         }
         
         #shadows {
-            width: 30%;
+            width: 100%;
+            height: 100%;
             right: 0;
            box-shadow: 0px 0px 50px 36px #000;
+        }
+        
+        #shadows2 {
+            width: 100vw;
+            height: 30vh;
+            position: absolute;
+            top: 70vh;
+            background-color: #f8f9fa;
+            z-index: 3;
+            right: 0;
+           box-shadow: 0px -10px 50px 36px #000;
         }
         
         .hide {display: none}
@@ -280,7 +332,7 @@
     <header class="d-flex" style="height: 500vh;background-color: black;color: white;">
 
         <div class="banner" style="height: 300vh">
-            <img src="img/os1.jpg" class="opa img-fluid door" data-seq="1" style="z-index: 100; opacity: 1;position: fixed;height: 100vh;">
+            <img src="img/os1.jpg" class="opa  door" data-seq="1" style="z-index: 100; opacity: 1;position: fixed;height: 100vh;">
             <img src="img/os2.jpg" class="opa  door" data-seq="3" style="z-index: 99; opacity: 3;position: fixed;height: 100vh;">
             <img src="img/os3.jpg" class="opa  door" data-seq="5" style="z-index: 98; opacity: 5;position: fixed;height: 100vh;">
         </div>
@@ -291,7 +343,8 @@
             <h3 class="mr-5" style="position: relative;z-index: 4">
                 「從微電影走進在地。」
             </h3>
-            <div id="shadows" style="position: absolute;height: 100%;width: 100%;top: 0;z-index: -10"></div>
+            <div id="shadows" style="position: absolute;height: 100%;top: 0;z-index: -10" class="m-hide"></div>
+            <div id="shadows2" style="z-index: -9" class="lg-hide"></div>
 
         </div>
 
@@ -326,7 +379,7 @@
                         <h1>角色介紹</h1>
                         <!-- Tab links -->
                         <div class="tab">
-                            <button class="tablinks" onclick="openCity(event, 'ZHOUXIAO')"><img src="img/ZHOUXIAO.jpg"></button>
+                            <button class="tablinks" onclick="openCity(event, 'ZHOUXIAO')" id="defaultOpen"><img src="img/ZHOUXIAO.jpg"></button>
                             <button class="tablinks" onclick="openCity(event, 'ZHOULANG')"><img src="img/ZHOULANG.jpg"></button>
                             <button class="tablinks" onclick="openCity(event, 'mrdong')"><img src="img/mrdong.jpg"></button>
                             <button class="tablinks" onclick="openCity(event, 'msdong')"><img src="img/msdong.jpg"></button>
@@ -370,72 +423,73 @@
                     <div class="hline" style="height: 5vh;"></div>
                     <hr class="hr-black">
 
-                    <div class="col-lg-12 mx-auto my-5 row" style="height: 100vh">
-                        <div class="col-lg-6">
+                    <div class="col-lg-12 mx-auto my-5 row osteam" style="height: 100vh">
+                        <div class="col-lg-6" style="height: 20%">
+                            <img src="img/oslogo.png" style="width: 80%;margin: 0 auto;padding-left: 10%;">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" style="height: 50%;">
                             <h1>One-Shot劇組</h1>
                             <p>這是介紹</p>
                         </div>
                         <br>
                         <hr>
                         <div class="tab row">
-                            <button class="tablinks"><img src="img/ZHOUXIAO.jpg">
+                            <button class="tablinks"><img src="img/YUE.jpg">
                                 <div class="tabinfo">
                                     <h2>曾越</h2>
                                     <p>導演/攝影/剪輯</p>
                                 </div>
 
                             </button>
-                            <button class="tablinks"><img src="img/ZHOULANG.jpg">
+                            <button class="tablinks"><img src="img/Ruai.jpg">
                                 <div class="tabinfo">
                                     <h2>林詩芮</h2>
                                     <p>專案負責人/副導演</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/mrdong.jpg">
+                            <button class="tablinks"><img src="img/Kaiyu.jpg">
                                 <div class="tabinfo">
                                     <h2>鄒凱宇</h2>
                                     <p>編劇/劇照師</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/msdong.jpg">
+                            <button class="tablinks"><img src="img/Tsai.jpg">
                                 <div class="tabinfo">
                                     <h2>蔡雨潔</h2>
                                     <p>場記</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/ZHOUXIAO.jpg">
+                            <button class="tablinks"><img src="img/Oscar.jpg">
                                 <div class="tabinfo">
                                     <h2>林軒澤</h2>
                                     <p>攝影</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/ZHOULANG.jpg">
+                            <button class="tablinks"><img src="img/Wen.jpg">
                                 <div class="tabinfo">
                                     <h2>曾靖雯</h2>
                                     <p>美術</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/mrdong.jpg">
+                            <button class="tablinks"><img src="img/Xuan.jpg">
                                 <div class="tabinfo">
                                     <h2>黃薰萱</h2>
                                     <p>美術</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/msdong.jpg">
+                            <button class="tablinks"><img src="img/Yuru.jpg">
                                 <div class="tabinfo">
                                     <h2>梁毓茹 yuru</h2>
                                     <p>製片</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/ZHOUXIAO.jpg">
+                            <button class="tablinks"><img src="img/Peggy.jpg">
                                 <div class="tabinfo">
                                     <h2>林培祺</h2>
                                     <p>製片</p>
                                 </div>
                             </button>
-                            <button class="tablinks"><img src="img/ZHOULANG.jpg">
+                            <button class="tablinks"><img src="img/BigJ.jpg">
                                 <div class="tabinfo">
                                     <h2>陳彥杰</h2>
                                     <p>製片/收音師</p>
@@ -494,9 +548,9 @@
     
     <section class="filminfo" style="height: auto">
         <div class="col-lg-12 mx-auto row py-5" style="height: 80vh">
-            <div class="col-5">
+            <div class="col-md-5">
             </div>
-            <div class="col-7">
+            <div class="col-md-7">
                 <h1>播放資訊</h1>
                 <p>
                     這是播放資訊
@@ -606,6 +660,9 @@
                 });
             });
         });
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").onclick();
 
         function openCity(evt, cityName) {
             // Declare all variables
