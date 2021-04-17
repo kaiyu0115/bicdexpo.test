@@ -47,9 +47,35 @@
         }
         
         .musicplayer {
-            background-color: gray;
+            background-color: transparent;
+            height: 100%;
+            display: flex;
             align-items: center;
             justify-content: center;
+        }
+        
+        audio {
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            border-radius: 5rem;
+        }
+        
+        @media (max-width:768px) {
+            .container.text-center.py-5 {
+                height: auto !important;
+            }
+            
+            .container.text-center.py-5 .cardo {
+                min-height: 80vh;
+            }
+            
+            .pl-5.pr-3.ml-3 {
+                margin-left: 0!important;
+                padding-left: 16px !important;
+            }
+            
+            .musicplayer {
+                margin-left: 16px;
+            }
         }
         
         
@@ -104,12 +130,12 @@
         
         <div class="container text-center py-5" style="height: 100vh;" id="A112">
             <div class="row" style="height: 100%">
-                <div class="col-6 cardo" style="height: 90%">
+                <div class="col-md-6 cardo" style="height: 90%">
                     <div class="face">
                         <h1>A</h1>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
                         <div class="musicplayer" style="height: 100%;width: 35%">
                             <audio controls class="audiplay" style="width: 100%;">
@@ -133,12 +159,12 @@
         
         <div class="container text-center py-5" style="height: 100vh;" id="B112">
             <div class="row" style="height: 100%">
-                <div class="col-6 cardo" style="height: 90%">
+                <div class="col-md-6 cardo" style="height: 90%">
                     <div class="face">
                         <h1>B</h1>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
                         <div class="musicplayer" style="height: 100%;width: 35%">
                             <audio controls class="audiplay" style="width: 100%;">
@@ -162,12 +188,12 @@
         
         <div class="container text-center py-5" style="height: 100vh;" id="C112">
             <div class="row" style="height: 100%">
-                <div class="col-6 cardo" style="height: 90%">
+                <div class="col-md-6 cardo" style="height: 90%">
                     <div class="face">
                         <h1>C</h1>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
                         <div class="musicplayer" style="height: 100%;width: 35%">
                             <audio controls class="audiplay" style="width: 100%;">
@@ -191,12 +217,12 @@
         
         <div class="container text-center py-5" style="height: 100vh;" id="D112">
             <div class="row" style="height: 100%">
-                <div class="col-6 cardo" style="height: 90%">
+                <div class="col-md-6 cardo" style="height: 90%">
                     <div class="face">
                         <h1>D</h1>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
                         <div class="musicplayer" style="height: 100%;width: 35%">
                             <audio controls class="audiplay" style="width: 100%;">
