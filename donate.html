@@ -29,6 +29,45 @@
             transition: all .8s ease !important; 
         }
         
+        .dropdown-content {
+            display: none;
+            transition: all 1s ease !important;
+            opacity: 0% !important;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.2);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+
+
+        .dropdown-content a:hover {
+            width: 85% !important;
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            transform: translateX(0%) !important;
+        }
+
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            transition: all 1s ease !important;
+            opacity: 100% !important;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+        
 
         .myinput:hover {
             transition: all 0.8s ease !important; 
@@ -51,7 +90,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
         <div class="container " style="">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">吾感再噪</a>
+            <a class="navbar-brand js-scroll-trigger" href="index.html">吾感再噪</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
