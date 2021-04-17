@@ -24,11 +24,18 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
     <style>
-        
         .navbar-scrolled {
-            display:none !important;
+            display: none !important;
         }
-        
+
+        section .content-section {
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100vw !important;
+            overflow-x: hidden !important;
+            position: relative;
+        }
+
         .content-section {
             padding: 0 !important;
             margin: 0 !important;
@@ -43,6 +50,12 @@
             margin: 0 !important;
         }
 
+        .divleft,
+        .divright {
+            background-color: #17469c;
+            color: lightblue;
+        }
+
         .divmid,
         .divleft,
         .divright {
@@ -54,25 +67,26 @@
         }
 
         .divmid {
-            background-color: grey;
+            background-color: #f6bdd3;
+            color: #17469c;
         }
 
         .listen ul li {
             list-style: none;
             width: 80%;
-            border-left: 1px solid black;
+            border-left: 1px solid lightblue;
             padding-left: 10px;
             margin-left: -25px;
             transition: all 0.8s ease;
         }
 
         .listen ul li:hover {
-            border-left: 6px solid black;
+            border-left: 6px solid lightblue;
         }
 
         .eps {
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            border-top: 1px solid #17469c;
+            border-bottom: 1px solid #17469c;
             width: 80%;
             display: flex;
             align-items: center;
@@ -90,9 +104,10 @@
             align-items: center;
             padding-left: 15px;
             transition: all 0.8s ease;
-            background-color: grey;
+            background-color: transparent;
+            color: #17469c;
             border: none;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+            box-shadow: 0px 0px 10px rgba(23, 70, 156, 0.5) inset;
 
         }
 
@@ -101,8 +116,8 @@
         .ep:hover {
             opacity: 1;
             width: 90%;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            background-color: #f6bdd3;
+            box-shadow: 0px 0px 4px rgba(23, 70, 156, 0.7);
         }
 
         .ep i {
@@ -142,12 +157,67 @@
         }
 
         .MCs {
-            width: 90% !important;
+            width: 100% !important;
             padding: 0;
-            margin: 0 auto;
+            margin: 0;
+            margin-top: -20px;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .MCs .card {
+            height: auto;
+            width: 30% !important;
+            padding: 0 !important;
+            margin: 0px 4px;
+            transition: all 0.6s ease;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        @media (max-width:998px) {
+            .MCs .card {
+                height: auto;
+                margin: 0 !important;
+                transition: all 0.6s ease;
+                background-color: rgba(246, 189, 211, 0);
+            }
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card h3 {
+            transition: all 0.6s ease;
+            padding-top: 4px;
+            font-size: 14pt;
+            margin-bottom: 4px;
+        }
+
+        .card p {
+            transition: all 0.6s ease;
+            font-size: 11pt;
+            margin-bottom: 8px
+        }
+
+        .card:hover img {
+            width: 100px;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover h3 {
+            margin-top: -20px;
+            font-size: 14pt;
+        }
+
+        .card img {
+            transition: all 0.6s ease;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+            width: 80px;
+            border-radius: 50%;
+            margin-top: 10px;
         }
 
         .eplabel {
@@ -159,67 +229,96 @@
             border: 2px solid black;
             position: relative;
         }
-        
-        .eplabel:hover,.eplabel.active {
+
+        .eplabel:hover,
+        .eplabel.active {
             color: black;
             border: 4px solid black;
         }
-        
+
         .eplabel:hover a {
             color: black;
             font-weight: 800;
         }
 
-        .eplabel  a {
+        .eplabel a {
             color: gray;
         }
 
-        .eplabel  a:hover {
+        .eplabel a:hover {
             color: black;
             text-decoration: none;
         }
 
-        .eplabel.active  a {
-            color: black;
-            font-weight: 800;
-        }
-
-        .MCs .card {
-            height: auto;
-            width: 30% !important;
-            padding: 0 !important;
-            margin: 5px auto;
-        }
-
-        #logo22 {
-            border: 1px solid gray;
+        .eplogo {
             display: block;
-            height: 25vh;
-            width: 25vh;
+            border: none;
+            height: 30vh;
+            width: 30vh;
             margin: 0 auto;
             padding: 10px;
             display: flex;
             align-items: center;
             transition: all 0.8s ease;
+            background-position: center;
+            background-size: contain;
         }
 
-        #logo22:hover {
-            transform: rotate(-45deg);
+        .eplabel.active a {
+            color: black;
+            font-weight: 800;
         }
 
-        #logo22 h2 {
+        .mainlist a {
+            transition: all 0.6s ease;
+        }
+
+        .mainlist a:hover {
+            text-decoration: none;
+            color: #f4a03f;
+        }
+
+
+
+        #logo22 {
+
+            background-image: url(img/logo20.jpg);
+
+        }
+
+
+        .eplogo .hh {
             text-align: center;
-            font-size: 18pt;
+            border: 1px solid lightgray;
+            width: 100%;
+            height: 100%;
             margin: 0 auto;
             transition: all 0.8s ease;
         }
 
-        #logo22:hover h2 {
-            transform: rotate(45deg);
+        .eplogo:hover .hh {
+            transform: rotate(-45deg);
         }
 
         #title22 {
             text-align: left;
+        }
+
+        li a img {
+            height: 24px;
+            padding-left: 6px;
+        }
+
+        @media (max-width:768px) {
+            section {
+                box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
+
+            }
+
+            section .content-section {
+                box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.5);
+                position: relative;
+            }
         }
     </style>
 
@@ -232,7 +331,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">吾感再噪</a>
+            <a class="navbar-brand js-scroll-trigger" href="index.html" style="margin-left: -30px;opacity: 0.2">吾感再噪</a>
 
         </div>
     </nav>
@@ -257,8 +356,8 @@
             <div class="maindiv row" style="">
                 <div class="divleft col-md-3">
 
-                    <div class="mt-5" id="logo22" style="">
-                        <h2>二二俱樂部</h2>
+                    <div class="mt-5 eplogo" id="logo22" style="">
+                        <div class="hh"></div>
                     </div>
                     <div class="pt-5 pl-4" id="title22">
                         <h5 style="font-size: 15pt">二二俱樂部|20 Something</h5>
@@ -266,17 +365,17 @@
                     </div>
                     <div class="pt-5 pl-4 listen" id="title22">
                         <h4>收聽平台</h4>
-                        <p>馬上搜尋</p>
-                        <ul>
-                            <li><a>spotify</a></li>
-                            <li><a>spotify</a></li>
+                        <p>馬上搜尋<i class="fas fa-search" style="padding-left: 4px"></i></p>
+                        <ul class="mainlist">
+                            <li><a href="">Anchor</a></li>
+                            <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
                             <li><a>spotify</a></li>
                             <li><a>spotify</a></li>
 
                         </ul>
                     </div>
                 </div>
-                <div class="divmid col-md-4">
+                <div class="divmid col-md-5">
 
                     <div style="" class="mt-5 mb-3 eps">
                         <h2 style="margin: 5px auto;">集數</h2>
@@ -327,53 +426,60 @@
 
 
                 </div>
-                <div class="divright col-md-5" style="">
-                    <h1 class="pt-3">主持群</h1>
-                    <h2>20 Something</h2>
+                <div class="divright col-md-4" style="">
+                    <h2 class="pt-3">主持群</h2>
+                    <h4>20 Something</h4>
                     <div class="row MCs">
                         <div class="card col-5">
+                            <img src="img/logo20.jpg" style="">
                             <h3>Angela</h3>
-                            <h6>1999</h6>
-                            <p>自我介紹</p>
+                            <p>1999 自我介紹</p>
                         </div>
                         <div class="card col-5">
+                            <img src="img/logo20.jpg" style="">
                             <h3>Angela</h3>
-                            <h6>1999</h6>
-                            <p>自我介紹</p>
+                            <p>1999 自我介紹</p>
                         </div>
                         <div class="card col-5">
+                            <img src="img/logo20.jpg" style="">
                             <h3>Angela</h3>
-                            <h6>1999</h6>
-                            <p>自我介紹</p>
+                            <p>1999 自我介紹</p>
                         </div>
                         <div class="card col-5">
+                            <img src="img/logo20.jpg" style="">
                             <h3>Angela</h3>
-                            <h6>1999</h6>
-                            <p>自我介紹</p>
+                            <p>1999 自我介紹</p>
                         </div>
                         <div class="card col-5">
+                            <img src="img/logo20.jpg" style="">
                             <h3>Angela</h3>
-                            <h6>1999</h6>
-                            <p>自我介紹</p>
+                            <p>1999 自我介紹</p>
                         </div>
                         <div class="card col-5">
+                            <img src="img/logo20.jpg" style="">
                             <h3>Angela</h3>
-                            <h6>1999</h6>
-                            <p>自我介紹</p>
+                            <p>1999 自我介紹</p>
                         </div>
                     </div>
-                    <hr>
-                    <h4>台大新聞所</h4>
-                    <h4>生傳畢製</h4>
+                    <hr style="margin-top: 0px;">
+                    <div class="row" style="width: 80%;padding-left: 5px">
+                        <h6 class="text-left pl-5">Partners</h6>
+                        <h6 style="padding-left:10px">台大新聞所</h6>
+                    </div>
+                    <div class="row " style="width: 80%;padding-left: 5px">
+                        <h6 class="text-left pl-5">Team</h6>
+                        <h6 style="padding-left: 40px">生傳畢製二二俱樂部</h6>
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="content-section bg-light row" id="main22eps" style="height: 700vh;">
-        <h1 class="" style="width: 40px;height: 100vh;display: flex;align-items: center;position:fixed;right: 10px;top: 0%;z-index: 99">二二俱樂部</h1>
-        <div class="" style="border: 1px solid black;height:80vh;width:300px;position:fixed;top: 10%;right: -150px;border-radius:100%;text-align: left;display:inline-grid;z-index: 99" id="navbartt">
+    <section class="content-section bg-light row " id="main22eps" style="height: 700vh;">
+        <h1 class="m-hide" style="width: 40px;height: 100vh;display: flex;align-items: center;position:fixed;right: 10px;top: 0%;z-index: 99">二二俱樂部</h1>
+        <div class="m-hide" style="border: 1px solid black;height:80vh;width:300px;position:fixed;top: 10%;right: -150px;border-radius:100%;text-align: left;display:inline-grid;z-index: 99" id="navbartt">
             <button style="left: 40px" class="eplabel" id="label1"><a class="js-scroll-trigger" href="#ep1main">Ep1</a></button>
             <button style="" class="eplabel" id="label2"><a class="js-scroll-trigger" href="#ep2main">Ep2</a></button>
             <button style=";left: -20px " class="eplabel" id="label3"><a class=" js-scroll-trigger" href="#ep3main">Ep3</a></button>
@@ -385,14 +491,14 @@
 
 
 
-        <section class="content-section bg-light " style="height: 100vh"></section>
-        <section class="content-section bg-light " id="ep1main">
+        <div class="content-section bg-light " style="height: 100vh"></div>
+        <div class="content-section bg-light " id="ep1main" style="z-index: 7">
             <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5" id="logo22" style="">
-                            <h2>第一集</h2>
+                        <div class="mt-5 eplogo" style="background-image: url(img/ep1cover.jpg)">
+                            <div class="hh"></div>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
                             <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
@@ -422,8 +528,8 @@
                             <h4>收聽平台</h4>
                             <p>馬上搜尋</p>
                             <ul>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
+                                <li><a href="">Anchor</a></li>
+                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify</a></li>
                                 <li><a>spotify</a></li>
                                 <li><a>spotify</a></li>
 
@@ -432,13 +538,13 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="content-section bg-light " id="ep2main">
+        </div>
+        <div class="content-section bg-light " id="ep2main" style="z-index: 6">
             <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5" id="logo22" style="">
+                        <div class="mt-5 eplogo" id="logo22" style="">
                             <h2>第二集</h2>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -479,13 +585,13 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="content-section bg-light " id="ep3main">
+        </div>
+        <div class="content-section bg-light " id="ep3main" style="z-index: 5">
             <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5" id="logo22" style="">
+                        <div class="mt-5 eplogo" id="logo22" style="">
                             <h2>第三集</h2>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -526,13 +632,13 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="content-section bg-light " id="ep4main">
+        </div>
+        <div class="content-section bg-light " id="ep4main" style="z-index: 4">
             <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5" id="logo22" style="">
+                        <div class="mt-5 eplogo" id="logo22" style="">
                             <h2>第四集</h2>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -573,13 +679,13 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="content-section bg-light " id="ep5main">
+        </div>
+        <div class="content-section bg-light " id="ep5main" style="z-index: 3">
             <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5" id="logo22" style="">
+                        <div class="mt-5 eplogo" id="logo22" style="">
                             <h2>第五集</h2>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -620,13 +726,13 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="content-section bg-light " id="ep6main">
+        </div>
+        <div class="content-section bg-light " id="ep6main" style="z-index: 2">
             <div class="container text-center" style="height:100vh;width: 100vw;padding: 0;margin: 0;">
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5" id="logo22" style="">
+                        <div class="mt-5 eplogo" id="logo22" style="">
                             <h2>第六集</h2>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -667,7 +773,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
 
 
@@ -684,7 +790,7 @@
         <div class="container">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
                         <i class="icon-social-facebook"></i>
                     </a>
                 </li>
@@ -694,7 +800,7 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white socialbtm" href="#!">
+                    <a class="social-link rounded-circle text-white socialbtm" href="http://www.bicd.ntu.edu.tw/" target="_blank">
                         <i class="icon-link"></i>
                     </a>
                 </li>
@@ -749,7 +855,7 @@
             });
         });
     </script>
-    
+
     <script>
         $(function() {
             $(window).scroll(function() {

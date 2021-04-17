@@ -86,6 +86,26 @@
 
         }
 
+        .xyzstory img {
+            max-height: 180px;
+            width: 100%;
+            opacity: 100%;
+            transition: all 0.6s ease;
+        }
+
+        .xyzstory:hover img {
+            opacity: 60%;
+        }
+
+        .xyzstory h1 {
+            font-size: 24pt !important;
+            position: absolute;
+            z-index: 99;
+            bottom: 10%;
+            margin: 0 auto;
+            width: 100%;
+        }
+
         .cardo {
             text-align: center;
             margin: 0 auto;
@@ -101,17 +121,106 @@
             height: 95%;
             display: block;
             transition: all 0.6s ease;
+            overflow-y: hidden;
         }
-        
+
         .cardo .face.btn {
             padding: 0 !important;
             border: none;
         }
 
+
+
         @media (max-width:378px) {
             .cardo {
                 width: 80vw;
             }
+        }
+
+        #hz {
+            width: 50%;
+            min-width: 540px;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width:768px) {
+            #hz {
+                width: 90% !important;
+                min-width: 10px !important;
+
+            }
+
+            #hz h3 {
+                font-size: 15pt !important;
+                padding: 1% !important;
+            }
+
+            .box .col-md-6 {
+                margin-top: 0 !important;
+            }
+
+            .box img {
+                width: 50% !important;
+                min-width: 180px;
+            }
+
+
+        }
+
+        @media (max-width:576px) {
+            .xyzstory img {
+                width: 60% !important;
+                max-height: 240px !important;
+            }
+
+            .xyzstory:hover img {
+                filter: blur(3px) !important;
+            }
+
+            .xyzstory h1 {
+                transform: translateY(60%);
+                transition: all 0.8s ease;
+                opacity: 0;
+                bottom: 42%;
+            }
+
+            .xyzstory:hover h1 {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+
+
+        }
+
+        @media (max-width:436px) {
+            #hz h3 {
+                font-size: 12pt !important;
+                padding: 1% !important;
+            }
+
+            header {
+                padding-top: 40px !important;
+                padding-bottom: 0px !important;
+            }
+
+            header h1 {
+                padding-top: 60px !important;
+            }
+        }
+
+        #modalbox {
+            position: fixed;
+            z-index: 3;
+            max-width: 80vw;
+            height: 50vh;
+            width: auto;
+            left: 20%;
+            top: 25%;
+            margin: 0 auto;
+
         }
 
 
@@ -153,6 +262,7 @@
         .collapse {
             background-color: wheat;
             position: absolute;
+            transform: ;
             z-index: 999;
         }
 
@@ -181,7 +291,7 @@
             -webkit-animation-name: slideleft;
             animation-duration: 1s;
             -webkit-animation-duration: 1s;
-            animation-delay: 2s;
+            animation-delay: 1.6s;
             animation-fill-mode: forwards;
             animation-timing-function: ease;
         }
@@ -201,6 +311,19 @@
         .slidedown .container-fliud {
             transform: translateY(0%);
             padding-top: 3rem
+        }
+
+        .slideani {
+            opacity: 0;
+            animation-name: show;
+            -webkit-animation-name: show;
+            animation-duration: 1.3s;
+            -webkit-animation-duration: 1.3s;
+            animation-delay: 0.8s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            visibility: visible;
+            z-index: 79;
         }
 
 
@@ -236,11 +359,6 @@
             animation-fill-mode: forwards;
             animation-timing-function: ease;
         }
-
-        .face img {
-            width: 100%;
-
-        }
     </style>
 
 
@@ -261,17 +379,17 @@
     <header class="masthead d-flex" style="background: #fff;height: 30vh;padding-top:5rem;padding-bottom: 5rem;z-index: 999;box-shadow: 1px 3px 30px 5px rgba(0,0,0,0.5)">
         <div class="container text-center my-5" style="height: 30vh">
             <h1 class="mb-1 show">XYZ</h1>
-            <div class="row" style="width: 100%;display: flex;margin: 0 auto;align-items: center;justify-content: center;">
-                <h3 class="mb-5 slide1">
+            <div class="row" style="" id="hz">
+                <h3 class=" slide1 col-3">
                     面對壓力
                 </h3>
-                <h3 class="mb-5 slide2">
+                <h3 class=" slide2  col-3 ">
                     接受壓力
                 </h3>
-                <h3 class="mb-5 slide3">
+                <h3 class=" slide3  col-3">
                     處理壓力
                 </h3>
-                <h3 class="mb-5 slide4">
+                <h3 class=" slide4  col-3 ">
                     放下壓力
                 </h3>
             </div>
@@ -283,7 +401,7 @@
     <section class="content-section bg-light xyz" id="xyzmain" style="padding-top: 0;">
         <div class="container-fliud text-center" style="height: 80vh;background-color: gray">
             <div class="col-lg-10 mx-auto py-5">
-                <article class="py-5">
+                <article class="py-5 " id="slidedd">
                     <h1>專案簡介</h1>
                     <p>
                         XYZ 分別代表著三個不同世代出生的人，年齡從 20 歲橫跨至 60 歲以上，每個人都有各自獨一無二的生活經驗，在不同的人生階段需要面臨不同的壓力。
@@ -298,7 +416,7 @@
         </div>
         <div class="container text-center py-5" style="height: auto;">
             <div class="col-lg-10 mx-auto" style="height: auto">
-                <div style="position: absolute;top:10%;left: 10%;;z-index: 3">
+                <div class="" style="" id="modalbox">
                     <div class="collapse width" id="caption1">
                         <div class="box row" style="">
                             <span class="close" id="closeMap" data-toggle="collapse" data-target="#caption1">&times;</span>
@@ -306,14 +424,14 @@
                                 <img src="img/xyz1.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件一</h2>
+                                <h2>口紅</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="collapse width" id="caption2">
                         <div class="box row" style="">
                             <span class="close" id="closeMap" data-toggle="collapse" data-target="#caption2">&times;</span>
@@ -321,14 +439,14 @@
                                 <img src="img/xyz2.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件二</h2>
+                                <h2>台大校徽</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="collapse width" id="caption3">
                         <div class="box row" style="">
                             <span class="close" id="closeMap" data-toggle="collapse" data-target="#caption3">&times;</span>
@@ -336,7 +454,7 @@
                                 <img src="img/xyz3.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件三</h2>
+                                <h2>打卡</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -350,7 +468,7 @@
                                 <img src="img/xyz4.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>休學申請書</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -364,7 +482,7 @@
                                 <img src="img/xyz5.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>眼鏡</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -378,7 +496,7 @@
                                 <img src="img/xyz6.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>行李箱</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -392,7 +510,7 @@
                                 <img src="img/xyz7.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>汽車技術表</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -406,7 +524,7 @@
                                 <img src="img/xyz8.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>沙漏</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -420,7 +538,7 @@
                                 <img src="img/xyz9.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>車票</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -434,7 +552,7 @@
                                 <img src="img/xyz10.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>時鐘</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -448,7 +566,7 @@
                                 <img src="img/xyz11.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>記帳本</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -462,7 +580,7 @@
                                 <img src="img/xyz12.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>酒瓶</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -476,7 +594,7 @@
                                 <img src="img/xyz13.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>畢業證書</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -490,7 +608,7 @@
                                 <img src="img/xyz14.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>鈔票</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -504,7 +622,7 @@
                                 <img src="img/xyz15.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>碎布</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -518,7 +636,7 @@
                                 <img src="img/xyz16.jpg" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>履歷表</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -532,7 +650,7 @@
                                 <img src="img/xyz17.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>盤子刀叉</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -546,7 +664,7 @@
                                 <img src="img/xyz18.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>學測時間表</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -560,7 +678,7 @@
                                 <img src="img/xyz19.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>藥罐</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -574,7 +692,7 @@
                                 <img src="img/xyz20.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>物件</h2>
+                                <h2>貧果飢蛋</h2>
                                 <p style="padding: 8px;">
                                     本篇作品希望讓讀者體驗酒店公關的生活，
                                 </p>
@@ -582,18 +700,18 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <h1 class="tittle">壓力故事</h1>
                 <div class="row xyzstorywall tittle" style="">
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
-                        <div class="face btn" data-toggle="collapse" data-target="#caption1">
+                        <div class="face btn open" data-toggle="collapse" data-target="#caption1">
                             <img src="img/xyz1.png">
                             <h1>口紅</h1>
                         </div>
                     </div>
 
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
-                        <div class="face btn" data-toggle="collapse" data-target="#caption2">
+                        <div class="face btn open" data-toggle="collapse" data-target="#caption2">
                             <img src="img/xyz2.png">
                             <h1>台大校徽</h1>
                         </div>
@@ -601,62 +719,62 @@
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption3">
                             <img src="img/xyz3.png">
-                            <h1>故事三</h1>
+                            <h1>打卡</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption4">
                             <img src="img/xyz4.png">
-                            <h1>故事四</h1>
+                            <h1>休學申請書</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption5">
                             <img src="img/xyz5.png">
-                            <h1>故事五</h1>
+                            <h1>老花眼鏡</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption6">
                             <img src="img/xyz6.png">
-                            <h1>故事六</h1>
+                            <h1>行李箱</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption7">
                             <img src="img/xyz7.png">
-                            <h1>故事七</h1>
+                            <h1>汽車技術表</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption8">
                             <img src="img/xyz8.png">
-                            <h1>故事八</h1>
+                            <h1>沙漏</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption9">
                             <img src="img/xyz9.png">
-                            <h1>故事九</h1>
+                            <h1>車票</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption10">
                             <img src="img/xyz10.png">
-                            <h1>故事十</h1>
+                            <h1>時鐘</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption11">
                             <img src="img/xyz11.png">
-                            <h1>故事十一</h1>
+                            <h1>記帳本</h1>
                         </div>
                     </div>
 
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption12">
                             <img src="img/xyz12.png">
-                            <h1>故事十二</h1>
+                            <h1>酒瓶</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
@@ -668,43 +786,43 @@
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption14">
                             <img src="img/xyz14.png">
-                            <h1>故事十四</h1>
+                            <h1>鈔票</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption15">
                             <img src="img/xyz15.png">
-                            <h1>故事十五</h1>
+                            <h1>碎布</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption16">
                             <img src="img/xyz16.jpg">
-                            <h1>故事十六</h1>
+                            <h1>履歷表</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption17">
                             <img src="img/xyz17.png">
-                            <h1>故事十七</h1>
+                            <h1>盤子刀叉</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption18">
                             <img src="img/xyz18.png">
-                            <h1>故事十八</h1>
+                            <h1>學測時間表</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption19">
                             <img src="img/xyz19.png">
-                            <h1>故事十九</h1>
+                            <h1>藥罐</h1>
                         </div>
                     </div>
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption20">
                             <img src="img/xyz20.png">
-                            <h1>故事二十</h1>
+                            <h1>貧果雞蛋</h1>
                         </div>
                     </div>
                 </div>
@@ -723,7 +841,7 @@
         <div class="container">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="#!">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
                         <i class="icon-social-facebook"></i>
                     </a>
                 </li>
@@ -733,7 +851,7 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white socialbtm" href="#!">
+                    <a class="social-link rounded-circle text-white socialbtm" href="http://www.bicd.ntu.edu.tw/" target="_blank">
                         <i class="icon-link"></i>
                     </a>
                 </li>
@@ -802,6 +920,7 @@
                         $(this).addClass("slidein");
                     }
 
+
                 });
             });
         });
@@ -812,10 +931,12 @@
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
+                var slidedd = document.getElementById("slidedd");
                 $(".xyz").each(function() {
                     var objpos = $(this).offset().top;
                     if (scrolled > objpos - winh * 0.7) {
                         $(this).addClass("slidedown");
+                        $(slidedd).addClass("slideani");
                     }
 
                 });
@@ -824,31 +945,9 @@
     </script>
 
     <script>
-        // Get the modal
-        var modal = document.getElementById("mapModal");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("maptri");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks on the button, open the modal
-        btn1.onclick = function() {
-            modal1.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span1.onclick = function() {
-            modal1.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event1) {
-            if (event1.target == modal1) {
-                modal1.style.display = "none";
-            }
-        }
     </script>
 
 
