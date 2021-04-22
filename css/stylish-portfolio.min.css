@@ -18,6 +18,10 @@ body {
     padding: 0.8rem 1.6rem
 }
 
+header {
+    color: #25354f;
+}
+
 .dropdown-content {
             display: none;
             transition: all 1s ease !important;
@@ -231,6 +235,37 @@ h6 {
     line-height: 50px;
     z-index: 999
 }
+
+footer a  .footercap {
+            position: absolute;
+            z-index: 999;
+            align-items: center;
+            
+            height: 40px;
+            width: auto;
+            transition: all 0.8s ease!important;
+            top:9%;
+            padding-left: 2px;
+            font-size: 11pt !important;
+            justify-content: center;
+            
+            opacity: 0;
+            
+        }
+        
+        footer a:hover  .footercap {
+            display: flex;
+            opacity: 1;
+            padding-top: 20px;
+        }
+        
+        footer a i {
+            transition: all 0.8s ease!important;
+        }
+        
+        footer a:hover i {
+            opacity: 0;
+        }
 
 .menu-toggle:focus,
 .menu-toggle:hover {
@@ -1024,8 +1059,8 @@ a:hover {
 
 
     #girl {
-        top: 20% !important;
-        left: 60% !important;
+        top: 25% !important;
+        left: 10% !important;
     }
 }
 
@@ -1054,6 +1089,31 @@ a:hover {
 
     #f1-1 {
         bottom: -80vh !important;
+    }
+    
+    #mt1 {
+        top: 27% !important;
+        left: 27% !important;
+    }
+    
+    #mt3 {
+        top: 20% !important;
+        left: 15% !important;
+    }
+    
+    #mt2 {
+        top: 45% !important;
+        left: 10% !important;
+    }
+
+    #mt4 {
+        top: 60% !important;
+        left: 10% !important;
+    }
+
+    #mt5 {
+        top: 75% !important;
+        left: 30% !important;
     }
 
     .exsm-hide {

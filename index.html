@@ -36,7 +36,8 @@
         }
         
         .daddy {
-            width: 90px;
+            width: 30%;
+            max-width: 90px;
             padding: 10px;
         }
 
@@ -98,6 +99,13 @@
         .tt {
             transition: all 0.8s ease;
         }
+        
+        @media (max-width:420px) {
+            .sm-font {
+                font-size: 10pt !important;
+            }
+        }
+        
 
 
         #seevideo:hover,
@@ -119,23 +127,13 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#about">策展緣起</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#video">形象片</a></li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger " href="#projects">專案一覽</a>
-                        <div class="dropdown-content">
-                            <a href="market.html">新市力</a>
-                            <a href="Incense.html">品味調香室</a>
-                            <a href="XYZ.html">XYZ</a>
-                            <a href="112.html">112星球</a>
-                            <a href="One-Shot.html">One-Shot劇組</a>
-                            <a href="20Something.html">二二俱樂部</a>
-                        </div>
                     </li>
 
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#info">活動資訊</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">贊助</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
                 </ul>
             </div>
         </div>
@@ -156,7 +154,7 @@
             <h3 class="mb-5" style="visibility: hidden">
                 <em>掀起你的感官革命</em>
             </h3>
-            <a class="btn btn-primary btn-xl js-scroll-trigger sm-hide glass" href="#about" style="position: absolute; bottom: 10%;;opacity: 50%;transition: all 0.8s ease" id="knowmore">了解更多
+            <a class="btn btn-primary btn-xl js-scroll-trigger sm-hide glass" href="#projects" style="position: absolute; bottom: 10%;;opacity: 50%;transition: all 0.8s ease" id="knowmore">跳往專案
                 <i class="icon-arrow-down" style="padding-left: 5px"></i>
             </a>
         </div>
@@ -170,17 +168,14 @@
             <img src="img/f1-1.png" id="f1-1" class="index-header tittle" style="min-width: 100px !important;width: 15%;left:43%;bottom:-99.5vh;z-index: 3">
             <img src="img/t6.png" id="t6-1" class="index-header tt" style="width: 20%;left:45%;bottom:-99.5vh;z-index:5">
             <div class="row" style="height: 100%">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-10 mx-auto content-section-heading">
+                    <h3 class="text-secondary mb-0 ">The origin of curation</h3>
                     <h1 class="tittle">策展緣起</h1>
                     <h3 style="color: #462857">
                         「從生傳的視角出發，我們怎麼看這世界？」
                     </h3>
-                    <p class="lead mb-5">取”吾”與”五“的諧音，吾感即可為「我的五感」；
-                        取”再噪”與”再造”之意，<br>
-                        即為對於感官的重新理解、 解構、組裝，來對於我們身處的社會進行心的審視與發聲。
+                    <p class="lead mb-5 sm-font" style="font-size: 12pt">「吾感再噪」旨在跳脫習慣的感官媒介，打破觀眾與議題概念間的界線，重新塑造非線性的敘事結構。因此，我們將展場內的各專案想像為一開放性的劇場舞台，讓觀眾透過展覽探索互動，共同參與並且驗證。在這場策展中，我們秉持社會設計與實驗性精神，將五感與理論、藝術和社會環環相扣，再透過生傳系所學、所知、所覺，創造新的思維審視多元議題，翻轉你對這個世界的理解，把真實且細膩的感動帶回你我身邊。
                         <br>
-
-                        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#video" style="margin-top:10px;position: absolute;bottom: -10%;right: 1%;opacity: 50%;" id="seevideo">形象片<i class="icon-arrow-down" style="padding-left: 5px"></i></a>
                 </div>
             </div>
         </div>
@@ -237,13 +232,12 @@
   </section> -->
 
     <!-- Callout -->
-    <section class="callout-sm" id="video">
+    <section class="callout-sm pb-3 pt-4" id="video" style="height: 90vh;">
         <div class="container text-center">
             <h2 class=" mb-5 tittle" style="margin: auto;visibility: hidden">
                 形象片</h2>
-            <iframe width="100%" height="630" src="https://www.youtube.com/embed/1kpdhPIcaVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:-5%;"></iframe>
+            <iframe width="100%" height="420" src="https://www.youtube.com/embed/1kpdhPIcaVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:-5%;"></iframe>
             <br>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#projects" style="margin-top: 30px;opacity: 50%;" id="seepj">看專案<i class="icon-arrow-down" style="padding-left: 5px"></i></a>
         </div>
     </section>
 
@@ -251,7 +245,7 @@
     <section class="content-section" id="projects">
         <div class="container">
             <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0 ">Recent Projects</h3>
+                <h3 class="text-secondary mb-0 ">All Projects</h3>
                 <h2 class="mb-5">專案一覽</h2>
             </div>
             <div class="row no-gutters">
@@ -260,7 +254,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <div class="h2">新市力</div>
-                                <p class="mb-0">讓市場菜鳥走進市場，成為『新市力』！</p>
+                                <p class="mb-0">「讓市場菜鳥走進市場，成為新市力！」</p>
                             </div>
                         </div>
                         <img class="img-fluid" src="img/market.png" alt="新市力">
@@ -332,9 +326,13 @@
                 <img src="img/bd1.png" style="position: relative; width: 15%;left: -36%;top:-6%;z-index: 3" id="bd1" class="tt">
                 <img src="img/b3.png" style="position: relative; width: 20%;left: 24%;top:-6%;z-index: 3" id="b3" class="tt">
             </div>
-            <h2 class="mb-4 tittle">活動資訊</h2>
-            <h4>4/30~5/2 @台北圓山花博流行館</h4>
-            <p>台大生傳畢業製作，免費展覽與體驗活動</p>
+            <h2 class="mb-3 tittle">展覽資訊</h2>
+            <p class="sm-font mb-4" style="text-align: left;min-width:350px;width:40%; margin: 0 auto">
+                ▩ 主辦單位｜國立臺灣大學生物產業傳播暨發展學系<br>
+                ▩ 企劃單位｜21_21 DESIGN SIGHT<br>
+                ▩ 展覽地點｜華山 1914 文創園區 東 2 AB 館<br>
+                ▩ 活動日期｜2021 / 12 / 25 (五) - 2021 / 04 / 06 (二)
+            </p>
 
             <a href="Activities.html" class="btn btn-xl btn-light mr-4" style="position: relative;z-index: 4">了解詳情</a>
             <a href="#!" class="btn btn-xl btn-dark" style="position: relative;z-index: 4">馬上分享</a>
@@ -364,7 +362,7 @@
             </div>
             <hr>
             <div class="container" style="height: 25vh">
-                <h2>特別感謝</h2>
+                <h2 class="pt-4">特別感謝</h2>
                 <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
                     <img src="img/bicdlogo.png" class="daddy">
                     <img src="img/bicdlogo.png" class="daddy">
@@ -379,22 +377,25 @@
                       
 
     <!-- Footer -->
-    <footer class="footer text-center" style="height: 220px;">
+    <footer class="footer text-center" style="height: 222px;">
         <div class="container">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo"  target="_blank">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
                         <i class="icon-social-facebook"></i>
+                        <h6 class="footercap">粉絲專頁</h6>
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.flyingv.cc/projects/28325" target="_blank">
-                        <i class="icon-heart"></i>
+                        <i class="fas fa-donate"></i>
+                        <h6 class="footercap">募資平台</h6>
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white socialbtm" href="http://www.bicd.ntu.edu.tw/" target="_blank">
-                        <i class="icon-link"></i>
+                        <i class="fas fa-seedling"></i>
+                        <h6 class="footercap">生傳官網</h6>
                     </a>
                 </li>
             </ul>

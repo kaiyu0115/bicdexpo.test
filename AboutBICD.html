@@ -50,6 +50,7 @@
 
         .cardicon {
             transform-style: preserve-3d;
+            margin-top: 50px!important;
         }
 
         .masthead {
@@ -72,11 +73,48 @@
 
         .tabcontent {
             display: none;
+            position: absolute;
+            top:48%;
+        }
+        
+        .tabcontent p {
+            width: 75%;
+            
+        }
+        
+        @media (max-width:998px) {
+            header h1 {
+                top: 20% !important;
+            }
+            
+            .tabcontent {
+                top: 35% !important;
+            }
+            
+        }
+        
+        @media (max-width:525px) {
+            header h1 {
+                top: 15% !important;
+            }
+            
+            .tabcontent {
+                top: 28% !important;
+            }
+            
+            .tabcontent h3 {
+                font-size: 16pt;
+            }
+            
+            .tabcontent p {
+                font-size: 11pt;
+            }
+            
         }
 
         .infoes {
             text-align: start;
-            padding: 15px;
+            padding: 20px;
             align-self: flex-start;
         }
         
@@ -133,23 +171,10 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#about">策展緣起</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#video">形象片</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link js-scroll-trigger " href="#projects">專案一覽</a>
-                        <div class="dropdown-content">
-                            <a href="market.html">新市力</a>
-                            <a href="Incense.html">品味調香室</a>
-                            <a href="XYZ.html">XYZ</a>
-                            <a href="112.html">112星球</a>
-                            <a href="One-Shot.html">One-Shot劇組</a>
-                            <a href="20Something.html">二二俱樂部</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#info">活動資訊</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">策展緣起</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Activities.html">活動資訊</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">贊助</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
                 </ul>
             </div>
         </div>
@@ -158,48 +183,36 @@
     <!-- Header -->
     <header class="masthead d-flex">
         <div class="container my-auto">
-            <img src="img/frame5.png" class="index-header m-hide" style="width: 60%;right: 5%;top: 4%;">
-            <img src="img/b1.png" class="index-header loopop1 m-hide" style="width: 14% ;left:35%;top: 4%;min-width: 14% !important;">
-            <img src="img/b2.png" class="index-header loopop2 m-hide" style="width: 15% ;right:33%;top: 4%;animation-delay: 0.5s;min-width: 15%;!important">
-            <img src="img/b4.png" class="index-header loopop3" id="bear" style="width: 20%;right: 8%;top: 2%;animation-delay: 1s">
-            <h1 class="mb-1">關於我們</h1>
+            <img src="img/frame5.png" class="index-header m-hide" style="width: 60%;right: 5%;top: 10%;">
+            <img src="img/b1.png" class="index-header loopop1 m-hide" style="width: 14% ;left:35%;top: 10%;min-width: 14% !important;">
+            <img src="img/b2.png" class="index-header loopop2 m-hide" style="width: 15% ;right:33%;top: 10%;animation-delay: 0.5s;min-width: 15%;!important">
+            <img src="img/b4.png" class="index-header loopop3" id="bear" style="width: 20%;right: 8%;top: 9%;animation-delay: 1s">
+            <h1 class="mb-1" style="position: absolute;top: 32%">關於我們</h1>
             <div class="my-4 tabcontent" id="about1" style="">
                 <h3 class="mb-3">
-                    嘿!我們是台大生傳
+                    「嘿，我們來自臺大生傳系」
                 </h3>
                 <p>
-                    本系學術領域具有跨領域科技整合之特性，著重以傳播行銷方法整合社會發展理論應用於農業生產、人類生活與社會永續發展等多元面向。
-
-                    專業課程特色在於培養學生瞭解生農產業與社會發展之全球脈動，訓練學生運用媒體傳播與創新科技，掌握市場消費與行為趨勢、以便對生產者和消費者進行即時而有效的傳播與行銷，俾能提高生產者之效益與滿足消費者之需求。
-
-                    整體而言，希望培養有能力應用傳播行銷方法於生農產業之生產端與消費端的優秀人才，以改善人類之生活品質與福祉，邁向永續社會發展之終極目標。
+                    臺大生傳系，全名生物產業傳播暨發展學系，前身是農業推廣學系，名稱很長、歷史超過一甲子，作為臺大唯一的傳播相關學系，我們以行銷、傳播加上農業的跨領域結合作為招牌，整合社會發展理論並應用於農業生產、人類生活與社會永續發展等多元面向。
                 </p>
             </div>
             <div class="my-4 tabcontent" id="about2">
                 <h3 class="mb-3">
-                    嘿!我們是台大生傳2
+                   「嘿，我們來自臺大生傳系」
                 </h3>
                 <p>
-                    本系學術領域具有跨領域科技整合之特性，著重以傳播行銷方法整合社會發展理論應用於農業生產、人類生活與社會永續發展等多元面向。
-
-                    專業課程特色在於培養學生瞭解生農產業與社會發展之全球脈動，訓練學生運用媒體傳播與創新科技，掌握市場消費與行為趨勢、以便對生產者和消費者進行即時而有效的傳播與行銷，俾能提高生產者之效益與滿足消費者之需求。
-
-                    整體而言，希望培養有能力應用傳播行銷方法於生農產業之生產端與消費端的優秀人才，以改善人類之生活品質與福祉，邁向永續社會發展之終極目標。
+                    主流消費文化主宰下，絢爛的感官體驗帶著我們失速，感官暴露在過多、過快的資訊底下，所有刺激流於表層的淺嚐即止，使我們正與真實世界脫軌。因此，這一次臺大生傳系試圖透過五感的重新組裝，讓你能對這個世界有更深入的理解，把真實且細膩的感動帶回你身邊。
                 </p>
             </div>
-            <div class="my-4 tabcontent" id="about3">
+            <div class="my-4 tabcontent" id="about3" style="width: 70%">
                 <h3 class="mb-3">
-                    嘿!我們是台大生傳3
+                    「嘿，我們來自臺大生傳系」
                 </h3>
                 <p>
-                    本系學術領域具有跨領域科技整合之特性，著重以傳播行銷方法整合社會發展理論應用於農業生產、人類生活與社會永續發展等多元面向。
-
-                    專業課程特色在於培養學生瞭解生農產業與社會發展之全球脈動，訓練學生運用媒體傳播與創新科技，掌握市場消費與行為趨勢、以便對生產者和消費者進行即時而有效的傳播與行銷，俾能提高生產者之效益與滿足消費者之需求。
-
-                    整體而言，希望培養有能力應用傳播行銷方法於生農產業之生產端與消費端的優秀人才，以改善人類之生活品質與福祉，邁向永續社會發展之終極目標。
+                    我們立身於土地，從農業出發，跨越畛域的界線，<br class="sm-hide">用不一樣的視角看見被忽略的細節。
                 </p>
             </div>
-            <div class="list-inline tab" style="width: 40%;height:8vh">
+            <div class="list-inline tab text-center" style="width: 80%;height:8vh;padding-top:6%;position: absolute;z-index: 5;top: 75%;margin: 0 auto;padding-left:30px !important">
                 <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about1')" style="height:30px;width: 30px;margin-right: 10%" id="defaultOpen"></a>
                 <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about2')" style="height:30px;width: 30px;margin-right: 10%" href=""></a>
                 <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about3')" style="height:30px;width: 30px;" href=""></a>
@@ -227,13 +240,13 @@
                             <button class="accordion">傳播</button>
                             <div class="panel">
                                 <p>傳播理論基礎，較側重實務端，實務部分以文案、平面影像為主，強調與行銷的結合。<br>
-                                    代表課程:傳播學、媒介概論、媒體寫作、視覺傳播</p>
+                                    代表課程：傳播學、媒介概論、媒體寫作、視覺傳播</p>
                             </div>
 
                             <button class="accordion">農業</button>
                             <div class="panel">
                                 <p>農業基本概念與廣泛農業相關議題，包含食農、地方創生等，強調生產與消費端的連結。<br>
-                                    代表課程:農業發展、社區發展與傳播、食農教育、六級產業</p>
+                                    代表課程：農業發展、社區發展與傳播、食農教育、六級產業</p>
                             </div>
 
                         </div>
@@ -273,7 +286,7 @@
                                         </div>
                                     </div>
                                     <div class="face back">
-                                        <p class="infoes">代表課程:傳播學、媒介概論、媒體寫作、視覺傳播</p>
+                                        <p class="infoes">代表課程：傳播學、媒介概論、媒體寫作、視覺傳播</p>
                                         <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
                                             <i class="icon-camrecorder" style="font-size:32px"></i>
                                         </div>
@@ -292,7 +305,7 @@
                                     </div>
                                     </div>
                                     <div class="face back">
-                                        <p class="infoes">代表課程:農業發展、社區發展與傳播、食農教育、六級產業</p>
+                                        <p class="infoes">代表課程：農業發展、社區發展與傳播、食農教育、六級產業</p>
                                         <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
                                         <i class="fas fa-seedling" style="font-size:32px"></i>
                                     </div>
@@ -383,7 +396,7 @@
                     <hr>
 
                     <div>
-                        <h1 class="tittle">外部連結</h1>
+                        <h1 class="tittle">瞭解更多</h1>
                         <br>
                         <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
 
@@ -406,16 +419,19 @@
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
                         <i class="icon-social-facebook"></i>
+                        <div class="footercap">粉絲專頁</div>
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white mr-3 socialbtm" href="index.html">
                         <i class="icon-home"></i>
+                        <div class="footercap">回到首頁</div>
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white socialbtm" href="https://www.flyingv.cc/projects/28325" target="_blank">
-                        <i class="icon-heart"></i>
+                        <i class="fas fa-donate"></i>
+                        <div class="footercap">募資平台</div>
                     </a>
                 </li>
             </ul>
