@@ -1257,46 +1257,48 @@ a:hover {
     }
 
     #t6-1 {
-        bottom: -50vh !important;
+        bottom: -70% !important;
+        margin-bottom: -20vh;
     }
 
     #f1-1 {
-        bottom: -50vh !important;
+        bottom: -70vh !important;
+        margin-bottom: -20vh;
     }
 
     #mt1 {
         top: 27% !important;
         left: 27% !important;
         width: 45%!important;
-        min-width: 45%!important;
+        min-width: 170px!important;
     }
 
     #mt3 {
         top: 20% !important;
         left: 15% !important;
         width: 48%!important;
-        min-width: 48%!important;
+        min-width: 180px!important;
     }
 
     #mt2 {
         top: 45% !important;
         left: 10% !important;
         width: 48%!important;
-        min-width: 48%!important;
+        min-width: 180px!important;
     }
 
     #mt4 {
         top: 60% !important;
         left: 10% !important;
         width: 48%!important;
-        min-width: 48%!important;
+        min-width: 180px!important;
     }
 
     #mt5 {
         top: 75% !important;
         left: 30% !important;
         width: 48%!important;
-        min-width: 48%!important;
+        min-width:  180px!important;
     }
 
     .exsm-hide {
