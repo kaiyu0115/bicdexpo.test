@@ -24,11 +24,18 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
     <style>
+        body {
+            width: 100vw;
+            overflow-x: hidden;
+        }
+        
         .cc {
-            background-color: rgba(255, 255, 255, 0.5);
-            -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-            -moz-backdrop-filter: blur(2px);
+        background-color: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        -moz-backdrop-filter: blur(2px);
+            max-width: 100vw!important;
+            width: 100vw!important;
         }
 
         .dropdown-content {
@@ -69,15 +76,142 @@
             align-items: center;
 
         }
+        
+        #fanpagelink {
+            color: #462857;
+            text-decoration: underline;
+        }
+        
+        #fanpagelink:hover {
+            color: #254A95;
+            text-decoration: none;
+        }
+        
+        .card {
+            transition: all 0.6s ease;
+            padding: 10px!important;
+            margin: 12px!important;
+            
+        }
+        
+        .card:hover {
+            background-color: rgba(255,255,255,0.2)!important;
+            color: #254A95;
+        }
+        
+        #curationinfo a {
+            font-size: 10pt;
+        }
+        
+        .event .caption .caption-content .h2,.mb-0{
+            font-weight: 800!important;
+            
+        }
+        
+        .event .caption .caption-content img {
+            width: 50%;
+            min-width: 120px;
+            transition: all 0.8s ease;
+        }
+        
+        .event .caption .caption-content {
+            transition: all 0.8s ease;
+            padding: 4rem;
+        }
+        
+        .event .caption .caption-content:hover {
+            padding: 2rem;
+        }
+        
+        .event .caption .caption-content:hover #img1 {
+            transform: translateX(50%);
+        }
+        
+        .event .caption .caption-content:hover #img2 {
+            transform: translateX(-50%);
+        }
+        
+        .event .caption #capl:hover .h2 {
+            color: #254A95!important;
+            transition: all 0.6s ease;
 
+        }
+        
+        .event .caption .caption-content:hover p {
+            color: #C34E75!important;
+            transition: all 0.6s ease;
 
+        }
+        
+        .event .caption #capr {
+            
+            background-color: rgba(200,200,200,0.5);
+             border-top: 8px solid #462857;
+        }
+        
+        .event .caption #capr:hover {
+            border: 2px solid #254A95;
+             background-color: rgba(255,255,255,0);
+        }
+        
 
         @media (max-width:992px) {
             .cc {
                 width: 95%;
                 padding-left: 30px;
             }
+            
+            #curationinfo {
+                min-width: 80%!important;
+            }
         }
+        
+        
+        @media (max-width:768px) {
+            #curationinfo {
+                min-width: 98%!important;
+                font-size: 14pt!important;
+            }
+        }
+        
+        @media (max-width:554px) {
+            .content-section-heading {
+                padding: 0!important;
+            }
+            #curationinfo {
+                margin: 0!important;
+            }
+            #pp5 {
+                padding: 0!important;
+                margin-top: 6px;
+            }
+            
+            header .my-auto {
+                margin-top: -30px!important;
+                padding-right: 0!important;
+            }
+        }
+        
+        @media (max-width:458px) {
+            #infodiv {
+                padding: 0!important;
+            }
+            
+            #infosect {
+                padding: 40px!important;
+            }
+            
+            #curationinfo {
+                font-size: 12pt!important;
+            }
+            
+            header h3 {
+                font-size: 20pt!important;
+            }
+            
+        }
+        
+        
     </style>
 
 
@@ -93,8 +227,8 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">策展緣起</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Activities.html">活動資訊</a></li>
+
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">活動資訊</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
                 </ul>
@@ -108,28 +242,30 @@
             <img src="img/frame2.png" class="index-header loopv1 act1" style="width: 25%;left: 57%;top: 30%;">
             <img src="img/frame3.png" class="index-header looph2 act2" style="width: 30%;left: 67%;top: 40%">
             <img src="img/bd4.png" class="index-header loopv1 act3" style="width: 30%;left: 60%;top: 8%">
-            <h1 class="mb-1" style="color: white">活動資訊</h1>
-            <h3 class="mb-5" style="color: #462857">
-                如果五感是一種語言，<br>那麼用五感策展就是一種文學。
+            <h1 class="mb-1">活動資訊</h1>
+            <h3 class="mb-5">
+                如果五感是一種語言，<br>那麼用五感策展<br class="lg-hide">就是一種文學。
             </h3>
         </div>
         <div class="overlay"></div>
     </header>
 
     <!-- 活動簡介 -->
-    <section class="content-section" id="" style="height: 100vh;width: 100vw;padding: 80px">
+    <section class="content-section" id="infosect" style="height: 100vh;width: 100vw;padding: 80px">
         <div class="container text-center content-section-heading">
-            <h3 class="text-secondary mb-0 ">Curation Information</h3>
-            <h1 class="mb-3 tittle">展覽資訊</h1>
-            <div class="container" style="">
-                <p class="sm-font mb-4" style="text-align: left;min-width:350px;width:80%; margin: 0 auto;font-size: 16pt">
+            <h3 class="text-secondary mb-0 tittle">Curation Information</h3>
+            <h1 class="mb-4 tittle">展覽資訊</h1>
+            <div class="container" style="" id="infodiv">
+                <p class="sm-font mb-4" style="text-align: left;min-width:350px;width:60%;;margin: 0 auto;font-size: 16pt" id="curationinfo">
                     ▩ 主辦單位｜國立臺灣大學生物產業傳播暨發展學系<br>
-                    ▩ 協辦單位｜台大生農學院<br>
-                    ▩ 展覽地點｜圓山花博流行館　台北市中山區玉門街1號<br>
+                    ▩ 協辦單位｜台大生農學院 台大生傳EMBA<br>
+                    ▩ 展覽地點｜圓山花博流行館 <a> 台北市中山區玉門街1號</a><br>
                     ▩ 活動日期｜2021 / 04 / 30 (五) - 2021 / 05 / 02 (日)<br>
                     ▩ 展出時段｜10:00~19:00(閉展日僅開放至16:00)<br>
                     ▩ 開幕儀式｜2021 / 04 / 30 (五) 10:00
                 </p>
+                <img src="img/birdseris.png" class="index-header bd1" style="width:28%;left:5%;top: 168%">
+                <p style="text-align:right" class="px-5" id="pp5">最新消息請至 <a id="fanpagelink" href="https://www.facebook.com/NTUBICD.GPExpo/" target="_blank">Facebook 粉絲專頁</a></p>
 
             </div>
         </div>
@@ -147,7 +283,7 @@
                     <h5>
                         交通資訊
                     </h5>
-                    <ul>
+                    <ul class="sm-font">
                         <li>搭乘淡水線至捷運圓山站，下車後從1號出口出站，延農夫市集步行約6分鐘即可</li>
                         <li>公車21、28、208、247、42、542、677、紅2、紅33、紅34(假日行駛)、紅50 至【捷運圓山站(玉門街)】</li>
                         <li>公車246、208、542、紅33、紅34(假日行駛)、218至【中山足球場站】(停靠民族東路)</li>
@@ -168,72 +304,69 @@
     </div>
 
 
-    
+
 
     <!-- Callout -->
-    <section class="callout-sm " id="" style="height: 80vh">
-        <div class="container text-center row" style="margin: 0 auto">
+    <section class="callout-sm " id="" style="min-height: 80vh;height: auto">
+        <div class="container text-center row" style="margin: 0 auto;padding: 0;min-width: 95vw">
             <div class="col-12 mx-auto">
-                <h2 class="mx-auto mb-3 col-12">
+                <h1 class="mx-auto mb-3 col-12 tittle">
                     三大亮點
-                </h2>
+                </h1>
+            </div>
+            <div class="row" style="display: flex;align-items: center;justify-content: center;width: 100%;margin: 0">
+                <div class="col-md-3 card glass" style="height: 300px;">
+                    <h3>跨域議題</h3>
+                    <h6>從社會、食農到心理，一探生傳究竟</h6>
+                </div>
+                <div class="col-md-3 card glass" style="height: 300px;">
+                    <h3>五感再造</h3>
+                    <h6>擺脫感官常規，翻轉議題印象</h6>
+                </div>
+                <div class="col-md-3 card glass" style="height: 300px;">
+                    <h3>起承轉合</h3>
+                    <h6>生傳首次大規模校外畢展，<br>
+                        各界系友相挺，跨界創新並傳承</h6>
+                </div>
             </div>
 
-            <div class="col-md-4">
-                <h3>亮點一</h3>
-            </div>
-            <div class="col-md-4">
-                <h3>亮點二</h3>
-            </div>
-            <div class="col-md-4">
-                <h3>亮點三</h3>
-            </div>
+            
         </div>
     </section>
 
     <!-- Portfolio -->
-    <section class="content-section" id="others" style="background-color:rgba(249,249,248,1)">
+    <section class="content-section" id="others" style="background-color:rgba(249,249,248,1);min-height: 120vh;height: auto">
         <div class="container">
             <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Special Events</h3>
-                <h2 class="mb-5">現場活動</h2>
+                <h3 class="text-secondary mb-0 tittle">Special Events</h3>
+                <h2 class="mb-4 tittle">現場活動</h2>
             </div>
             <div class="row no-gutters" style="padding: 20px;">
-                <div class="col-lg-12" style="height: 20%">
-                    <a class="portfolio-item" href="#!">
+                <div class="col-lg-6" >
+                    <a class="event">
                         <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">Stationary</div>
-                                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                            <div class="caption-content"  id="capl">
+                                <div class="h2" style="font-size: 32pt;color: #462857">我的吾感革命</div>
+                                <p class="mb-0">帶著導覽手冊尋找各展區集章，<br class="sm-hide">完成任務抽大獎!</p>
+                                <img src="img/bd4.png" id="img1">
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+                        
                     </a>
                 </div>
-                <div class="col-lg-12">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">Ice Cream</div>
-                                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                <div class="col-lg-6" >
+                    <a class="event">
+                        <div class="caption" >
+                            <div class="caption-content text-right" id="capr" >
+                                <img src="img/b4.png" id="img2">
+                                <div class="h2" style="color:#eeb033">多種精緻獎項等著你!</div>
+                                <p class="mb-0">啤酒、面膜、茶葉、零食通通有，<br class="sm-hide">豐富獎項顛覆想像!</p>
+                                
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+                        
                     </a>
                 </div>
-                <div class="col-lg-12">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">Strawberries</div>
-                                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                    </a>
-                </div>
-
-
 
             </div>
         </div>

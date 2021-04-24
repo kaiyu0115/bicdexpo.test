@@ -3,6 +3,10 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
+* {
+    max-width: 99vw;
+}
+
 body,
 html {
     width: 100%;
@@ -18,48 +22,58 @@ body {
     padding: 0.8rem 1.6rem
 }
 
+header h1 {
+    color: #e9c2ac;
+}
+
 header {
-    color: #25354f;
+    color: #fff;
+}
+
+@media (max-width:420px) {
+    .sm-font {
+        font-size: 10pt !important;
+    }
 }
 
 .dropdown-content {
-            display: none;
-            transition: all 1s ease !important;
-            opacity: 0% !important;
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.2);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            width: 100%;
-        }
+    display: none;
+    transition: all 1s ease !important;
+    opacity: 0% !important;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
 
-        .dropdown-content a:hover {
-            width: 85% !important;
-            border-top-right-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-            transform: translateX(0%) !important;
-        }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+
+.dropdown-content a:hover {
+    width: 85% !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    transform: translateX(0%) !important;
+}
 
 
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-            transition: all 1s ease !important;
-            opacity: 100% !important;
-            justify-content: flex-start;
-            align-items: center;
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 1s ease !important;
+    opacity: 100% !important;
+    justify-content: flex-start;
+    align-items: center;
 
-        }
+}
 
 .content-section {
     padding-top: 7.5rem;
@@ -236,36 +250,36 @@ h6 {
     z-index: 999
 }
 
-footer a  .footercap {
-            position: absolute;
-            z-index: 999;
-            align-items: center;
-            
-            height: 40px;
-            width: auto;
-            transition: all 0.8s ease!important;
-            top:9%;
-            padding-left: 2px;
-            font-size: 11pt !important;
-            justify-content: center;
-            
-            opacity: 0;
-            
-        }
-        
-        footer a:hover  .footercap {
-            display: flex;
-            opacity: 1;
-            padding-top: 20px;
-        }
-        
-        footer a i {
-            transition: all 0.8s ease!important;
-        }
-        
-        footer a:hover i {
-            opacity: 0;
-        }
+footer a .footercap {
+    position: absolute;
+    z-index: 999;
+    align-items: center;
+
+    height: 40px;
+    width: auto;
+    transition: all 0.8s ease !important;
+    top: 9%;
+    padding-left: 2px;
+    font-size: 11pt !important;
+    justify-content: center;
+
+    opacity: 0;
+
+}
+
+footer a:hover .footercap {
+    display: flex;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+footer a i {
+    transition: all 0.8s ease !important;
+}
+
+footer a:hover i {
+    opacity: 0;
+}
 
 .menu-toggle:focus,
 .menu-toggle:hover {
@@ -289,6 +303,7 @@ footer a  .footercap {
 
 .callout-sm {
     padding: 5rem 0;
+    color: #273650;
     background: linear-gradient(90deg, rgba(219, 153, 123, 1) 0, rgba(237, 175, 50, 1) 100%);
     background-position: center center;
     background-repeat: no-repeat;
@@ -334,14 +349,16 @@ footer a  .footercap {
     margin: auto 2rem 2rem
 }
 
-.portfolio-item .caption .caption-content h2 {
-    font-size: .8rem;
+.portfolio-item .caption .caption-content .h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
     text-transform: uppercase
 }
 
 .portfolio-item .caption .caption-content p {
     font-weight: 300;
-    font-size: 1.2rem
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 @media (min-width:992px) {
@@ -705,7 +722,7 @@ a:hover {
 }
 
 .cardo .face.front {
-        width: 100%;
+    width: 100%;
     height: 100%;
     backface-visibility: hidden;
     transition: all 1s ease;
@@ -717,16 +734,16 @@ a:hover {
     transform: perspective(500px) rotateY(180deg);
     transition: all 1s ease;
 
-    
+
 }
 
 .cardo .face.back {
-        width: 100%;
+    width: 100%;
     height: 100%;
     backface-visibility: hidden;
     transform: perspective(500px) rotateY(180deg);
     transition: all 1s ease;
-    background-color: #000;
+    background: radial-gradient(farthest-corner at 20% 5%, #9658A0 0, #462857 100%);
     color: #fff;
 
 }
@@ -740,6 +757,7 @@ a:hover {
     -webkit-backdrop-filter: blur(5px) !important;
     backdrop-filter: blur(5px) !important;
     -moz-backdrop-filter: blur(5px) !important;
+    background-color: rgba(184, 80, 112, 0.1) !important;
 }
 
 .cardicon {
@@ -764,31 +782,32 @@ a:hover {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .2);
-  transition:all 0.6s ease;
+    transition: all 0.6s ease;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
+.active,
+.accordion:hover {
+    background-color: #ccc;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     text-align: left;
-  padding: 18px 18px;
-      width: 100%;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+    padding: 18px 18px;
+    width: 100%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
 
 
@@ -808,7 +827,11 @@ a:hover {
 
 .hr-black {
     background: linear-gradient(90deg, #452d5c, #aa4d73);
-    height: 1.5px;
+    height: 1.2px;
+}
+
+.line-ani {
+    visibility: hidden;
 }
 
 .tittle {
@@ -824,6 +847,17 @@ a:hover {
     animation-timing-function: ease;
     visibility: visible;
     z-index: 79;
+}
+
+.linein {
+    animation-name: linein;
+    -webkit-animation-name: linein;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    visibility: visible;
+    z-index: 69;
 }
 
 
@@ -848,6 +882,30 @@ a:hover {
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes linein {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 100%;
+
+    }
+}
+
+@-webkit-keyframes linein {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 100%;
+
     }
 }
 
@@ -977,9 +1035,6 @@ a:hover {
 
 
 @media (max-width:992px) {
-    body {
-        overflow-x: hidden !important;
-    }
 
     .bicd {
         height: auto !important;
@@ -1014,13 +1069,13 @@ a:hover {
 
     #t6-1 {
         bottom: -80vh !important;
-        left: 12% !important ;
+        left: 12% !important;
         position: absolute !important;
     }
 
     #f1-1 {
         bottom: -80vh !important;
-        left: 10% !important ;
+        left: 10% !important;
         width: 150px !important;
     }
 
@@ -1062,58 +1117,108 @@ a:hover {
         top: 25% !important;
         left: 10% !important;
     }
+    
+   ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 }
 
 @media (max-width:376px) {
+    *{box-sizing: border-box;
+    }
     
-        .act1 {
+    #vvideo {
+        padding: 0 !important;
+        margin-top: 30px;
+    }
+    
+    #vvideo h2{
+        display: none;
+    }
+    
+    body {
+        min-width: 375px !important;
+        width: 375px !important;
+    }
+    
+    section , header , footer {
+        width: 100%;
+        
+    }
+
+    .act1 {
         top: 60% !important;
-            left: 10% !important;
-            width: 100px !important;
+        left: 10% !important;
+        width: 100px !important;
     }
 
     .act2 {
         top: 65% !important;
-         left: 20% !important;
+        left: 20% !important;
 
     }
 
     .act3 {
         top: 50% !important;
-         left: 20% !important;
+        left: 20% !important;
     }
-    
+
     #t6-1 {
-        bottom: -80vh !important;
+        bottom: -30vh !important;
     }
 
     #f1-1 {
-        bottom: -80vh !important;
+        bottom: -30vh !important;
     }
-    
+
     #mt1 {
         top: 27% !important;
         left: 27% !important;
+        width: 45%!important;
+        min-width: 45%!important;
     }
-    
+
     #mt3 {
         top: 20% !important;
         left: 15% !important;
+        width: 48%!important;
+        min-width: 48%!important;
     }
-    
+
     #mt2 {
         top: 45% !important;
         left: 10% !important;
+        width: 48%!important;
+        min-width: 48%!important;
     }
 
     #mt4 {
         top: 60% !important;
         left: 10% !important;
+        width: 48%!important;
+        min-width: 48%!important;
     }
 
     #mt5 {
         top: 75% !important;
         left: 30% !important;
+        width: 48%!important;
+        min-width: 48%!important;
     }
 
     .exsm-hide {

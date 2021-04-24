@@ -9,6 +9,7 @@
     <meta name="author" content="台大生傳 鄒凱宇">
 
     <title>台大生傳畢業製作</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -100,12 +101,54 @@
             transition: all 0.8s ease;
         }
         
-        @media (max-width:420px) {
-            .sm-font {
-                font-size: 10pt !important;
-            }
+        .hashtag {
+            opacity: 0;
+            transition: all 0.8s ease;
+            color: #efc8b0;
         }
         
+        .caption:hover .hashtag {
+            opacity: 1;
+        }
+        
+        
+        .navicon {
+            width: 30px;
+            padding: 0!important;
+            margin-right: 5px;
+            
+        }
+        
+        .navicon:hover {
+            transform: translate(0%) !important;
+            width: 30px!important;
+            height: 24px!important;
+           background-color: transparent!important;
+        }
+        
+        .menuicon {
+            width: 24px;
+        }
+        
+        #news {
+            cursor:context-menu;
+        }
+        
+        #news p {
+            position: absolute;
+            width: 54px;
+            font-size: 10pt;
+            z-index: 8;
+            padding-top: 60px;
+            margin-right: -12px;
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+        
+        #news:hover p{
+            display: block;
+            opacity: 1;
+        }
 
 
         #seevideo:hover,
@@ -131,9 +174,15 @@
                         <a class="nav-link js-scroll-trigger " href="#projects">專案一覽</a>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#info">活動資訊</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Activities.html">活動資訊</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
+                    <div class="menuicon-list row ml-3" style="">
+                    <a class="nav-link js-scroll-trigger navicon" href="#!" id="news"><img class="menuicon" src="/img/icons8-news-64.png" alt="媒體報導"><p>敬請期待</p></a>
+                    <a class="nav-link js-scroll-trigger navicon" href="https://www.flyingv.cc/projects/28325" target="_blank"><img class="menuicon" src="/img/fv.png"/></a>
+                    <a class="nav-link js-scroll-trigger navicon" href="https://www.facebook.com/NTUBICD.GPExpo/" target="_blank"><img class="menuicon" src="img/f_logo_RGB-Hex-Blue_512.png"/></a>
+                    </div>
+                    
                 </ul>
             </div>
         </div>
@@ -169,7 +218,7 @@
             <img src="img/t6.png" id="t6-1" class="index-header tt" style="width: 20%;left:45%;bottom:-99.5vh;z-index:5">
             <div class="row" style="height: 100%">
                 <div class="col-lg-10 mx-auto content-section-heading">
-                    <h3 class="text-secondary mb-0 ">The origin of curation</h3>
+                    <h3 class="text-secondary mb-0 tittle">The origin of curation</h3>
                     <h1 class="tittle">策展緣起</h1>
                     <h3 style="color: #462857">
                         「從生傳的視角出發，我們怎麼看這世界？」
@@ -233,10 +282,10 @@
 
     <!-- Callout -->
     <section class="callout-sm pb-3 pt-4" id="video" style="height: 90vh;">
-        <div class="container text-center">
+        <div class="container text-center" id="vvideo">
             <h2 class=" mb-5 tittle" style="margin: auto;visibility: hidden">
                 形象片</h2>
-            <iframe width="100%" height="420" src="https://www.youtube.com/embed/1kpdhPIcaVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:-5%;"></iframe>
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/hqQnAKhGXR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:-5%;box-shadow: 1px 5px 20px rgba(0,0,0,0.4),0px 3px 12px rgba(0,0,0,0.3)"></iframe>
             <br>
         </div>
     </section>
@@ -245,71 +294,95 @@
     <section class="content-section" id="projects">
         <div class="container">
             <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0 ">All Projects</h3>
-                <h2 class="mb-5">專案一覽</h2>
+                <h3 class="text-secondary mb-0 tittle">All Projects</h3>
+                <h2 class="mb-5 tittle">專案一覽</h2>
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="market.html">
+                    <a class="portfolio-item" href="#!">
                         <div class="caption">
-                            <div class="caption-content">
+                            <div class="caption-content text-right">
                                 <div class="h2">新市力</div>
-                                <p class="mb-0">「讓市場菜鳥走進市場，成為新市力！」</p>
+                                <h4 class="mb-1">「讓市場菜鳥走進市場，成為新市力！」</h4>
+                                <p class="hashtag">
+                                    #市場 #食材 #料理 #人情 <br>
+                                    #空間再造 #地方創生 #食農教育
+
+                                </p>
                             </div>
                         </div>
                         <img class="img-fluid" src="img/market.png" alt="新市力">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="Incense.html">
+                    <a class="portfolio-item" href="#!">
                         <div class="caption">
                             <div class="caption-content">
                                 <div class="h2">品味調香室</div>
-                                <p class="mb-0">「在香氣的交融間，了解他們的故事。」</p>
+                                <h4 class="mb-1">「在香氣的交融間，了解他們的故事。」</h4>
+                                <p class="hashtag">#嗅覺 #香水 #氣味 #DIY <br>
+                                    #香臭之間 #破除刻板 #拆解整合
+                                </p>
                             </div>
                         </div>
                         <img class="img-fluid" src="img/incense.png" alt="品味調香室">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="XYZ.html">
+                    <a class="portfolio-item" href="#!">
                         <div class="caption">
                             <div class="caption-content">
                                 <div class="h2">XYZ</div>
-                                <p class="mb-0">「面對壓力、接受壓力、處理壓力、放下壓力。」</p>
+                                <h4 class="mb-1">「面對壓力、接受壓力、處理壓力、放下壓力。」</h4>
+                                <p class="hashtag">
+                                    #GenXYZ #跨世代 #壓力 <br>
+                                    #自我覺察 #人生歷程 #共同創作
+                                </p>
                             </div>
                         </div>
                         <img class="img-fluid" src="img/xyz.png" alt="XYZ">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="112.html">
-                        <div class="caption">
-                            <div class="caption-content">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption text-right">
+                            <div class="caption-content text-right">
                                 <div class="h2">112星球</div>
-                                <p class="mb-0">「走進台大的想像與真實。」</p>
+                                <h4 class="mb-1">「走進台大的想像與真實。」</h4>
+                                <p class="hashtag" >
+                                    #框架 #想像 #真實 #突破 <br>
+                                    #一窺頂大生 #聲光效果 #眼見不為憑
+                                </p>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/112.png" alt="112星球">
+                        <img class="img-fluid" src="img/112.png" alt="112星球" >
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="20Something.html">
+                    <a class="portfolio-item" href="#!">
                         <div class="caption">
-                            <div class="caption-content">
+                            <div class="caption-content text-right">
                                 <div class="h2">二二俱樂部</div>
-                                <p class="mb-0">「歡迎收聽 22俱樂部 twenty something 。」</p>
+                                <h4 class="mb-1">「歡迎收聽 22俱樂部 twenty something 。」</h4>
+                                <p class="hashtag">
+                                    #22歲 #大學女孩 #Podcast <br>
+                                    #迷惘困惑 #追尋意義 #心靈療癒
+                                </p>
                             </div>
                         </div>
                         <img class="img-fluid" src="img/22.png" alt="二二俱樂部">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="One-Shot.html">
+                    <a class="portfolio-item" href="#!">
                         <div class="caption">
                             <div class="caption-content">
                                 <div class="h2">One-Shot劇組</div>
-                                <p class="mb-0">「從微電影走進在地。」</p>
+                                <h4 class="mb-1">「從微電影走進在地。」</h4>
+                                <p class="hashtag">
+                                    #品味 #料理 #影像 #感動 <br>
+                                    #鄉村風情 #找回初心 #家的溫度
+                                </p>
                             </div>
                         </div>
                         <img class="img-fluid" src="img/ontshot.png" alt="One-Shot劇組">
@@ -335,7 +408,7 @@
             </p>
 
             <a href="Activities.html" class="btn btn-xl btn-light mr-4" style="position: relative;z-index: 4">了解詳情</a>
-            <a href="#!" class="btn btn-xl btn-dark" style="position: relative;z-index: 4">馬上分享</a>
+            <a href="https://www.facebook.com/NTUBICD.GPExpo/" class="btn btn-xl btn-dark" style="position: relative;z-index: 4" target="_blank">前往粉專</a>
 
 
         </div>
@@ -352,21 +425,23 @@
     
     <section class="content-section bg-light " id="sugardaddy" style="padding-top: 40px;padding-bottom: 40px">
         <div class="container text-center" style="padding: 0;">
-            <div class="container" style="height: 25vh">
+            <div class="container" style="min-height: 25vh">
                 <h2>協辦單位</h2>
                 <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
-                    <img src="img/bicdlogo.png" class="daddy">
-                    <img src="img/bicdlogo.png" class="daddy">
-                    <img src="img/bicdlogo.png" class="daddy">
+                    <img src="img/big3logo.jpg" class="daddy">
+                    <img src="img/fongyuLogo.png" class="daddy">
+                    <img src="img/Wanshen-logo.png" class="daddy">
+                    <img src="img/GooGoo-logo.png" class="daddy">
+                    <img src="img/DB-LOGO.png" class="daddy">
+                    <img src="img/SoC-logo.png" class="daddy">
                 </div>
             </div>
             <hr>
-            <div class="container" style="height: 25vh">
+            <div class="container" style="min-height: 25vh">
                 <h2 class="pt-4">特別感謝</h2>
                 <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
-                    <img src="img/bicdlogo.png" class="daddy">
-                    <img src="img/bicdlogo.png" class="daddy">
-                    <img src="img/bicdlogo.png" class="daddy">
+                    <img src="img/sunrice-logo.png" class="daddy">
+                    <img src="img/ATBlogo.png" class="daddy">
                 </div>
             </div>
 
@@ -400,6 +475,7 @@
                 </li>
             </ul>
             <p class="text-muted small mb-0">Copyright &copy; NTU BICD 2021</p>
+            
         </div>
     </footer>
 

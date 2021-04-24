@@ -3,32 +3,32 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="台大生傳 鄒凱宇">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="台大生傳 鄒凱宇">
 
-  <title>台大生傳畢業製作</title>
+    <title>台大生傳畢業製作</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
     <style>
-        
         .myinput {
-            transition: all .8s ease !important; 
+            transition: all .8s ease !important;
+            min-width: 240px;
         }
-        
+
         .dropdown-content {
             display: none;
             transition: all 1s ease !important;
@@ -39,7 +39,14 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
-        
+
+
+        .daddy {
+            width: 30%;
+            max-width: 150px;
+            min-width: 60px;
+            padding: 10px;
+        }
 
         .dropdown-content a {
             color: black;
@@ -57,8 +64,6 @@
             transform: translateX(0%) !important;
         }
 
-
-
         .dropdown:hover .dropdown-content {
             display: block;
             transition: all 1s ease !important;
@@ -67,16 +72,30 @@
             align-items: center;
 
         }
-        
+
 
         .myinput:hover {
-            transition: all 0.8s ease !important; 
-            background-color: rgba(238,176,51,0.3);
+            transition: all 0.8s ease !important;
+            background-color: rgba(238, 176, 51, 0.3);
         }
+
         @media (max-width:378px) {
             .looph1 {
-                left: 30% !important;
-                top:50% !important;
+                left: 24% !important;
+                top: 50% !important;
+            }
+            
+            form.row  {
+                padding: 0 !important;
+            }
+            
+            #fvimg {
+                min-width: 320px!important;
+                padding-left: -5px !important;
+            }
+            
+            #ev {
+                min-height: 260vh!important;
             }
         }
     </style>
@@ -85,101 +104,113 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
+<body id="page-top" data-spy="scroll" data-target="#navbarResponsive" style="overflow-x: hidden;max-width: 100%">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
         <div class="container " style="">
             <a class="navbar-brand js-scroll-trigger" href="index.html">吾感再噪</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">策展緣起</a></li>
+
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Activities.html">活動資訊</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">聯絡我們</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container my-auto">
-        <img src="img/frame4.png" class="index-header looph2 m-hide" style="width: 22%;right: 5%;top: 4%;">
-        <img src="img/t6-1.png" class="index-header looph1" style="width: 30%;left: 57%;top:36.5%">
-      <h1 class="mb-1">聯絡我們</h1>
-      <h3 class="mb-5">
-        贊助與合作
-      </h3>
-    </div>
-    <div class="overlay"></div>
-  </header>
+    <!-- Header -->
+    <header class="masthead d-flex">
+        <div class="container my-auto">
+            <img src="img/frame4.png" class="index-header looph2 m-hide" style="width: 22%;right: 5%;top: 4%;">
+            <img src="img/t6-1.png" class="index-header looph1" style="width: 30%;left: 57%;top:36.5%">
+            <h1 class="mb-1">聯絡我們</h1>
+            <h3 class="mb-5">
+                贊助與合作
+            </h3>
+        </div>
+        <div class="overlay"></div>
+    </header>
 
-  <!-- 活動簡介 -->
-  <section class="content-section bg-light " id="event">
-      <div class="container text-center" style="height: 300vh;">
-          <div class="row">
-              <div class="col-lg-10 mx-auto">
+    <!-- 活動簡介 -->
+    <section class="content-section bg-light " id="event">
+        <div class="container text-center" style="min-height: 305vh;height: auto;" id="ev">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
 
-                  <div style="height: 75vh">
-                      <h1>募資平台</h1>
-                      <img src="img/donate1.PNG" style="width: 50%;min-width: 360px">
-                      <br><br>
-                      <button class="todonate btn btn-primary"><a href="https://www.flyingv.cc/projects/28325" target="_blank">立即前往</a></button>
-                      
+                    <div style="height: 77vh" class="tittle mb-3">
+                        <h1 class="mb-4">募資計畫</h1>
+                        <img src="img/donate1.PNG" style="width: 50%;min-width: 360px" id="fvimg">
+                        <br><br>
+                        <button class="todonate btn btn-primary"><a href="https://www.flyingv.cc/projects/28325" target="_blank">立即前往</a></button>
 
-                  </div>
-                  <div class="hline"></div>
-                  <hr class="hr-black">
 
-                  <div style="height: 75vh">
-                      <h1>商業合作</h1>
-                      <form method="post" autocomplete="off" name="hello-sheet" class="row px-5 py-3">
-                          <div class="col-md-6">
-                              <label for="name">姓名</label><br>
-                              <input type="text" id="name" name="name" placeholder="您的姓名" style="width: 60%" class="myinput"><br><br>
-                              <label for="org">代表單位</label><br>
-                              <input type="text" id="org" name="org" placeholder="單位名稱" style="width: 60%;" class="myinput"><br><br>
-                              <label for="email">電子信箱</label><br>
-                              <input type="email" id="email" name="email" placeholder="電子郵件" style="width: 60%;" class="myinput"><br>
-                          </div>
-                          <div class="col-md-6">
-                              <label for="message">訊息</label><br>
-                              <textarea id="message" name="message" style="width: 80%;height:86%" class="myinput"></textarea>
-                          </div>
-                          
-                          
-                          
-                          <input class="todonate btn btn-primary" type="submit" value="送出訊息" style="margin-top: 5vh;margin-left: auto;margin-right: auto;">
-                      </form>
-                      
-                      <br><br><br><br>
-                      <hr class="hr-black">
-                      <div class="container" style="height: 75vh">
-                          <h2>協辦單位</h2>
-                      </div>
-                      
-                      <br><br><br><br>
-                      <hr class="hr-black">
-                      <div class="container" style="height: 75vh">
-                          <h2>特別感謝</h2>
-                      </div>
-                      
+                    </div>
+                    <div class="hline mt-3"></div>
+                    <hr class="hr-black line-ani mt-3">
 
-                  </div>
+                    <div style="height: 75vh" class="tittle">
+                        <h1 class="tittle mt-5">商業合作</h1>
+                        <form method="post" autocomplete="off" name="hello-sheet" class="row px-5 py-3 mx-3">
+                            <div class="col-md-6">
+                                <label for="name">姓名</label><br>
+                                <input type="text" id="name" name="name" placeholder="您的姓名" style="width: 70%" class="myinput"><br><br>
+                                <label for="org">代表單位</label><br>
+                                <input type="text" id="org" name="org" placeholder="單位名稱" style="width: 70%;" class="myinput"><br><br>
+                                <label for="email">電子信箱</label><br>
+                                <input type="email" id="email" name="email" placeholder="電子郵件" style="width: 70%;" class="myinput"><br>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="message">訊息</label><br>
+                                <textarea id="message" name="message" style="width: 90%;height:86%" class="myinput"></textarea>
+                            </div>
 
-              </div>
-          </div>
-      </div>
-  </section>
-    
-   
 
- 
 
-  <!-- Footer -->
-  <footer class="footer text-center" style="height: 220px;">
+                            <input class="todonate btn btn-primary" type="submit" value="送出訊息" style="margin-top: 5vh;margin-left: auto;margin-right: auto;">
+                        </form>
+
+                        <br><br>
+                        <hr class="hr-black line-ani">
+                        <div class="container tittle" style="">
+                            <h2 class="my-5">協辦單位</h2>
+                            <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
+                                <img src="img/big3logo.jpg" class="daddy">
+                                <img src="img/fongyuLogo.png" class="daddy">
+                                <img src="img/Wanshen-logo.png" class="daddy">
+                                <img src="img/GooGoo-logo.png" class="daddy">
+                                <img src="img/DB-LOGO.png" class="daddy">
+                                <img src="img/SoC-logo.png" class="daddy">
+                            </div>
+                        </div>
+
+                        <br><br>
+                        <hr class="hr-black line-ani">
+                        <div class="container tittle" style="">
+                            <h2 class="my-5">特別感謝</h2>
+                            <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
+                                <img src="img/sunrice-logo.png" class="daddy">
+                                <img src="img/ATBlogo.png" class="daddy">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center" style="height: 220px;">
         <div class="container">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
@@ -205,38 +236,42 @@
         </div>
     </footer>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/popper.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-     <script>
-         $(function() {
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $("#mainNav").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled >  winh * 0.3 ) {
+                    if (scrolled > winh * 0.3) {
                         $(this).addClass("navbar-scrolled");
                         $(this).addClass("navbar-light");
                         $(this).removeClass("navbar-dark");
@@ -252,34 +287,53 @@
             });
         });
     </script>
-    
+
     <script>
-         $(function() {
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $(".tittle").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled > objpos - winh * 0.7 ) {
+                    if (scrolled > objpos - winh * 0.7) {
                         $(this).addClass("slidein");
-                    } 
+                    }
 
                 });
             });
         });
     </script>
-    
+
     <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxHiHJSl8gF0Y62iMUvWG3l8CflQdh1UVxaAMfozD1hcVbpngpsNufaEE3iRXe6sL5YxA/exec'
-            const form = document.forms['hello-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        $(function() {
+            $(window).scroll(function() {
+                var winh = $(window).height();
+                var scrolled = $(window).scrollTop();
+                $(".line-ani").each(function() {
+                    var objpos = $(this).offset().top;
+                    if (scrolled > objpos - winh * 0.7) {
+                        $(this).addClass("linein");
+                    }
+
+                });
+            });
+        });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxHiHJSl8gF0Y62iMUvWG3l8CflQdh1UVxaAMfozD1hcVbpngpsNufaEE3iRXe6sL5YxA/exec'
+        const form = document.forms['hello-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
                 .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
                 .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+        })
+    </script>
 
 </body>
 

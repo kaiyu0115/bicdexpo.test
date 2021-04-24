@@ -82,6 +82,12 @@
             
         }
         
+        .card:hover  {
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+        }
+
+
+        
         @media (max-width:998px) {
             header h1 {
                 top: 20% !important;
@@ -156,6 +162,15 @@
             align-items: center;
 
         }
+        
+        .btn-primary {
+            width: 150px;
+            height: 150px;
+            padding-top: 65px;
+            margin: 6px;
+            
+        }
+        
     </style>
 
 
@@ -171,9 +186,8 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">策展緣起</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Activities.html">活動資訊</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">關於我們</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
                 </ul>
             </div>
@@ -334,44 +348,47 @@
 
 
                         <div class="row tittle " style="padding: 10px;">
-                            <h3 style="margin: 0 auto;padding: 20px" class="lg-hide">主要出路</h3>
+                            <h3 style="margin: 0 auto;padding: 20px" class="lg-hide">關注面向</h3>
                             <button class="accordion lg-hide">行銷</button>
                             <div class="panel lg-hide">
-                                <p>Lorem ipsum...</p>
+                                <p>內容行銷、行銷企劃、社群經營、數據分析、品牌行銷、數位行銷、SEO、聯盟行銷、廣告投放、網紅行銷、口碑行銷</p>
                             </div>
 
                             <button class="accordion lg-hide">傳播</button>
                             <div class="panel lg-hide">
-                                <p>Lorem ipsum...</p>
+                                <p>公共關係、危機處理、品牌形象、公關企劃、媒體關係、媒體宣傳經營、新聞稿、活動策劃、新聞監測、品牌價值</p>
                             </div>
 
                             <button class="accordion lg-hide">農業</button>
                             <div class="panel lg-hide">
-                                <p>Lorem ipsum...</p>
+                                <p>智慧農業、農業4.0 、農業推廣、糧食自給率、USR、農林漁牧、食農教育、里山倡議</p>
                             </div>
                             <button class="accordion lg-hide">跨領域</button>
                             <div class="panel lg-hide">
-                                <p>Lorem ipsum...</p>
+                                <p>六級產業、地域品牌、體驗經濟、永續旅遊、資通訊技術、物聯網、大數據分析、區塊鏈、</p>
                             </div>
 
                             <div class="col-1 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
                                 <div class="" style="height: 100%;width: 10px;display: flex;align-items: center;justify-content: center;">
-                                    <h3 class="">主要出路</h3>
+                                    <h3 class="">關注面向</h3>
                                 </div>
                             </div>
                             <div class="card col-3 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
-                                <div class="" style="height: 90%;width:80%;display: flex;align-items: center;justify-content: center;">
+                                <div class="my-auto face" style="height: 80%;width:80%;">
                                     <h3 class="">行銷</h3>
+                                    <p>內容行銷、行銷企劃、社群經營、數據分析、品牌行銷、數位行銷、SEO、聯盟行銷、廣告投放、網紅行銷、口碑行銷</p>
                                 </div>
                             </div>
-                            <div class="card col-3 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
-                                <div class="" style="height: 90%;width:80%;display: flex;align-items: center;justify-content: center;">
+                            <div class="card col-3 m-hide" style="margin:0 auto;height: 300px;">
+                                <div class="my-auto" style="height: 80%;width:80%;">
                                     <h3 class="">傳播</h3>
+                                    <p>公共關係、危機處理、品牌形象、公關企劃、媒體關係、媒體宣傳經營、新聞稿、活動策劃、新聞監測、品牌價值</p>
                                 </div>
                             </div>
                             <div class="card col-3 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
-                                <div class="" style="height: 90%;width:80%;display: flex;align-items: center;justify-content: center;">
+                                <div class="my-auto" style="height: 80%;width:80%;">
                                     <h3 class="">農業</h3>
+                                    <p>智慧農業、農業4.0 、農業推廣、糧食自給率、USR、農林漁牧、食農教育、里山倡議</p>
                                 </div>
                             </div>
 
@@ -382,11 +399,11 @@
 
                             </div>
 
-                            <div class="card col-10 m-hide" style=";height: 400px;display: flex;align-items: center;justify-content: center;margin-left: -1.5vw;">
-                                <h3 class="">跨領域</h3>
-                                <div class="" style="width: 80%;border-radius: 5px;display: flex;align-items: center;justify-content: center;">
-                                    <p>
-                                    </p>
+                            <div class="card col-10 m-hide" style="height:200px;display: flex;align-items: center;justify-content: center;margin-left: -1.5vw;">
+                                
+                                <div class="my-auto" style="height: 60%;width:70%;">
+                                    <h3 class="">跨領域</h3>
+                                    <p>六級產業、地域品牌、體驗經濟、永續旅遊、資通訊技術、物聯網、大數據分析、區塊鏈、</p>
                                 </div>
                             </div>
                         </div>
@@ -396,9 +413,12 @@
                     <hr>
 
                     <div>
-                        <h1 class="tittle">瞭解更多</h1>
+                        <h1 class="tittle mt-5">探索更多</h1>
                         <br>
-                        <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/">生傳系官網</a>
+                        <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/" target="_blank">生傳系官網</a>
+                        <a class="btn btn-primary" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">畢製粉專</a>
+                        <a class="btn btn-primary" href="https://www.flyingv.cc/projects/28325" target="_blank">募資平台</a>
+                        <a class="btn btn-primary" href="https://www.facebook.com/NTUBICDSA/" target="_blank">生傳系學會</a>
 
 
                     </div>
