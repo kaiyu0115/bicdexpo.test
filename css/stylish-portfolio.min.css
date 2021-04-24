@@ -1214,6 +1214,10 @@ a:hover {
         width: 48%!important;
         min-width: 48%!important;
     }
+    
+        .hashtag {
+        margin: 0!important;
+    }
 } 
 
 @media (max-width:376px) {
@@ -1257,13 +1261,14 @@ a:hover {
     }
 
     #t6-1 {
-        bottom: -70% !important;
-        margin-bottom: -20vh;
+        bottom: -90vh !important;
+        position: absolute!important;
+
     }
 
     #f1-1 {
-        bottom: -70vh !important;
-        margin-bottom: -20vh;
+        bottom: -90vh !important;
+        position: absolute!important;
     }
 
     #mt1 {
@@ -1305,6 +1310,8 @@ a:hover {
         visibility: collapse;
         display: none !important;
     }
+    
+
 
     @media (max-width:361px) {
         nav {
@@ -1313,10 +1320,10 @@ a:hover {
         
             #t6-1 {
                 
-        bottom: -60vh !important;
+        bottom: -80vh !important;
     }
 
     #f1-1 {
-        bottom: -60vh !important;
+        bottom: -80vh !important;
     }
     }
