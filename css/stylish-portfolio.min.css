@@ -1153,7 +1153,7 @@ a:hover {
 
     #girl {
         top: 25% !important;
-        left: 10% !important;
+        left: 5% !important;
     }
     
    ::-webkit-scrollbar {
@@ -1175,6 +1175,46 @@ a:hover {
   background: #555; 
 }
 }
+
+@media (max-width:545px) {
+        #girl {
+            display: none!important;
+    }
+    #mt1 {
+        top: 27% !important;
+        left: 27% !important;
+        width: 45%!important;
+        min-width: 45%!important;
+    }
+
+    #mt3 {
+        top: 20% !important;
+        left: 15% !important;
+        width: 48%!important;
+        min-width: 48%!important;
+    }
+
+    #mt2 {
+        top: 45% !important;
+        left: 10% !important;
+        width: 48%!important;
+        min-width: 48%!important;
+    }
+
+    #mt4 {
+        top: 60% !important;
+        left: 10% !important;
+        width: 48%!important;
+        min-width: 48%!important;
+    }
+
+    #mt5 {
+        top: 75% !important;
+        left: 30% !important;
+        width: 48%!important;
+        min-width: 48%!important;
+    }
+} 
 
 @media (max-width:376px) {
     *{box-sizing: border-box;
@@ -1217,11 +1257,11 @@ a:hover {
     }
 
     #t6-1 {
-        bottom: -30vh !important;
+        bottom: -50vh !important;
     }
 
     #f1-1 {
-        bottom: -30vh !important;
+        bottom: -50vh !important;
     }
 
     #mt1 {
@@ -1264,8 +1304,17 @@ a:hover {
         display: none !important;
     }
 
-    @media (max-width:360px) {
+    @media (max-width:361px) {
         nav {
             width: 360px !important;
         }
+        
+            #t6-1 {
+                
+        bottom: -60vh !important;
+    }
+
+    #f1-1 {
+        bottom: -60vh !important;
+    }
     }
