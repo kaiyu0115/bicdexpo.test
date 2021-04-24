@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="台大生傳 鄒凱宇">
+
+    <title>台大生傳畢業製作</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/38c0fa8ae6.js"></script>
+
+    <style>
+        .vll {
+            margin: 0 auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vl {
+            width: 4px;
+            height: 200%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 2px dotted black;
+            background-color: transparent;
+            padding-left: -2px;
+            padding-top: -50px;
+            border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+
+        }
+
+        .cardicon {
+            transform-style: preserve-3d;
+            margin-top: 50px!important;
+        }
+
+        .masthead {
+
+            background: linear-gradient(90deg, rgba(150, 88, 160, 1) 0, rgba(219, 153, 123, 1) 100%) url(/bg.jpg) !important;
+
+        }
+
+        .tab a {
+            background-color: white;
+        }
+
+        .tab a:hover {
+            background-color: #ddd;
+        }
+
+        .tab a.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            position: absolute;
+            top:48%;
+        }
+        
+        .tabcontent p {
+            width: 75%;
+            
+        }
+        
+        .card:hover  {
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+        }
+
+
+        
+        @media (max-width:998px) {
+            header h1 {
+                top: 20% !important;
+            }
+            
+            .tabcontent {
+                top: 35% !important;
+            }
+            
+        }
+        
+        @media (max-width:525px) {
+            header h1 {
+                top: 15% !important;
+            }
+            
+            .tabcontent {
+                top: 28% !important;
+            }
+            
+            .tabcontent h3 {
+                font-size: 16pt;
+            }
+            
+            .tabcontent p {
+                font-size: 11pt;
+            }
+            
+        }
+
+        .infoes {
+            text-align: start;
+            padding: 20px;
+            align-self: flex-start;
+        }
+        
+        .dropdown-content {
+            display: none;
+            transition: all 1s ease !important;
+            opacity: 0% !important;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.2);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+
+
+        .dropdown-content a:hover {
+            width: 85% !important;
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            transform: translateX(0%) !important;
+        }
+
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            transition: all 1s ease !important;
+            opacity: 100% !important;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+        
+        .btn-primary {
+            width: 150px;
+            height: 150px;
+            padding-top: 65px;
+            margin: 6px;
+            
+        }
+        
+    </style>
+
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
+        <div class="container " style="">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">吾感再噪</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger " href="index.html">回首頁</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Activities.html">活動資訊</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
+                    <div class="menuicon-list row ml-3" style="">
+                    <a style="font-size: 9pt" class="nav-link js-scroll-trigger navicon" href="#!" id="news"><img class="menuicon" src="news-icon.png"><p>敬請期待</p></a>
+                    <a  style="font-size: 9pt" class="nav-link js-scroll-trigger navicon" href="https://www.flyingv.cc/projects/28325" target="_blank"><img class="menuicon" src="fv-icon.png" ></a>
+                    <a class="nav-link js-scroll-trigger navicon" href="https://www.facebook.com/NTUBICD.GPExpo/" target="_blank"><img class="menuicon" src="img/f_logo_RGB-Hex-Blue_512.png"/></a>
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+        <div class="container my-auto">
+            <img src="img/frame5.png" class="index-header m-hide" style="width: 60%;right: 5%;top: 10%;">
+            <img src="img/b1.png" class="index-header loopop1 m-hide" style="width: 14% ;left:35%;top: 10%;min-width: 14% !important;">
+            <img src="img/b2.png" class="index-header loopop2 m-hide" style="width: 15% ;right:33%;top: 10%;animation-delay: 0.5s;min-width: 15%;!important">
+            <img src="img/b4.png" class="index-header loopop3" id="bear" style="width: 20%;right: 8%;top: 9%;animation-delay: 1s">
+            <h1 class="mb-1" style="position: absolute;top: 32%">關於我們</h1>
+            <div class="my-4 tabcontent" id="about1" style="">
+                <h3 class="mb-3">
+                    「嘿，我們來自臺大生傳系」
+                </h3>
+                <p>
+                    臺大生傳系，全名生物產業傳播暨發展學系，前身是農業推廣學系，名稱很長、歷史超過一甲子，作為臺大唯一的傳播相關學系，我們以行銷、傳播加上農業的跨領域結合作為招牌，整合社會發展理論並應用於農業生產、人類生活與社會永續發展等多元面向。
+                </p>
+            </div>
+            <div class="my-4 tabcontent" id="about2">
+                <h3 class="mb-3">
+                   「嘿，我們來自臺大生傳系」
+                </h3>
+                <p>
+                    主流消費文化主宰下，絢爛的感官體驗帶著我們失速，感官暴露在過多、過快的資訊底下，所有刺激流於表層的淺嚐即止，使我們正與真實世界脫軌。因此，這一次臺大生傳系試圖透過五感的重新組裝，讓你能對這個世界有更深入的理解，把真實且細膩的感動帶回你身邊。
+                </p>
+            </div>
+            <div class="my-4 tabcontent" id="about3" style="width: 70%">
+                <h3 class="mb-3">
+                    「嘿，我們來自臺大生傳系」
+                </h3>
+                <p>
+                    我們立身於土地，從農業出發，跨越畛域的界線，<br class="sm-hide">用不一樣的視角看見被忽略的細節。
+                </p>
+            </div>
+            <div class="list-inline tab text-center" style="width: 80%;height:8vh;padding-top:6%;position: absolute;z-index: 5;top: 75%;margin: 0 auto;padding-left:30px !important">
+                <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about1')" style="height:30px;width: 30px;margin-right: 10%" id="defaultOpen"></a>
+                <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about2')" style="height:30px;width: 30px;margin-right: 10%" href=""></a>
+                <a class="btn rounded-circle tablinks" onmouseover="openCity(event, 'about3')" style="height:30px;width: 30px;" href=""></a>
+            </div>
+
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- 簡介 -->
+    <section class="content-section bg-light " id="event" style="padding-bottom: 10px">
+        <div class="container text-center bicd" style="height: 230vh;">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+
+                    <div>
+                        <div class="row tittle text-center lg-hide" style="z-index: 3;position: relative;width: 100%;margin: 0 auto">
+                            <h3 style="margin: 0 auto;padding: 20px" class="col-12">三大領域</h3>
+                            <button class="accordion">行銷</button>
+                            <div class="panel">
+                                <p>行銷理論基礎與實務操作，包含基本組織管理概念，並且稍側重在傳播推廣上。<br>
+                                    代表課程：行銷學、整合行銷傳播、傳播企劃、數位行銷</p>
+                            </div>
+
+                            <button class="accordion">傳播</button>
+                            <div class="panel">
+                                <p>傳播理論基礎，較側重實務端，實務部分以文案、平面影像為主，強調與行銷的結合。<br>
+                                    代表課程：傳播學、媒介概論、媒體寫作、視覺傳播</p>
+                            </div>
+
+                            <button class="accordion">農業</button>
+                            <div class="panel">
+                                <p>農業基本概念與廣泛農業相關議題，包含食農、地方創生等，強調生產與消費端的連結。<br>
+                                    代表課程：農業發展、社區發展與傳播、食農教育、六級產業</p>
+                            </div>
+
+                        </div>
+                        <div class="row tittle m-hide" style="z-index: 3;position: relative;margin: 0 auto">
+                            <div class="col-1 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
+                                <div class="" style="height: 100%;width: 10px;display: flex;align-items: center;justify-content: center;">
+                                    <h3 class="">三大領域</h3>
+                                </div>
+                            </div>
+                            <div class="col-3" style="margin: 0 auto;">
+                                <h3 class="">行銷</h3>
+                                <div class="cardo" style="">
+                                    <div class="face front">
+                                        <p class="infoes">行銷理論基礎與實務操作，包含基本組織管理概念，並且稍側重在傳播推廣上。</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-graph" style="font-size:32px"></i>
+                                        </div>
+                                    </div>
+                                    <div class="face back">
+                                        <p class="infoes">代表課程：行銷學、整合行銷傳播、傳播企劃、數位行銷</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-graph" style="font-size:32px"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3" style="margin: 0 auto;">
+                                <h3 class="">傳播</h3>
+
+                                <div class="cardo" style="">
+                                    
+                                    <div class="face front">
+                                        <p class="infoes">傳播理論基礎，較側重實務端，實務部分以文案、平面影像為主，強調與行銷的結合。</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-camrecorder" style="font-size:32px"></i>
+                                        </div>
+                                    </div>
+                                    <div class="face back">
+                                        <p class="infoes">代表課程：傳播學、媒介概論、媒體寫作、視覺傳播</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                            <i class="icon-camrecorder" style="font-size:32px"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3" style="margin: 0 auto;">
+                                <h3 class="">農業</h3>
+
+                                <div class="cardo" style="">
+                                    <div class="face front">
+                                        <p class="infoes">農業基本概念與廣泛農業相關議題，包含食農、地方創生等，強調生產與消費端的連結。</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                        <i class="fas fa-seedling" style="font-size:32px"></i>
+                                    </div>
+                                    </div>
+                                    <div class="face back">
+                                        <p class="infoes">代表課程：農業發展、社區發展與傳播、食農教育、六級產業</p>
+                                        <div class="social-link rounded-circle text-white  socialbtm cardicon" style="margin: 0 auto;">
+                                        <i class="fas fa-seedling" style="font-size:32px"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row tittle m-hide c1" style="padding: 10px;">
+                            <div class="col-1 m-hide c1" style="margin: 0 auto;height: 100px;display: flex;align-items: center;justify-content: center;">
+                            </div>
+                            <div class=" col-3 m-hide" style="margin: 0 auto;height: 100px;display: flex;align-items: center;justify-content: center;">
+                                <div class="vl" style="">
+                                </div>
+                            </div>
+                            <div class=" col-3 m-hide" style="margin: 0 auto;height: 100px;display: flex;align-items: center;justify-content: center;">
+                                <div class="vl" style="">
+                                </div>
+                            </div>
+                            <div class=" col-3 m-hide" style="margin: 0 auto;height: 100px;display: flex;align-items: center;justify-content: center;">
+                                <div class="vl" style="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row tittle " style="padding: 10px;">
+                            <h3 style="margin: 0 auto;padding: 20px" class="lg-hide">關注面向</h3>
+                            <button class="accordion lg-hide">行銷</button>
+                            <div class="panel lg-hide">
+                                <p>內容行銷、行銷企劃、社群經營、數據分析、品牌行銷、數位行銷、SEO、聯盟行銷、廣告投放、網紅行銷、口碑行銷</p>
+                            </div>
+
+                            <button class="accordion lg-hide">傳播</button>
+                            <div class="panel lg-hide">
+                                <p>公共關係、危機處理、品牌形象、公關企劃、媒體關係、媒體宣傳經營、新聞稿、活動策劃、新聞監測、品牌價值</p>
+                            </div>
+
+                            <button class="accordion lg-hide">農業</button>
+                            <div class="panel lg-hide">
+                                <p>智慧農業、農業4.0 、農業推廣、糧食自給率、USR、農林漁牧、食農教育、里山倡議</p>
+                            </div>
+                            <button class="accordion lg-hide">跨領域</button>
+                            <div class="panel lg-hide">
+                                <p>六級產業、地域品牌、體驗經濟、永續旅遊、資通訊技術、物聯網、大數據分析、區塊鏈、</p>
+                            </div>
+
+                            <div class="col-1 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
+                                <div class="" style="height: 100%;width: 10px;display: flex;align-items: center;justify-content: center;">
+                                    <h3 class="">關注面向</h3>
+                                </div>
+                            </div>
+                            <div class="card col-3 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
+                                <div class="my-auto face" style="height: 80%;width:80%;">
+                                    <h3 class="">行銷</h3>
+                                    <p>內容行銷、行銷企劃、社群經營、數據分析、品牌行銷、數位行銷、SEO、聯盟行銷、廣告投放、網紅行銷、口碑行銷</p>
+                                </div>
+                            </div>
+                            <div class="card col-3 m-hide" style="margin:0 auto;height: 300px;">
+                                <div class="my-auto" style="height: 80%;width:80%;">
+                                    <h3 class="">傳播</h3>
+                                    <p>公共關係、危機處理、品牌形象、公關企劃、媒體關係、媒體宣傳經營、新聞稿、活動策劃、新聞監測、品牌價值</p>
+                                </div>
+                            </div>
+                            <div class="card col-3 m-hide" style="margin: 0 auto;height: 300px;display: flex;align-items: center;justify-content: center;">
+                                <div class="my-auto" style="height: 80%;width:80%;">
+                                    <h3 class="">農業</h3>
+                                    <p>智慧農業、農業4.0 、農業推廣、糧食自給率、USR、農林漁牧、食農教育、里山倡議</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 m-hide" style="height: 5vh">
+
+                            </div>
+                            <div class="col-2 m-hide" style="height: 5vh">
+
+                            </div>
+
+                            <div class="card col-10 m-hide" style="height:200px;display: flex;align-items: center;justify-content: center;margin-left: -1.5vw;">
+                                
+                                <div class="my-auto" style="height: 60%;width:70%;">
+                                    <h3 class="">跨領域</h3>
+                                    <p>六級產業、地域品牌、體驗經濟、永續旅遊、資通訊技術、物聯網、大數據分析、區塊鏈、</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hline" style="height: 3vh;"></div>
+                    <hr>
+
+                    <div>
+                        <h1 class="tittle mt-5">探索更多</h1>
+                        <br>
+                        <a class="btn btn-primary" href="http://www.bicd.ntu.edu.tw/" target="_blank">生傳系官網</a>
+                        <a class="btn btn-primary" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">畢製粉專</a>
+                        <a class="btn btn-primary" href="https://www.flyingv.cc/projects/28325" target="_blank">募資平台</a>
+                        <a class="btn btn-primary" href="https://www.facebook.com/NTUBICDSA/" target="_blank">生傳系學會</a>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center" style="height: 220px;">
+        <div class="container">
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
+                        <i class="icon-social-facebook"></i>
+                        <div class="footercap">粉絲專頁</div>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="index.html">
+                        <i class="icon-home"></i>
+                        <div class="footercap">回到首頁</div>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white socialbtm" href="https://www.flyingv.cc/projects/28325" target="_blank">
+                        <i class="fas fa-donate"></i>
+                        <div class="footercap">募資平台</div>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; NTU BICD 2021</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var winh = $(window).height();
+                var scrolled = $(window).scrollTop();
+                $("#mainNav").each(function() {
+                    var objpos = $(this).offset().top;
+                    if (scrolled > winh * 0.3) {
+                        $(this).addClass("navbar-scrolled");
+                        $(this).addClass("navbar-light");
+                        $(this).removeClass("navbar-dark");
+                    } else {
+                        $(this).removeClass("navbar-scrolled");
+                        $(this).addClass("navbar-dark");
+                        $(this).removeClass("navbar-light");
+                    }
+
+
+
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var winh = $(window).height();
+                var scrolled = $(window).scrollTop();
+                $(".tittle").each(function() {
+                    var objpos = $(this).offset().top;
+                    if (scrolled > objpos - winh * 0.7) {
+                        $(this).addClass("slidein");
+                    }
+
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").onmouseover();
+
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+
+        }
+    </script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
