@@ -70,7 +70,7 @@ header {
 
 @media (max-width:420px) {
     .sm-font {
-        font-size: 10pt !important;
+        font-size: 11pt !important;
     }
 }
 
@@ -505,6 +505,10 @@ footer a:hover i {
         margin-right: 3rem;
         margin-bottom: 3.5rem;
         opacity: 100%;
+    }
+    
+    .portfolio-item:hover .caption .caption-content .h2 {
+        opacity: 0%;
     }
 }
 
@@ -1218,6 +1222,23 @@ a:hover {
         .hashtag {
         margin: 0!important;
     }
+    
+        .act1 {
+        top: 60% !important;
+        left: 24% !important;
+        width: 100px !important;
+    }
+
+    .act2 {
+        top: 65% !important;
+        left: 32% !important;
+
+    }
+
+    .act3 {
+        top: 50% !important;
+        left: 32% !important;
+    }
 } 
 
 @media (max-width:376px) {
@@ -1226,12 +1247,9 @@ a:hover {
     
     #vvideo {
         padding: 0 !important;
-        margin-top: 30px;
+        margin: auto 0;
     }
     
-    #vvideo h2{
-        display: none;
-    }
     
     body {
         min-width: 375px !important;
@@ -1243,22 +1261,7 @@ a:hover {
         
     }
 
-    .act1 {
-        top: 60% !important;
-        left: 10% !important;
-        width: 100px !important;
-    }
 
-    .act2 {
-        top: 65% !important;
-        left: 20% !important;
-
-    }
-
-    .act3 {
-        top: 50% !important;
-        left: 20% !important;
-    }
 
     #t6-1 {
         bottom: -90vh !important;
@@ -1318,12 +1321,5 @@ a:hover {
             width: 360px !important;
         }
         
-            #t6-1 {
-                
-        bottom: -80vh !important;
-    }
 
-    #f1-1 {
-        bottom: -80vh !important;
-    }
     }

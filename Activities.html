@@ -92,7 +92,6 @@
             transition: all 0.6s ease;
             padding: 10px!important;
             margin: 12px!important;
-            
         }
         
         .card:hover {
@@ -106,7 +105,6 @@
         
         .event .caption .caption-content .h2,.mb-0{
             font-weight: 800!important;
-            
         }
         
         .event .caption .caption-content img {
@@ -134,8 +132,6 @@
         
         .event .caption #capl:hover .h2 {
             color: #254A95!important;
-            transition: all 0.6s ease;
-
         }
         
         .event .caption .caption-content:hover p {
@@ -155,6 +151,10 @@
              background-color: rgba(255,255,255,0);
         }
         
+        .hover-hide-pr:hover .hover-hide {
+            display: none;
+        }
+        
 
         @media (max-width:992px) {
             .cc {
@@ -172,6 +172,13 @@
             #curationinfo {
                 min-width: 98%!important;
                 font-size: 14pt!important;
+            }
+            
+            .bd1 {
+                width:77%!important;
+                min-width: 77%!important;
+                left:5%!important;
+                top: 158%!important;
             }
         }
         
@@ -209,6 +216,10 @@
             header h3 {
                 font-size: 20pt!important;
             }
+            
+            .event .caption #capl .h2 {
+            font-size: 28pt!important;
+        }
             
         }
         
@@ -356,7 +367,7 @@
                     <a class="event">
                         <div class="caption">
                             <div class="caption-content"  id="capl">
-                                <div class="h2" style="font-size: 32pt;color: #462857">我的吾感革命</div>
+                                <div class="h2" style="font-size: 32pt;color: #462857;transition: all 0.6s ease;">我的<br class="lg-hide">吾感革命</div>
                                 <p class="mb-0">帶著導覽手冊尋找各展區集章，<br class="sm-hide">完成任務抽大獎!</p>
                                 <img src="img/bd4.png" id="img1">
                             </div>
@@ -367,10 +378,10 @@
                 <div class="col-lg-6" >
                     <a class="event">
                         <div class="caption" >
-                            <div class="caption-content text-right" id="capr" >
+                            <div class="caption-content text-right hover-hide-pr" id="capr" >
                                 <img src="img/b4.png" id="img2">
-                                <div class="h2" style="color:#eeb033">多種精緻獎項等著你!</div>
-                                <p class="mb-0">啤酒、面膜、茶葉、零食通通有，<br class="sm-hide">豐富獎項顛覆想像!</p>
+                                <div class="h2" style="color:#eeb033;transition: all 0.6s ease;">多種精緻<br class="lg-hide">獎項等著你!</div>
+                                <p class="mb-0 ">啤酒、面膜、茶葉、零食通通有，<br class="sm-hide">豐富獎項<br class="lg-hide hover-hide">顛覆想像!</p>
                                 
                             </div>
                         </div>
