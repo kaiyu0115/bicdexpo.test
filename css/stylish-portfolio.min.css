@@ -1215,7 +1215,19 @@ a:hover {
         width: 48% !important;
         min-width: 48% !important;
     }
+    
+    #t6-1 {
+        bottom: -68vh !important;
+        left: 12% !important;
+        position: absolute !important;
+    }
 
+    #f1-1 {
+        bottom: -68vh !important;
+        left: 10% !important;
+        width: 150px !important;
+    }
+    
     .hashtag {
         margin: 0 !important;
     }
@@ -1264,13 +1276,13 @@ a:hover {
 
 
     #t6-1 {
-        bottom: -70vh !important;
+        bottom: -60vh !important;
         position: absolute !important;
 
     }
 
     #f1-1 {
-        bottom: -70vh !important;
+        bottom: -60vh !important;
         position: absolute !important;
     }
 
