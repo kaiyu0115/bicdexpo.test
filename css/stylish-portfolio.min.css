@@ -31,42 +31,42 @@ header {
 }
 
 .navicon {
-            width: 30px;
-            padding: 0!important;
-            margin-right: 5px;
-            
-        }
-        
-        .navicon:hover {
-            transform: translate(0%) !important;
-            width: 30px!important;
-            height: 24px!important;
-           background-color: transparent!important;
-        }
-        
-        .menuicon {
-            width: 24px;
-        }
-        
-        #news {
-            cursor:context-menu;
-        }
-        
-        #news p {
-            position: absolute;
-            width: 54px;
-            font-size: 10pt;
-            z-index: 8;
-            padding-top: 60px;
-            margin-right: -12px;
-            transition: all 0.6s ease;
-            opacity: 0;
-        }
-        
-        #news:hover p{
-            display: block;
-            opacity: 1;
-        }
+    width: 30px;
+    padding: 0 !important;
+    margin-right: 5px;
+
+}
+
+.navicon:hover {
+    transform: translate(0%) !important;
+    width: 30px !important;
+    height: 24px !important;
+    background-color: transparent !important;
+}
+
+.menuicon {
+    width: 24px;
+}
+
+#news {
+    cursor: context-menu;
+}
+
+#news p {
+    position: absolute;
+    width: 54px;
+    font-size: 10pt;
+    z-index: 8;
+    padding-top: 60px;
+    margin-right: -12px;
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+#news:hover p {
+    display: block;
+    opacity: 1;
+}
 
 @media (max-width:420px) {
     .sm-font {
@@ -487,7 +487,7 @@ footer a:hover i {
     }
 
     .portfolio-item .caption .caption-content .h2 {
-        font-size: 160% !important;
+        font-size: 25pt !important;
     }
 
     .portfolio-item .caption .caption-content {
@@ -506,7 +506,7 @@ footer a:hover i {
         margin-bottom: 3.5rem;
         opacity: 100%;
     }
-    
+
     .portfolio-item:hover .caption .caption-content .h2 {
         opacity: 0%;
     }
@@ -1121,10 +1121,6 @@ a:hover {
         width: 150px !important;
     }
 
-    #bear {
-        top: 70% !important;
-        right: 2% !important;
-    }
 
     #girl {
         top: 20% !important;
@@ -1159,71 +1155,72 @@ a:hover {
         top: 25% !important;
         left: 5% !important;
     }
-    
-   ::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
 
 @media (max-width:545px) {
-        #girl {
-            display: none!important;
+    #girl {
+        display: none !important;
     }
+
     #mt1 {
         top: 27% !important;
         left: 27% !important;
-        width: 45%!important;
-        min-width: 45%!important;
+        width: 45% !important;
+        min-width: 45% !important;
     }
 
     #mt3 {
         top: 20% !important;
         left: 15% !important;
-        width: 48%!important;
-        min-width: 48%!important;
+        width: 48% !important;
+        min-width: 48% !important;
     }
 
     #mt2 {
         top: 45% !important;
         left: 10% !important;
-        width: 48%!important;
-        min-width: 48%!important;
+        width: 48% !important;
+        min-width: 48% !important;
     }
 
     #mt4 {
         top: 60% !important;
         left: 10% !important;
-        width: 48%!important;
-        min-width: 48%!important;
+        width: 48% !important;
+        min-width: 48% !important;
     }
 
     #mt5 {
         top: 75% !important;
         left: 30% !important;
-        width: 48%!important;
-        min-width: 48%!important;
+        width: 48% !important;
+        min-width: 48% !important;
     }
-    
-        .hashtag {
-        margin: 0!important;
+
+    .hashtag {
+        margin: 0 !important;
     }
-    
-        .act1 {
+
+    .act1 {
         top: 60% !important;
         left: 24% !important;
         width: 100px !important;
@@ -1239,87 +1236,90 @@ a:hover {
         top: 50% !important;
         left: 32% !important;
     }
-} 
+}
 
 @media (max-width:376px) {
-    *{box-sizing: border-box;
+    * {
+        box-sizing: border-box;
     }
-    
+
     #vvideo {
         padding: 0 !important;
         margin: auto 0;
     }
-    
-    
+
+
     body {
         min-width: 375px !important;
         width: 375px !important;
     }
-    
-    section , header , footer {
+
+    section,
+    header,
+    footer {
         width: 100%;
-        
+
     }
 
 
 
     #t6-1 {
-        bottom: -90vh !important;
-        position: absolute!important;
+        bottom: -70vh !important;
+        position: absolute !important;
 
     }
 
     #f1-1 {
-        bottom: -90vh !important;
-        position: absolute!important;
+        bottom: -70vh !important;
+        position: absolute !important;
     }
 
     #mt1 {
         top: 27% !important;
         left: 27% !important;
-        width: 45%!important;
-        min-width: 170px!important;
+        width: 45% !important;
+        min-width: 170px !important;
     }
 
     #mt3 {
         top: 20% !important;
         left: 15% !important;
-        width: 48%!important;
-        min-width: 180px!important;
+        width: 48% !important;
+        min-width: 180px !important;
     }
 
     #mt2 {
         top: 45% !important;
         left: 10% !important;
-        width: 48%!important;
-        min-width: 180px!important;
+        width: 48% !important;
+        min-width: 180px !important;
     }
 
     #mt4 {
         top: 60% !important;
         left: 10% !important;
-        width: 48%!important;
-        min-width: 180px!important;
+        width: 48% !important;
+        min-width: 180px !important;
     }
 
     #mt5 {
         top: 75% !important;
         left: 30% !important;
-        width: 48%!important;
-        min-width:  180px!important;
+        width: 48% !important;
+        min-width: 180px !important;
     }
 
     .exsm-hide {
         visibility: collapse;
         display: none !important;
     }
-    
+
 
 
     @media (max-width:361px) {
         nav {
             width: 360px !important;
         }
-        
+
 
     }
