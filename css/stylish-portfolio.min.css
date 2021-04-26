@@ -34,7 +34,13 @@ header {
     width: 30px;
     padding: 0 !important;
     margin-right: 5px;
+}
 
+.thumbnail {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    width: 60px;
 }
 
 .navicon:hover {
