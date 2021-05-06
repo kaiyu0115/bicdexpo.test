@@ -70,18 +70,31 @@
             background-color: #f6bdd3;
             color: #17469c;
         }
+        
+        .listen ul {
+            width: 90%;
+        }
 
         .listen ul li {
             list-style: none;
-            width: 80%;
-            border-left: 1px solid lightblue;
+            width: 90%;
+            border-left: 1px solid white;
             padding-left: 10px;
             margin-left: -25px;
             transition: all 0.8s ease;
         }
+        
+        .listen ul li a {
+            transition: all 0.6s ease;
+        }
+        
+        .listen ul li:hover a {
+            text-decoration: none;
+            color: #f4a03f;
+        }
 
         .listen ul li:hover {
-            border-left: 6px solid lightblue;
+            border-left: 6px solid #f4a03f;
         }
 
         .eps {
@@ -96,19 +109,30 @@
 
         .ep {
             width: 80%;
-            height: 30px;
+            height: 32px;
             opacity: 70%;
             display: inline-grid;
             border-radius: 1rem;
             text-align: left;
             align-items: center;
             padding-left: 15px;
+            margin-top: 6px;
             transition: all 0.8s ease;
             background-color: transparent;
             color: #17469c;
             border: none;
             box-shadow: 0px 0px 10px rgba(23, 70, 156, 0.5) inset;
 
+        }
+        
+        .ep a {
+            color: #17469c;
+            transition: all 0.6s ease;
+        }
+        
+        .ep:hover a {
+            text-decoration: none;
+            font-weight: bold;
         }
 
 
@@ -348,7 +372,7 @@
         <div class="overlay"></div>
     </header>
     
-    -->
+    <!--
 
     <!-- 簡介 -->
     <section class="content-section bg-light " id="main22" style="position: absolute; z-index: 199">
@@ -357,20 +381,27 @@
                 <div class="divleft col-md-3">
 
                     <div class="mt-5 eplogo" id="logo22" style="">
-                        <div class="hh"></div>
+                        <a class="hh" target="_blank" href="https://anchor.fm/20something-22/episodes/20-Something-eu1b8c"></a>
                     </div>
-                    <div class="pt-5 pl-4" id="title22">
-                        <h5 style="font-size: 15pt">二二俱樂部|20 Something</h5>
-                        <p>專案介紹</p>
+                    <div class="pt-4 pl-4" id="title22">
+                        <h5 style="font-size: 15pt">二二俱樂部 | 20 Something</h5>
+                        <p style="font-size: 8pt">歡迎收聽 22俱樂部 twenty something　<br>
+                            這是一個由台大生傳系六個大四女生開設的podcast節目<br>
+                            我們正在尋找符合以下條件的你：<br>
+                            如果你對未知的一切感到不安<br>
+                            如果你的內心小劇場多到演不完<br>
+                            如果你認為生活不應該只是這樣<br>
+                            歡迎加入22俱樂部，後青春期的我們，<br>
+                            在這裡陪你一起面對。</p>
                     </div>
-                    <div class="pt-5 pl-4 listen" id="title22">
+                    <div class="pt-2 pl-4 listen" id="title22">
                         <h4>收聽平台</h4>
-                        <p>馬上搜尋<i class="fas fa-search" style="padding-left: 4px"></i></p>
+                        <!--<p>馬上搜尋「二二俱樂部」<i class="fas fa-search" style="padding-left: 4px"></i></p>  -->
                         <ul class="mainlist">
-                            <li><a href="">Anchor</a></li>
+                            <li><a href="https://anchor.fm/20something-22" target="_blank">Anchor<img src="img/anchor.png"></a></li>
                             <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
-                            <li><a>spotify</a></li>
-                            <li><a>spotify</a></li>
+                            <li><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZmIyYmZlOC9wb2RjYXN0L3Jzcw==" target="_blank">Google Podcast<img src="img/google_podcasts@2x%20(1).png"></a></li>
+                            <li><a href="https://pca.st/v376aswz" target="_blank">Pocket Casts<img src="img/pocket_casts@2x.png"></a></li>
 
                         </ul>
                     </div>
@@ -381,43 +412,37 @@
                         <h2 style="margin: 5px auto;">集數</h2>
                     </div>
 
-                    <button class="ep" style=""><a>ep1<i class="icon-control-play"></i></a></button>
+                    <button class="ep" style=""><a href="https://anchor.fm/20something-22/episodes/EP1Angelina-eui9nr" target="_blank">EP1｜冥冥之中，入坑生傳系！<i class="icon-control-play"></i></a></button>
                     <div class="mclist row">
                         <a><img>1</a>
                         <a><img>2</a>
                         <a><img>3</a>
                     </div>
-                    <button class="ep"><a>ep2<i class="icon-control-play"></i></a></button>
+                    <button class="ep" style=""><a href="https://anchor.fm/20something-22/episodes/EP2-ev1ji6" target="_blank">EP2｜從交友中找到自我<i class="icon-control-play"></i></a></button>
                     <div class="mclist row">
                         <a><img>1</a>
                         <a><img>2</a>
                         <a><img>3</a>
                     </div>
-                    <button class="ep"><a>ep3<i class="icon-control-play"></i></a></button>
+                    <button class="ep" style=""><a href="https://anchor.fm/20something-22/episodes/EP3--Angela-evb93r" target="_blank">EP3 | 浴火鳳凰，談失戀！<i class="icon-control-play"></i></a></button>
                     <div class="mclist row">
                         <a><img>1</a>
                         <a><img>2</a>
                         <a><img>3</a>
                     </div>
-                    <button class="ep"><a>ep4<i class="icon-control-play"></i></a></button>
+                    <button class="ep" style=""><a href="https://anchor.fm/20something-22/episodes/EP04Angela-evk2fr" target="_blank">EP4｜揮灑汗水吧💦少女的運動青春紀錄✨<i class="icon-control-play"></i></a></button>
                     <div class="mclist row">
                         <a><img>1</a>
                         <a><img>2</a>
                         <a><img>3</a>
                     </div>
-                    <button class="ep"><a>ep5<i class="icon-control-play"></i></a></button>
+                    <button class="ep" style=""><a href="https://anchor.fm/20something-22/episodes/EP5AliceAngelina-evqvvt" target="_blank">EP5｜那堂戀愛，必修學分？✨<i class="icon-control-play"></i></a></button>
                     <div class="mclist row">
                         <a><img>1</a>
                         <a><img>2</a>
                         <a><img>3</a>
                     </div>
-                    <button class="ep"><a>ep6<i class="icon-control-play"></i></a></button>
-                    <div class="mclist row">
-                        <a><img>1</a>
-                        <a><img>2</a>
-                        <a><img>3</a>
-                    </div>
-                    <button class="ep"><a>ep7<i class="icon-control-play"></i></a></button>
+                    <button class="ep" style=""><a href="https://anchor.fm/20something-22/episodes/EP6AngelinaAliceAngela-evqvoq" target="_blank">EP6｜最大的敵人是⋯⋯冒牌者症侯群啦！<i class="icon-control-play"></i></a></button>
                     <div class="mclist row">
                         <a><img>1</a>
                         <a><img>2</a>
@@ -427,8 +452,7 @@
 
                 </div>
                 <div class="divright col-md-4" style="">
-                    <h2 class="pt-3">主持群</h2>
-                    <h4>20 Something</h4>
+                    <h2 class="pt-3 pb-3">主持群</h2>
                     <div class="row MCs">
                         <div class="card col-5">
                             <img src="img/logo20.jpg" style="">
@@ -497,11 +521,11 @@
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5 eplogo" style="background-image: url(img/ep1cover.jpg)">
-                            <div class="hh"></div>
+                        <div class="mt-5 eplogo" style="background-image: url(img/EP1_cover.jpg)">
+                            <a class="hh" target="_blank" href="https://anchor.fm/20something-22/episodes/EP1Angelina-eui9nr"></a>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
-                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <h5 style="font-size: 15pt">EP | 1 冥冥之中入坑生傳</h5>
                             <p>集數介紹</p>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -516,23 +540,27 @@
                     <div class="divmid col-md-9" style="text-align: left ">
 
                         <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
-                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                            <h2 style="margin: 5px auto;">冥冥之中，入坑生傳系！</h2>
                         </div>
                         <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
                             <p class="p-4">
-                                這是一段簡介
+                                Angelina：生傳一直是我的第一志願，但進來之後發現⋯⋯<br>
+                                怡陽：進來生傳完全是個意外，就考上了啊⋯⋯<br>
+                                采璇：從沒想過會進生傳，也從沒想過我會因為生傳⋯⋯<br>
+                                一切的迷惘，都從進大學的這一刻開始！<br>
+                                大學四年快過完了，三個 22 歲的生傳老屁股，<br>
+                                會怎麼回頭看 18 歲那年的決定呢？<br>
+                                大學對我們來說，在四年間，似乎有了不同的轉變...
                             </p>
 
                         </div>
-                        <div class="pt-5 pl-4 listen" id="">
+                        <div class="pt-5 pl-4 listen" style="width: 60%">
                             <h4>收聽平台</h4>
-                            <p>馬上搜尋</p>
                             <ul>
-                                <li><a href="">Anchor</a></li>
-                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-
+                                <li><a href="https://anchor.fm/20something-22" target="_blank">Anchor<img src="img/anchor.png"></a></li>
+                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
+                                <li><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZmIyYmZlOC9wb2RjYXN0L3Jzcw==" target="_blank">Google Podcast<img src="img/google_podcasts@2x%20(1).png"></a></li>
+                                <li><a href="https://pca.st/v376aswz" target="_blank">Pocket Casts<img src="img/pocket_casts@2x.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -544,11 +572,11 @@
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5 eplogo" id="logo22" style="">
-                            <h2>第二集</h2>
+                        <div class="mt-5 eplogo" style="background-image: url(img/EP2_cover.jpg)">
+                            <a class="hh" target="_blank" href="https://anchor.fm/20something-22/episodes/EP2-ev1ji6"></a>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
-                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <h5 style="font-size: 15pt">EP2｜從交友中找到自我</h5>
                             <p>集數介紹</p>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -563,11 +591,16 @@
                     <div class="divmid col-md-9" style="text-align: left ">
 
                         <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
-                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                            <h2 style="margin: 5px auto;">從交友中找到自我</h2>
                         </div>
                         <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
                             <p class="p-4">
-                                這是一段簡介
+                                認識新朋友的時候，你是屬於⋯⋯<br>
+                                會設理性線，保持友善距離的 #怡陽派？<br>
+                                不管三七二不一，掏心掏肺就對了的 #詠琳派？<br>
+                                「交友」是大學生涯中非常重要的課題，<br>
+                                兩個熱愛交朋友的生傳里長伯，<br>
+                                究竟是如何在「交友」中學習建立自信、尋找自我的呢？
                             </p>
 
                         </div>
@@ -575,11 +608,10 @@
                             <h4>收聽平台</h4>
                             <p>馬上搜尋</p>
                             <ul>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-
+                                <li><a href="https://anchor.fm/20something-22" target="_blank">Anchor<img src="img/anchor.png"></a></li>
+                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
+                                <li><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZmIyYmZlOC9wb2RjYXN0L3Jzcw==" target="_blank">Google Podcast<img src="img/google_podcasts@2x%20(1).png"></a></li>
+                                <li><a href="https://pca.st/v376aswz" target="_blank">Pocket Casts<img src="img/pocket_casts@2x.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -591,11 +623,11 @@
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5 eplogo" id="logo22" style="">
-                            <h2>第三集</h2>
+                        <div class="mt-5 eplogo" style="background-image: url(img/Ep3_cover.png)">
+                            <a class="hh" target="_blank" href="https://anchor.fm/20something-22/episodes/EP3--Angela-evb93r"></a>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
-                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <h5 style="font-size: 15pt">EP3 | 浴火鳳凰，談失戀！</h5>
                             <p>集數介紹</p>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -610,11 +642,17 @@
                     <div class="divmid col-md-9" style="text-align: left ">
 
                         <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
-                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                            <h2 style="margin: 5px auto;">浴火鳳凰，談失戀！</h2>
                         </div>
                         <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
                             <p class="p-4">
-                                這是一段簡介
+                                噓⋯趕快把門關起來，我們現在要來講一些「馬」的故事了 🐎<br>
+                                泡杯熱茶，爬上床，戴上耳機 🍵<br>
+                                3 位二二俱樂部的失戀代表，將帶你一起走過這個人生必經的歷練時期！<br>
+
+                                誰說失戀只是個無盡的煉獄？<br>
+                                跟著我們，不僅帶你活著走出失戀的苦海，<br>
+                                還讓你浴火鳳凰，經過失戀的洗禮，活得更精彩漂亮！💗
                             </p>
 
                         </div>
@@ -622,11 +660,10 @@
                             <h4>收聽平台</h4>
                             <p>馬上搜尋</p>
                             <ul>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-
+                                <li><a href="https://anchor.fm/20something-22" target="_blank">Anchor<img src="img/anchor.png"></a></li>
+                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
+                                <li><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZmIyYmZlOC9wb2RjYXN0L3Jzcw==" target="_blank">Google Podcast<img src="img/google_podcasts@2x%20(1).png"></a></li>
+                                <li><a href="https://pca.st/v376aswz" target="_blank">Pocket Casts<img src="img/pocket_casts@2x.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -638,11 +675,11 @@
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5 eplogo" id="logo22" style="">
-                            <h2>第四集</h2>
+                        <div class="mt-5 eplogo" style="background-image: url(img/Ep3_cover.png)">
+                            <a class="hh" target="_blank" href="https://anchor.fm/20something-22/episodes/EP04Angela-evk2fr"></a>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
-                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <h5 style="font-size: 15pt">EP4｜揮灑汗水吧💦少女的運動青春紀錄✨</h5>
                             <p>集數介紹</p>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -657,23 +694,27 @@
                     <div class="divmid col-md-9" style="text-align: left ">
 
                         <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
-                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                            <h2 style="margin: 5px auto;">揮灑汗水吧💦少女的運動青春紀錄✨</h2>
                         </div>
                         <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
                             <p class="p-4">
-                                這是一段簡介
+                                誒，你也是光說不練的說說仔嗎？<br>
+                                還是運動這件事也早已融入你的日常生活中了呢<br>
+                                本集想和大家談談運動對22歲的我們帶來的改變<br>
+                                不只是毅力，更紀錄著堅持鍛鍊心志的過程中的體悟<br>
+                                運動帶來的自信和踏實感不只使人變得更強壯<br>
+                                更是讓生活更加精彩的調和劑<br>
+                                點擊收聽三位熱血少女如何把運動中得到的體悟轉移成生活中的mindset❤️
                             </p>
 
                         </div>
                         <div class="pt-5 pl-4 listen" id="">
                             <h4>收聽平台</h4>
-                            <p>馬上搜尋</p>
                             <ul>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-
+                                <li><a href="https://anchor.fm/20something-22" target="_blank">Anchor<img src="img/anchor.png"></a></li>
+                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
+                                <li><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZmIyYmZlOC9wb2RjYXN0L3Jzcw==" target="_blank">Google Podcast<img src="img/google_podcasts@2x%20(1).png"></a></li>
+                                <li><a href="https://pca.st/v376aswz" target="_blank">Pocket Casts<img src="img/pocket_casts@2x.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -685,11 +726,11 @@
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5 eplogo" id="logo22" style="">
-                            <h2>第五集</h2>
+                        <div class="mt-5 eplogo" style="background-image: url(img/Ep3_cover.png)">
+                            <a class="hh" target="_blank" href="https://anchor.fm/20something-22/episodes/EP5AliceAngelina-evqvvt"></a>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
-                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <h5 style="font-size: 15pt">EP5｜那堂戀愛，必修學分？✨</h5>
                             <p>集數介紹</p>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -704,23 +745,32 @@
                     <div class="divmid col-md-9" style="text-align: left ">
 
                         <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
-                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                            <h2 style="margin: 5px auto;">那堂戀愛，必修學分？✨</h2>
                         </div>
                         <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
                             <p class="p-4">
-                                這是一段簡介
+                                「你大學竟然母胎單身？？？」<br>
+                                戀愛讓人更了解自己，更懂得如何與他人好好相處和溝通;<br>
+                                而單身讓人覺得自由，完全享受大學的社交生活。<br>
+                                那你是大學戀愛派，還是母胎單身派？<br>
+                                到底大學戀愛和單身有什麼好處壞處？<br>
+
+                                而在感情中和另一半的溝通，<br>
+                                以及在單身時和自己的溝通，<br>
+                                身為大學女生，會有什麼煩惱和體悟呢？<br>
+
+                                點擊收聽三位大四女生對於感情的想法，<br>
+                                以及分享如何應用「好的傳播手法」好好溝通
                             </p>
 
                         </div>
                         <div class="pt-5 pl-4 listen" id="">
                             <h4>收聽平台</h4>
-                            <p>馬上搜尋</p>
                             <ul>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-
+                                <li><a href="https://anchor.fm/20something-22" target="_blank">Anchor<img src="img/anchor.png"></a></li>
+                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
+                                <li><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZmIyYmZlOC9wb2RjYXN0L3Jzcw==" target="_blank">Google Podcast<img src="img/google_podcasts@2x%20(1).png"></a></li>
+                                <li><a href="https://pca.st/v376aswz" target="_blank">Pocket Casts<img src="img/pocket_casts@2x.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -732,11 +782,11 @@
                 <div class="maindiv row" style="">
                     <div class="divleft col-md-3">
 
-                        <div class="mt-5 eplogo" id="logo22" style="">
-                            <h2>第六集</h2>
+                        <div class="mt-5 eplogo" style="background-image: url(img/Ep3_cover.png)">
+                            <a class="hh" target="_blank" href="https://anchor.fm/20something-22/episodes/EP6AngelinaAliceAngela-evqvoq"></a>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
-                            <h5 style="font-size: 15pt">冥冥之中入坑生傳</h5>
+                            <h5 style="font-size: 15pt">EP6｜最大的敵人是⋯⋯冒牌者症侯群啦！</h5>
                             <p>集數介紹</p>
                         </div>
                         <div class="pt-5 pl-4" id="title22">
@@ -751,23 +801,30 @@
                     <div class="divmid col-md-9" style="text-align: left ">
 
                         <div style="text-align: left;margin-left: 4rem" class="mt-5 mb-3">
-                            <h2 style="margin: 5px auto;">冥冥之中</h2>
+                            <h2 style="margin: 5px auto;">最大的敵人是⋯⋯冒牌者症侯群啦！</h2>
                         </div>
                         <div class="card" style="width: 50%;height: auto;margin:0 4rem;align-items: flex-start">
                             <p class="p-4">
-                                這是一段簡介
+                                各位，出～色～的女性 💃<br>
+                                你是不是總覺得自己不夠好？<br>
+                                是不是認為你的成就都是「運氣」造成的？<br>
+                                是不是怕被揭露你其實沒有那麼厲害？<br>
+                                親愛的，你很有可能遇到了「冒牌者症候群」！☠<br>
+                                人生中的成功與挫折，<br>
+                                多多少少都影響了我們對於「自我」的認知，<br>
+                                自信、壓力與焦慮也是在大學中必經歷過的擺盪。<br>
+                                三個期中、實習壓力爆棚的生傳女孩們，<br>
+                                怎麼面對可怕的冒牌者症侯群，又怎麼建立自信呢？💎
                             </p>
 
                         </div>
                         <div class="pt-5 pl-4 listen" id="">
                             <h4>收聽平台</h4>
-                            <p>馬上搜尋</p>
                             <ul>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-                                <li><a>spotify</a></li>
-
+                                <li><a href="https://anchor.fm/20something-22" target="_blank">Anchor<img src="img/anchor.png"></a></li>
+                                <li><a href="https://open.spotify.com/show/1aROuJDDAe01FChTlz7Jlu" target="_blank">Spotify<img src="img/spotify@2x.png"></a></li>
+                                <li><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZmIyYmZlOC9wb2RjYXN0L3Jzcw==" target="_blank">Google Podcast<img src="img/google_podcasts@2x%20(1).png"></a></li>
+                                <li><a href="https://pca.st/v376aswz" target="_blank">Pocket Casts<img src="img/pocket_casts@2x.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -786,22 +843,25 @@
 
 
     <!-- Footer -->
-    <footer class="footer text-center" style="height: 220px;z-index:999;position: absolute;width: 100%;background-color: white">
+    <footer class="footer text-center" style="height: 220px;">
         <div class="container">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
                         <i class="icon-social-facebook"></i>
+                        <div class="footercap">粉絲專頁</div>
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a class="social-link rounded-circle text-white mr-3 socialbtm" href="index.html">
                         <i class="icon-home"></i>
+                        <div class="footercap">回到首頁</div>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white socialbtm" href="http://www.bicd.ntu.edu.tw/" target="_blank">
-                        <i class="icon-link"></i>
+                    <a class="social-link rounded-circle text-white socialbtm" href="https://www.flyingv.cc/projects/28325" target="_blank">
+                        <i class="fas fa-donate"></i>
+                        <div class="footercap">募資平台</div>
                     </a>
                 </li>
             </ul>
