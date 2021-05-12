@@ -54,25 +54,6 @@ header {
     width: 24px;
 }
 
-#news {
-    cursor: context-menu;
-}
-
-#news p {
-    position: absolute;
-    width: 54px;
-    font-size: 10pt;
-    z-index: 8;
-    padding-top: 60px;
-    margin-right: -12px;
-    transition: all 0.6s ease;
-    opacity: 0;
-}
-
-#news:hover p {
-    display: block;
-    opacity: 1;
-}
 
 @media (max-width:420px) {
     .sm-font {
@@ -170,7 +151,9 @@ h6 {
     text-align: center;
     color: #fff;
     background: rgba(52, 58, 64, .5);
-    line-height: 45px
+    line-height: 45px;
+    z-index: 999
+    
 }
 
 .scroll-to-top:focus,
@@ -524,9 +507,17 @@ footer a:hover i {
     border: 0
 }
 
+footer {
+    position: absolute;
+    z-index: 998;
+    width: 100%;
+    background-color: white;
+}
+
 footer.footer {
     padding-top: 5rem;
-    padding-bottom: 5rem
+    padding-bottom: 5rem;
+    
 }
 
 footer.footer .social-link {
@@ -1276,7 +1267,6 @@ a:hover {
     header,
     footer {
         width: 100%;
-
     }
 
 

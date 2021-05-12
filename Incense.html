@@ -3,69 +3,78 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="台大生傳 鄒凱宇">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="台大生傳 鄒凱宇">
 
-  <title>台大生傳畢業製作</title>
+    <title>台大生傳畢業製作</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
     <style>
         .vl {
             width: 4px;
             height: 200%;
-            display: flex;align-items: center;justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-right: 2px dotted black;
             background-color: transparent;
             padding-left: -2px;
             padding-top: -50px;
             border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
-            
+
         }
-        
+
         .decrt {
             height: 24px;
             width: 24px;
             position: absolute;
             border: 1px solid black;
         }
-        
+
         .btnic {
 
             transition: all 0.6s ease;
             color: #EBB471;
+            background-color: rgba(255, 255, 255, 0) !important;
             border: 2px solid #EBB471;
-            margin-bottom: 60px;
-            
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3) inset) !important;
+
         }
-        
+
+        .btnic h2 {
+            line-height: 50px;
+            align-self: center;
+            align-content: center;
+            align-items: center;
+            vertical-align: middle;
+            margin: auto 0;
+            filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.1)) !important;
+
+        }
+
         .btnic:hover {
-            background-color: #EBB471;
+            background-color: #EBB471 !important;
             color: white;
         }
-        
-        .btnic  h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            
-        }
-        
-        .navs  {
+
+
+        .navs {
             color: black;
             width: 20%;
             margin: 0 auto;
@@ -74,74 +83,87 @@
             transition: all 0.6s ease;
             font-weight: 700;
         }
-        
+
         .incensespecial {
-                height: 100vh;
-            }
-        
+            height: 100vh;
+        }
+
         .navs:hover {
             color: #A96360;
             text-decoration: none;
             font-weight: 700;
         }
-        
+
         .brhide {
             display: none;
         }
-        
+
+        .mc-cover {
+            width: 100%;
+        }
+
         @media (max-width:768px) {
             .tess {
                 width: 240px !important;
             }
-            
+
             .incensespecial {
-                height: auto!important;
+                height: auto !important;
             }
-            
+
             .brhide {
                 display: inline;
 
             }
         }
-        
+
         @media (max-width:564px) {
-            
+
             html {
-                overflow-x: hidden!important;
-                width: 100vw!important;
+                overflow-x: hidden !important;
+                width: 100vw !important;
             }
-            
+
             .footertext {
                 font-size: 16pt !important;
             }
-            
-            .container , .container-fluid {
-                padding-right: 0  !important;
+
+            .container,
+            .container-fluid {
+                padding-right: 0 !important;
             }
-            
+
             .navbaricp {
                 position: absolute !important;
-                bottom: 1%  !important ;
-                
+                bottom: 1% !important;
+
             }
-            
-            
+
+
         }
-        
+
         @media (max-width:380px) {
             .footertext {
                 font-size: 14pt !important;
             }
-            
+
             #navbaric {
                 margin-left: -20px !important;
-                
+
             }
-            
+
 
         }
-    
-    
+
+        .notoserif {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .underline {
+            border-bottom: 1px solid black;
+            padding-bottom: 3px;
+            line-height: 45px;
+        }
     </style>
 
 
@@ -150,153 +172,335 @@
 
 <body id="page-top" data-spy="scroll" data-target="#navbarResponsive" style="overflow-x: hidden">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="index.html">吾感再噪</a>
-            </div>
-        </nav>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">吾感再噪</a>
+        </div>
+    </nav>
 
-  <!-- Header -->
-  <header class="masthead d-flex" style="background: #fff;height: 60vh">
-      <div class="decrt" style="top: 20px;left: 20px;"></div>
-      <div class="decrt" style="top: 20px;left: 50px;"></div>
-      <div class="decrt" style="top: 50px;left: 20px;"></div>
-      <div class="container text-center my-auto" >
-          <img src="img/logo_ic_bl.png" style="width: 30%;min-width: 200px;margin-top: -4%">
-          <div class="container navbaricp" style="width:100vw;margin: 0 auto;padding: 0">
-              <div class="pt-4" id="navbaric" style="text-align:center;width: 100%;margin-left: -1%;padding-left: -35%;color: black">
-                  <a class="navs js-scroll-trigger" href="#aboutincense">專案理念</a>
-                <a class="navs js-scroll-trigger" href="#incensespecial">專案亮點</a>
-                <a class="navs js-scroll-trigger" href="#mcincense">角色香調</a>
-              </div>
-          </div>
-      </div>
-  </header>
-    
-  <!-- 簡介 -->
-  <section class="content-section bg-light " id="aboutincense" style="height: 100vh;padding:0;margin: 0;display:grid;align-items: center;justify-content:center;">
-    <div class="container-fluid text-center" style="height:100%;width: 100vw !important;display:flex;align-items: center;justify-content:center;background-color: darksalmon">
-        <div class="col-lg-10 mx-auto" style="width: 100%;">
-            <article>
-            <h1 style="color:#884C3A">「歡迎光臨，<br class="brhide">品味調香室」</h1>
+    <!-- Header -->
+    <header class="masthead d-flex" style="background: #fff;height: 60vh">
+        <div class="decrt" style="top: 20px;left: 20px;"></div>
+        <div class="decrt" style="top: 20px;left: 50px;"></div>
+        <div class="decrt" style="top: 50px;left: 20px;"></div>
+        <div class="container text-center my-auto">
+            <img src="img/incense/logo_ic_bl.png" style="width: 30%;min-width: 200px;margin-top: -4%">
+            <div class="container navbaricp notoserif" style="width:100vw;margin: 0 auto;padding: 0">
+                <div class="pt-4" id="navbaric" style="text-align:center;width: 100%;margin-left: -1%;padding-left: -35%;color: black">
+                    <a class="navs js-scroll-trigger" href="#aboutincense">專案理念</a>
+                    <a class="navs js-scroll-trigger" href="#incensespecial">專案亮點</a>
+                    <a class="navs js-scroll-trigger" href="#mcincense">角色香調</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 簡介 -->
+    <section class="content-section bg-light notoserif" id="aboutincense" style="height: 100vh;padding:0;margin: 0;display:grid;align-items: center;justify-content:center;">
+        <div class="container-fluid text-center" style="height:100%;width: 100vw !important;display:flex;align-items: center;justify-content:center;background-color: darksalmon">
+            <div class="col-lg-10 mx-auto notoserif" style="width: 100%;">
+                <article>
+                    <h1 style="color:#884C3A">「歡迎光臨，<br class="brhide">品味調香室」</h1>
+                    <p>
+                        繁忙的日子裡，空出一段時光<br>
+                        邀請您好好打開趕官嗅聞<br>
+                        品嘗每一縷氣味背後蘊藏的人生故事<br><br>
+                        再香氣的交融間找尋人物的真實<br>
+                        用更接近的眼光認識他們所面臨的<br class="brhide">困難與壓力<br>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section bg-light " id="incensespecial" style="">
+        <div class="container text-center" style="height:auto">
+
+            <div class="col-lg-10 mx-auto notoserif">
+
+                <h1 style="text-align: left">專案亮點</h1>
+
+                <div class="row pt-4">
+                    <div class="col-md-4">
+                        <img src="img/xyzalpha.png" style="width: 100%" class="tess">
+                        <h3 class="pt-4">3段角色故事</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/xyzalpha.png" style="width: 100%" class="tess">
+                        <h3 class="pt-4">12種香氛</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/xyzalpha.png" style="width: 100%" class="tess">
+                        <h3 class="pt-4">3種展間設計</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section bg-light notoserif" id="mcincense" style="height:">
+        <div class="container-fluid" style="background-color: grey;height: 80vh;background-image: url(img/incense/IMG_8339.jpg);background-position: bottom">
+            <h1 style="font-size: 100pt;width: 20%;padding-left: -20%;margin-left: -5%;color: rgba(70,30,25,0.5);mix-blend-mode: multiply">角色香調</h1>
+
+        </div>
+        <div class="container text-center" style="">
+
+            <div class="col-lg-10 mx-auto" style="height:40vh;margin:10% auto">
+                <h1>引言</h1>
+
                 <p>
-                    繁忙的日子裡，空出一段時光<br>
-                    邀請您好好打開趕官嗅聞<br>
-                    品嘗每一縷氣味背後蘊藏的人生故事<br><br>
-                    再香氣的交融間找尋人物的真實<br>
-                    用更接近的眼光認識他們所面臨的<br class="brhide">困難與壓力<br>
+                    在品味調香室，我們將為您介紹三種角色香水<br>
+                    每一支角色香水，將蘊涵三種不同風味的特質香調，代表組織成人了三種不同特質。<br>
+                    <br>
+                    旨在透過氣味的演繹，以嗅覺形式再現，讓三種角色能以另類形式予社會認識。<br>
+                    本室希望搭配文字說明跨越線上障礙。請您試著發揮想像，打開感官，一同品嚐意會。
+
                 </p>
-            </article>
-      </div>
+            </div>
+            <div class="col-lg-10 mx-auto" style="height:90vh">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#mc-flyingteens" class="btn btnic mb-3 js-scroll-trigger">
+                            <h2>飛行少年記</h2>
+                        </a>
+                        <img src="img/incense/flyingteens.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#mc-foreigner" class="btn btnic mb-3 js-scroll-trigger">
+                            <h2>異域尋夢</h2>
+                        </a>
+                        <img src="img/incense/foreigner.JPG" class="mc-cover ">
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#mc-mirror" class="btn btnic mb-3 js-scroll-trigger" >
+                            <h2>虛實之鏡</h2>
+                        </a>
+                        <img src="img/incense/mirror.JPG" class="mc-cover">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="content-section bg-light notoserif" id="mc-flyingteens" style="height:">
+        <div class="container-fluid" style="background-color: grey;height: 80vh;background-image: url(img/incense/IMG_8339.jpg);background-position: bottom">
+
+        </div>
+        <div class="container text-center" style="">
+
+            <div class="col-lg-10 mx-auto" style="height:40vh;margin:10% auto">
+                <h1>飛行少年記</h1>
+
+                <p>
+                    在品味調香室，我們將為您介紹三種角色香水<br>
+                    每一支角色香水，將蘊涵三種不同風味的特質香調，代表組織成人了三種不同特質。<br>
+                    <br>
+                    旨在透過氣味的演繹，以嗅覺形式再現，讓三種角色能以另類形式予社會認識。<br>
+                    本室希望搭配文字說明跨越線上障礙。請您試著發揮想像，打開感官，一同品嚐意會。
+
+                </p>
+            </div>
+            <div class="col-lg-10 mx-auto pb-5" style="height:">
+                <div class="row" style="font-family: 'Noto Serif TC', serif;">
+                    <div class="col-md-4">
+                        <img src="img/incense/flyingteens.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3 class="underline">飛行少年記</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        <h3>自力更生</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/flyingteens-1.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/flyingteens-2.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3>社會抽離</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        <h3>歸屬感</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/flyingteens-3.JPG" class="mc-cover">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid text-center" style="background-color: grey;height: 200vh;padding: 0">
+            <h1 style="font-size: 72pt;line-height: 240px">展間布置</h1>
+            <img class="img-fluid" src="img/incense/IMG_8339.jpg">
+            <p class="py-5" style="color: white">介紹文字</p>
+
+        </div>
+
+        <div class="text-center">
+            <h1 style="font-size: 72pt;line-height: 240px">更多故事</h1>
+            <img class="" src="img/incense/IMG_8339.jpg" style="width: 60%">
+            <p class="py-5">介紹文字</p>
+
+        </div>
+
+    </section>
+    <section class="content-section bg-light notoserif" id="mc-foreigner" style="height:">
+        <div class="container-fluid" style="background-color: grey;height: 80vh;background-image: url(img/incense/IMG_8339.jpg);background-position: bottom">
+
+        </div>
+        <div class="container text-center" style="">
+
+            <div class="col-lg-10 mx-auto" style="height:40vh;margin:10% auto">
+                <h1>異域尋夢</h1>
+
+                <p>
+                    在品味調香室，我們將為您介紹三種角色香水<br>
+                    每一支角色香水，將蘊涵三種不同風味的特質香調，代表組織成人了三種不同特質。<br>
+                    <br>
+                    旨在透過氣味的演繹，以嗅覺形式再現，讓三種角色能以另類形式予社會認識。<br>
+                    本室希望搭配文字說明跨越線上障礙。請您試著發揮想像，打開感官，一同品嚐意會。
+
+                </p>
+            </div>
+            <div class="col-lg-10 mx-auto pb-5" style="height:">
+                <div class="row" style="font-family: 'Noto Serif TC', serif;">
+                    <div class="col-md-4">
+                        <img src="img/incense/foreigner.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3 class="underline">異域尋夢</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        <h3>刻苦耐勞</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/foreigner-1.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/foreigner-2.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3>思鄉情懷</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        <h3>異國風情</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/foreigner-3.JPG" class="mc-cover">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid text-center" style="background-color: grey;height: 200vh;padding: 0">
+            <h1 style="font-size: 72pt;line-height: 240px">展間布置</h1>
+            <img class="img-fluid" src="img/incense/IMG_8339.jpg">
+            <p class="py-5" style="color: white">介紹文字</p>
+
+        </div>
+
+        <div class="text-center">
+            <h1 style="font-size: 72pt;line-height: 240px">更多故事</h1>
+            <img class="" src="img/incense/IMG_8339.jpg" style="width: 60%">
+            <p class="py-5">介紹文字</p>
+
+        </div>
+
+    </section>
+    <section class="content-section bg-light notoserif" id="mc-mirror" style="height:">
+        <div class="container-fluid" style="background-color: grey;height: 80vh;background-image: url(img/incense/IMG_8339.jpg);background-position: bottom">
+
+        </div>
+        <div class="container text-center" style="">
+
+            <div class="col-lg-10 mx-auto" style="height:40vh;margin:10% auto">
+                <h1>虛實之鏡</h1>
+
+                <p>
+                    在品味調香室，我們將為您介紹三種角色香水<br>
+                    每一支角色香水，將蘊涵三種不同風味的特質香調，代表組織成人了三種不同特質。<br>
+                    <br>
+                    旨在透過氣味的演繹，以嗅覺形式再現，讓三種角色能以另類形式予社會認識。<br>
+                    本室希望搭配文字說明跨越線上障礙。請您試著發揮想像，打開感官，一同品嚐意會。
+
+                </p>
+            </div>
+            <div class="col-lg-10 mx-auto pb-5" style="height:">
+                <div class="row" style="font-family: 'Noto Serif TC', serif;">
+                    <div class="col-md-4">
+                        <img src="img/incense/mirror.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3 class="underline">虛實之鏡</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        <h3>工作挫折</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/mirror-1.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/mirror-2.JPG" class="mc-cover">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3>自信美</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        <h3>堅強韌性</h3>
+                        <p>介紹文字</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/incense/mirror-3.JPG" class="mc-cover">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid text-center" style="background-color: grey;height: 200vh;padding: 0">
+            <h1 style="font-size: 72pt;line-height: 240px">展間布置</h1>
+            <img class="img-fluid" src="img/incense/IMG_8339.jpg">
+            <p class="py-5" style="color: white">介紹文字</p>
+
+        </div>
+
+        <div class="text-center">
+            <h1 style="font-size: 72pt;line-height: 240px">更多故事</h1>
+            <img class="" src="img/incense/IMG_8339.jpg" style="width: 60%">
+            <p class="py-5">介紹文字</p>
+
+        </div>
+
+    </section>
+
+
+    <div class="container-fluid text-center mt-5" style="height:60vh;width:100vw !important;background-color: darksalmon;padding: 0;">
+        <h5 class="footertext" style="color:#884C3A;width: 100%;margin: 0 auto;position:relative;top: 20%">想了解這些群體的故事及味道，<br class="brhide">歡迎到品味調香室！</h5>
+        <img src="img/incense/logo_ic_wh.png" style="width: 20%;min-width: 150px;position: relative;top: 20%">
+
     </div>
-  </section>
-    
-  <section class="content-section bg-light " id="incensespecial" style="">
-    <div class="container text-center" style="height:auto">
-      
-        <div class="col-lg-10 mx-auto">
-        
-            <h1 style="text-align: left">專案亮點</h1>
-            
-            <div class="row pt-4">
-                <div class="col-md-4">
-                    <img src="img/xyzalpha.png" style="width: 100%" class="tess">
-                    <h3 class="pt-4">3段角色故事</h3>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/xyzalpha.png" style="width: 100%" class="tess">
-                    <h3 class="pt-4">12種香氛</h3>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/xyzalpha.png" style="width: 100%" class="tess">
-                    <h3 class="pt-4">3種展間設計</h3>
-                </div>
-            </div>
-            
-      </div>
-    </div>
-  </section>
-    
-      <section class="content-section bg-light " id="mcincense" style="height: 560vh">
-          <div class="container-fluid" style="background-color: grey;height: 80vh">
-              <h1 style="font-size: 100pt;width: 20%;padding-left: -20%;margin-left: -5%">角色香調</h1>
 
-          </div>
-          <div class="container text-center" style="height:380vh;">
 
-              <div class="col-lg-10 mx-auto" style="height:60vh;margin:10% auto">
-                  <h1>引言</h1>
 
-                  <p>
-                      在品味調香室，我們將為您介紹三種角色香水<br>
-                      每一支角色香水，將蘊涵三種不同風味的特質香調，代表組織成人了三種不同特質。<br>
-                      <br>
-                      旨在透過氣味的演繹，以嗅覺形式再現，讓三種角色能以另類形式予社會認識。<br>
-                      本室希望搭配文字說明跨越線上障礙。請您試著發揮想像，打開感官，一同品嚐意會。
 
-                  </p>
-              </div>
-              <div class="col-lg-10 mx-auto" style="height:100vh">
-                  <a href="#" class="btn btnic mb-5"><h1>飛行少年記</h1></a>
-                  
-                  
-                  <div class="row">
-                <div class="col-md-4">
-                    <h3>社會抽離</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>歸屬感</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>自力更生</h3>
-                </div>
-            </div>
-              </div>
-              <div class="col-lg-10 mx-auto" style="height:100vh">
-                  <a href="#" class="btn btnic mb-5"><h1>移工之旅</h1></a>
-                  
-                  <div class="row">
-                <div class="col-md-4">
-                    <h3>異國風情</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>刻苦耐勞</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>思鄉情懷</h3>
-                </div>
-            </div>
-              </div>
-              <div class="col-lg-10 mx-auto" style="height:100vh">
-                  <a href="#" class="btn btnic mb-5"><h1>虛實之鏡</h1></a>
-                  
-                  <div class="row">
-                <div class="col-md-4">
-                    <h3>工作挫折</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>自信美</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>堅強韌性</h3>
-                </div>
-            </div>
-              </div>
-          </div>
-          <div class="container-fluid text-center mt-5" style="height:60vh;width:100vw !important;background-color: darksalmon;padding: 0;">
-              <h5 class="footertext" style="color:#884C3A;width: 100%;margin: 0 auto;position:relative;top: 40%">想了解這些群體的故事及味道，<br class="brhide">歡迎到品味調香室！</h5>
-              <img src="img/logo_ic_wh.png" style="width: 20%;min-width: 150px;position: relative;top: 35%">
-          
-          </div>
-      </section>
-    
-   
 
- 
-
-  <!-- Footer -->
-  <footer class="footer text-center" style="height: 220px;">
+    <!-- Footer -->
+    <footer class="footer text-center" style="height: 220px;">
         <div class="container">
             <ul class="list-inline mb-4">
                 <li class="list-inline-item">
@@ -322,37 +526,37 @@
         </div>
     </footer>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/popper.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <script>
-         $(function() {
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $("#mainNav").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled >  winh * 0.3 ) {
+                    if (scrolled > winh * 0.3) {
                         $(this).addClass("navbar-scrolled");
                         $(this).addClass("navbar-light");
                         $(this).removeClass("navbar-dark");
@@ -368,23 +572,23 @@
             });
         });
     </script>
-    
+
     <script>
-         $(function() {
+        $(function() {
             $(window).scroll(function() {
                 var winh = $(window).height();
                 var scrolled = $(window).scrollTop();
                 $(".tittle").each(function() {
                     var objpos = $(this).offset().top;
-                    if (scrolled > objpos - winh * 0.7 ) {
+                    if (scrolled > objpos - winh * 0.7) {
                         $(this).addClass("slidein");
-                    } 
+                    }
 
                 });
             });
         });
     </script>
-    
+
 
 </body>
 

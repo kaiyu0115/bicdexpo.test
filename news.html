@@ -26,9 +26,67 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
     <style>
-        .myinput {
-            transition: all .8s ease !important;
-            min-width: 240px;
+        .cardo {
+            height: 320px;
+        }
+
+        .cardo:hover .face {
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)
+        }
+
+        .cardo .face {
+            width: 90%;
+            margin-left: 5%;
+            height: 100%;
+            display: block;
+            transition: all 0.6s ease;
+            overflow-y: hidden;
+            text-align: left;
+        }
+
+        .cardo .face.btn {
+            padding: 0 !important;
+            border: none;
+            cursor: auto
+        }
+
+        .cardo .face img {
+            width: 100%;
+            opacity: 80%;
+            transition: all 0.6s ease;
+        }
+
+        .cardo .face:hover img {
+            width: 100%;
+            opacity: 100%;
+        }
+
+        .cardo .face .news-tittle {
+            transition: all 0.6s ease;
+            color: #254A95;
+            font-size: 15pt;
+            text-decoration: underline;
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+            max-width: 120%;
+        }
+
+        .cardo .face .news-tittle:hover {
+            color: #462857;
+            text-decoration: none;
+        }
+
+        .cardo .face .media {
+            transition: all 0.6s ease;
+            color: #eeb033;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .cardo .face .media:hover {
+            color: #C34E75;
+            text-decoration: none;
         }
 
         .dropdown-content {
@@ -89,11 +147,30 @@
 
         }
 
-
-        .myinput:hover {
-            transition: all 0.8s ease !important;
-            background-color: rgba(238, 176, 51, 0.3);
+        ul.share-buttons {
+            list-style: none;
+            padding: 0;
         }
+
+        ul.share-buttons li {
+            display: inline;
+        }
+
+        ul.share-buttons .sr-only {
+            position: absolute;
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0;
+            border: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+
+        ul.share-buttons img {
+            width: 32px;
+        }
+
 
         @media (max-width:764px) {
             .looph1 {
@@ -101,9 +178,6 @@
                 top: 43% !important;
             }
 
-            #ev {
-                min-height: 443vh !important;
-            }
         }
 
         @media (max-width:428px) {
@@ -112,36 +186,19 @@
                 top: 50% !important;
             }
 
-            #ev {
-                min-height: 420vh !important;
-            }
-
-
         }
 
         @media (max-width:378px) {
 
-
-            form.row {
-                padding: 0 !important;
-            }
 
             #fvimg {
                 min-width: 320px !important;
                 padding-left: -5px !important;
             }
 
-            #ev {
-                min-height: 322vh !important;
-            }
         }
 
-        @media (max-width:361px) {
-
-            #ev {
-                min-height: 360vh !important;
-            }
-        }
+        @media (max-width:361px) {}
     </style>
 
 
@@ -163,10 +220,9 @@
 
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Activities.html">活動資訊</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="AboutBICD.html">關於我們</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">聯絡我們</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">聯絡我們</a></li>
                     <div class="menuicon-list row ml-3" style="">
-                        <a style="font-size: 9pt" class="nav-link js-scroll-trigger navicon" href="#!" id="news"><img class="menuicon" src="news-icon.png">
-                            <p>敬請期待</p>
+                        <a style="font-size: 9pt" class="nav-link js-scroll-trigger navicon" href="news.html" id="news"><img class="menuicon" src="news-icon.png">
                         </a>
                         <a style="font-size: 9pt" class="nav-link js-scroll-trigger navicon" href="https://www.flyingv.cc/projects/28325" target="_blank"><img class="menuicon" src="fv-icon.png"></a>
                         <a class="nav-link js-scroll-trigger navicon" href="https://www.facebook.com/NTUBICD.GPExpo/" target="_blank"><img class="menuicon" src="img/f_logo_RGB-Hex-Blue_512.png" /></a>
@@ -192,95 +248,55 @@
 
     <!-- 活動簡介 -->
     <section class="content-section bg-light " id="event" style="padding-bottom: 30px">
-        <div class="container text-center" style="height: auto;min-height: 456vh;padding-bottom: 30px" id="ev">
+        <div class="container text-center" style="padding-bottom: 30px" id="ev">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
 
-                    <div style="height: 77vh" class="tittle mb-3">
-                        <h1 class="mb-4">募資計畫</h1>
+                    <div style="" class="tittle mb-3 text-left">
+                        <h1 class="mb-4">置頂新聞稿</h1>
                         <img src="img/donate1.PNG" style="width: 50%;min-width: 360px" id="fvimg">
                         <br><br>
-                        <button class="todonate btn btn-primary"><a href="https://www.flyingv.cc/projects/28325" target="_blank">立即前往</a></button>
+                        <h2>副標題</h2>
+                        <p>新聞稿內容</p>
+                        <ul class="share-buttons text-right pr-4" data-source="simplesharingbuttons.com">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.expo.bicd.ntu.edu.tw%2F&quote=%E8%87%BA%E5%A4%A7%E7%94%9F%E5%82%B3%E7%95%A2%E6%A5%AD%E8%A3%BD%E4%BD%9C%7C%E5%90%BE%E6%84%9F%E5%86%8D%E5%99%AA" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="img/social_flat_rounded_rects_svg/Facebook.svg" /></a></li>
+                            <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.expo.bicd.ntu.edu.tw%2F&text=%E8%87%BA%E5%A4%A7%E7%94%9F%E5%82%B3%E7%95%A2%E6%A5%AD%E8%A3%BD%E4%BD%9C%7C%E5%90%BE%E6%84%9F%E5%86%8D%E5%99%AA:%20http%3A%2F%2Fwww.expo.bicd.ntu.edu.tw%2F" target="_blank" title="Tweet"><img alt="Tweet" src="img/social_flat_rounded_rects_svg/Twitter.svg" /></a></li>
+                            <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.expo.bicd.ntu.edu.tw%2F&description=%E7%94%9F%E5%82%B3%E7%B3%BB%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%A4%A7%E5%9E%8B%E7%95%A2%E8%A3%BD%E7%AD%96%E5%B1%95%EF%BC%8C%E4%B8%BB%E9%A1%8C%E5%AE%9A%E7%82%BA%E3%80%8C%E5%90%BE%E6%84%9F%E5%86%8D%E5%99%AA%E3%80%8D%EF%BC%81%E5%9C%A8%E5%96%A7%E9%AC%A7%E5%BF%AB%E9%80%9F%E7%9A%84%E4%B8%96%E7%95%8C%E4%B8%AD%EF%BC%8C%E6%88%91%E5%80%91%E6%AD%A3%E5%9C%A8%E9%8C%AF%E9%81%8E%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85%EF%BC%8C%E9%82%A3%E4%BA%9B%E4%BE%86%E4%B8%8D%E5%8F%8A%E9%80%B2%E5%85%A5%E4%BD%A0%E7%9C%BC%E7%9D%9B%E7%9A%84%E8%81%B2%E9%9F%B3%E9%82%84%E6%9C%89%E6%95%85%E4%BA%8B%EF%BC%8C%E5%B0%B1%E8%AB%8B%E4%BD%A0%E6%89%93%E9%96%8B%E6%89%80%E6%9C%89%E6%84%9F%E5%AE%98%EF%BC%8C%E8%AE%93%E6%88%91%E5%80%91%E5%91%8A%E8%A8%B4%E4%BD%A0%E5%90%A7%EF%BC%814%2F30~5%2F2%E5%9C%A8%E5%9C%93%E5%B1%B1%E8%8A%B1%E5%8D%9A%E6%B5%81%E8%A1%8C%E9%A4%A8%EF%BC%8C%E8%97%9D%E8%A1%93%E5%89%B5%E4%BD%9C%E3%80%81%E9%AB%94%E9%A9%97%E6%B4%BB%E5%8B%95%E3%80%81%E5%BE%AE%E9%9B%BB%E5%BD%B1%E3%80%81Podcast%E9%83%BD%E5%9C%A8%E9%80%99%EF%BC%8C%E9%82%84%E6%9C%89%E5%90%84%E7%A8%AE%E5%A5%BD%E7%A6%AE%E7%AD%89%E4%BD%A0%E5%B8%B6%E5%9B%9E%E5%AE%B6%E5%96%94" target="_blank" title="Pin it"><img alt="Pin it" src="img/social_flat_rounded_rects_svg/Pinterest.svg" /></a></li>
+                            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.expo.bicd.ntu.edu.tw%2F&title=%E8%87%BA%E5%A4%A7%E7%94%9F%E5%82%B3%E7%95%A2%E6%A5%AD%E8%A3%BD%E4%BD%9C%7C%E5%90%BE%E6%84%9F%E5%86%8D%E5%99%AA&summary=%E7%94%9F%E5%82%B3%E7%B3%BB%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%A4%A7%E5%9E%8B%E7%95%A2%E8%A3%BD%E7%AD%96%E5%B1%95%EF%BC%8C%E4%B8%BB%E9%A1%8C%E5%AE%9A%E7%82%BA%E3%80%8C%E5%90%BE%E6%84%9F%E5%86%8D%E5%99%AA%E3%80%8D%EF%BC%81%E5%9C%A8%E5%96%A7%E9%AC%A7%E5%BF%AB%E9%80%9F%E7%9A%84%E4%B8%96%E7%95%8C%E4%B8%AD%EF%BC%8C%E6%88%91%E5%80%91%E6%AD%A3%E5%9C%A8%E9%8C%AF%E9%81%8E%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85%EF%BC%8C%E9%82%A3%E4%BA%9B%E4%BE%86%E4%B8%8D%E5%8F%8A%E9%80%B2%E5%85%A5%E4%BD%A0%E7%9C%BC%E7%9D%9B%E7%9A%84%E8%81%B2%E9%9F%B3%E9%82%84%E6%9C%89%E6%95%85%E4%BA%8B%EF%BC%8C%E5%B0%B1%E8%AB%8B%E4%BD%A0%E6%89%93%E9%96%8B%E6%89%80%E6%9C%89%E6%84%9F%E5%AE%98%EF%BC%8C%E8%AE%93%E6%88%91%E5%80%91%E5%91%8A%E8%A8%B4%E4%BD%A0%E5%90%A7%EF%BC%814%2F30~5%2F2%E5%9C%A8%E5%9C%93%E5%B1%B1%E8%8A%B1%E5%8D%9A%E6%B5%81%E8%A1%8C%E9%A4%A8%EF%BC%8C%E8%97%9D%E8%A1%93%E5%89%B5%E4%BD%9C%E3%80%81%E9%AB%94%E9%A9%97%E6%B4%BB%E5%8B%95%E3%80%81%E5%BE%AE%E9%9B%BB%E5%BD%B1%E3%80%81Podcast%E9%83%BD%E5%9C%A8%E9%80%99%EF%BC%8C%E9%82%84%E6%9C%89%E5%90%84%E7%A8%AE%E5%A5%BD%E7%A6%AE%E7%AD%89%E4%BD%A0%E5%B8%B6%E5%9B%9E%E5%AE%B6%E5%96%94&source=http%3A%2F%2Fwww.expo.bicd.ntu.edu.tw%2F" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="img/social_flat_rounded_rects_svg/LinkedIn.svg" /></a></li>
+                            <li><a href="mailto:?subject=%E8%87%BA%E5%A4%A7%E7%94%9F%E5%82%B3%E7%95%A2%E6%A5%AD%E8%A3%BD%E4%BD%9C%7C%E5%90%BE%E6%84%9F%E5%86%8D%E5%99%AA&body=%E7%94%9F%E5%82%B3%E7%B3%BB%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%A4%A7%E5%9E%8B%E7%95%A2%E8%A3%BD%E7%AD%96%E5%B1%95%EF%BC%8C%E4%B8%BB%E9%A1%8C%E5%AE%9A%E7%82%BA%E3%80%8C%E5%90%BE%E6%84%9F%E5%86%8D%E5%99%AA%E3%80%8D%EF%BC%81%E5%9C%A8%E5%96%A7%E9%AC%A7%E5%BF%AB%E9%80%9F%E7%9A%84%E4%B8%96%E7%95%8C%E4%B8%AD%EF%BC%8C%E6%88%91%E5%80%91%E6%AD%A3%E5%9C%A8%E9%8C%AF%E9%81%8E%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85%EF%BC%8C%E9%82%A3%E4%BA%9B%E4%BE%86%E4%B8%8D%E5%8F%8A%E9%80%B2%E5%85%A5%E4%BD%A0%E7%9C%BC%E7%9D%9B%E7%9A%84%E8%81%B2%E9%9F%B3%E9%82%84%E6%9C%89%E6%95%85%E4%BA%8B%EF%BC%8C%E5%B0%B1%E8%AB%8B%E4%BD%A0%E6%89%93%E9%96%8B%E6%89%80%E6%9C%89%E6%84%9F%E5%AE%98%EF%BC%8C%E8%AE%93%E6%88%91%E5%80%91%E5%91%8A%E8%A8%B4%E4%BD%A0%E5%90%A7%EF%BC%814%2F30~5%2F2%E5%9C%A8%E5%9C%93%E5%B1%B1%E8%8A%B1%E5%8D%9A%E6%B5%81%E8%A1%8C%E9%A4%A8%EF%BC%8C%E8%97%9D%E8%A1%93%E5%89%B5%E4%BD%9C%E3%80%81%E9%AB%94%E9%A9%97%E6%B4%BB%E5%8B%95%E3%80%81%E5%BE%AE%E9%9B%BB%E5%BD%B1%E3%80%81Podcast%E9%83%BD%E5%9C%A8%E9%80%99%EF%BC%8C%E9%82%84%E6%9C%89%E5%90%84%E7%A8%AE%E5%A5%BD%E7%A6%AE%E7%AD%89%E4%BD%A0%E5%B8%B6%E5%9B%9E%E5%AE%B6%E5%96%94:%20http%3A%2F%2Fwww.expo.bicd.ntu.edu.tw%2F" target="_blank" title="Send email"><img alt="Send email" src="img/social_flat_rounded_rects_svg/Email.svg" /></a></li>
+                        </ul>
 
 
                     </div>
                     <div class="hline mt-3"></div>
                     <hr class="hr-black line-ani mt-3">
 
-                    <div style="height: 75vh" class="tittle">
-                        <h1 class="tittle mt-5">商業合作</h1>
-                        <form method="post" autocomplete="off" name="hello-sheet" class="row px-5 py-3 mx-3">
-                            <div class="col-md-6">
-                                <label for="name">姓名</label><br>
-                                <input type="text" id="name" name="name" placeholder="您的姓名" style="width: 70%" class="myinput"><br><br>
-                                <label for="org">代表單位</label><br>
-                                <input type="text" id="org" name="org" placeholder="單位名稱" style="width: 70%;" class="myinput"><br><br>
-                                <label for="email">電子信箱</label><br>
-                                <input type="email" id="email" name="email" placeholder="電子郵件" style="width: 70%;" class="myinput"><br>
+                    <div style="height: 80vh" class="tittle">
+                        <h1 class="tittle mt-5 py-3">媒體報導</h1>
+                        <div class="row">
+                            <div class="cardo col-md-4 col-sm-6 col-12">
+                                <div class="face btn open">
+                                    <img src="img/edunews.jpg">
+                                    <a href="https://www.ner.gov.tw/news/608bdbc8b67f600007fc9fd2" class="news-tittle" target="_blank">
+                                        顛覆感官體驗臺大生傳系首屆畢製<br>《吾感再噪》花博流行館登場</a>
+                                    <a href="https://www.ner.gov.tw/news/608bdbc8b67f600007fc9fd2" class="media" target="_blank">國立教育廣播電臺</a>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <label for="message">訊息</label><br>
-                                <textarea id="message" name="message" style="width: 90%;height:86%" class="myinput"></textarea>
+                            <div class="cardo col-md-4 col-sm-6 col-12">
+                                <div class="face btn open">
+                                    <img src="img/yahoonews.jpg">
+                                    <a href="https://www.ner.gov.tw/news/608bdbc8b67f600007fc9fd2" class="news-tittle" target="_blank">顛覆感官體驗 臺大生傳系首屆畢製<br>《吾感再噪》花博流行館登場</a>
+                                    <a href="https://www.ner.gov.tw/news/608bdbc8b67f600007fc9fd2" class="media" target="_blank">yahoo!新聞</a>
+                                </div>
                             </div>
-
-
-
-                            <input class="todonate btn btn-primary" type="submit" value="送出訊息" style="margin-top: 5vh;margin-left: auto;margin-right: auto;">
-                        </form>
-
-                        <br><br>
-                        <hr class="hr-black line-ani">
-                        <div class="container tittle" style="">
-                            <h2 class="mt-5 mb-4">協辦單位</h2>
-                            <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
-                                <img src="img/big3logo.png" class="bigdaddy">
-                                <img src="img/Temple-logo.png" class="bigdaddy">
-                                <img src="img/dh-logo.png" class="bigdaddy">
-                                <img src="img/bornfree_logo.png" class="bigdaddy">
-                                <img src="img/MMT-logo.png" class="bigdaddy">
-                                <a class="bigdaddy-a" href="http://www.fongyuco.com/"><img src="img/fongyuLogo.png" class="bigdaddy"></a>
-                                <img src="img/DB-LOGO.png" class="bigdaddy">
-                                <img src="img/Wanshen-logo.png" class="bigdaddy">
-                                <img src="img/GooGoo-logo.png" class="bigdaddy">
-                                
-                                <img src="img/SoC-logo.png" class="bigdaddy">
-                                <img src="img/TAIWONlogo.png" class="bigdaddy">
-                                <img src="img/SGR-logo.png" class="bigdaddy">
+                            <div class="cardo col-md-4 col-sm-6 col-12">
+                                <div class="face btn open">
+                                    <img src="img/hinetnews.jpg">
+                                    <a href="https://times.hinet.net/news/23312637" class="news-tittle" target="_blank">顛覆感官體驗 臺大生傳系首屆畢製<br>《吾感再噪》花博流行館登場</a>
+                                    <a href="https://times.hinet.net/news/23312637" class="media" target="_blank">HiNet生活誌</a>
+                                </div>
                             </div>
                         </div>
-
-                        <br><br>
-                        <hr class="hr-black line-ani">
-                        <div class="container tittle" style="">
-                            <h2 class="mt-5 mb-4">特別感謝</h2>
-                            <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
-                                <img src="img/LFD-logo.png" class="daddy">
-                                <img src="img/kano-logo.png" class="daddy">
-                                <img src="img/sunrice-logo.png" class="daddy">
-                                <img src="img/ATBlogo.png" class="daddy">
-                            </div>
-                        </div>
-
-                        <br><br>
-                        <hr class="hr-black line-ani">
-                        <h2 class="mt-5 mb-4">贊助單位</h2>
-                        <div class="row" style="width: 80%;align-items: center;justify-content: center;margin: 0 auto">
-                            <a class="bigdaddy-a" href="http://www.fongyuco.com/"><img src="img/alsomarketing-logo.png" class="daddy"></a>
-                            <img src="img/whosmelon-logo.png" class="daddy">
-                            <img src="img/XUMEIlogo.png" class="daddy">
-                            <img src="img/mado-logo.jpg" class="daddy">
-                            <img src="img/HoneyMuseum-logo.png" class="daddy">
-                            <img src="img/FreshPower-logo.png" class="daddy">
-                            <img src="img/golden_field_logo.png" class="daddy">
-                            <img src="img/TFlogo.png" class="daddy">
-                            <img src="img/UncleSweet-logo.png" class="daddy">
-                            <img src="img/LBD-logo.png" class="daddy">
-                            <img src="img/petitdoux-logo.png" class="daddy">
-                            <img src="img/ArtisanTourlogo.png" class="daddy">
-                            <img src="img/ijgreenhouse-logo.png" class="daddy">
-                            <img src="img/kakiice-logo.png" class="daddy">
-                        </div>
-
 
                     </div>
 
