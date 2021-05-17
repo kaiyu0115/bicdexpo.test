@@ -29,8 +29,193 @@
             width: 100vw;
             position: fixed;
             z-index: 99;
-            background-image: url(img/bg-masthead.jpg)
         }
+        
+        .d-flex {
+           background-image: url(img/market/market_web.jpg); 
+        }
+        
+        @media (max-width:769px) {
+            .d-flex {
+               background-image: url(img/market/market_pad.jpg); 
+            }
+            
+            #q2 {
+                top: 10%  !important;
+                left: 33%  !important;
+                width: 33%  !important;
+            }
+            
+            #q3 {
+                top: 61%  !important;
+                left: 77%  !important;
+                width: 22%  !important;
+            }
+            
+            #q4 {
+                top: 15%  !important;
+                left: 70%  !important;
+                width: 27%  !important;
+            }
+            
+            #marketmap {
+                padding: 0 !important;
+                width: 100%  !important;
+                margin: auto 0 !important;
+                transform: translateY(8%);
+            }
+            
+            .marketcard {
+                transform: translateY(15%);
+                width: 70% !important;
+            }
+            
+            #seeinfo {
+                top: 6% !important;
+                left: 5% !important;
+                margin: 0;
+            }
+            
+            #maptri10 {
+                top: 75% !important;
+                left: 25% !important;
+            }
+        }
+        
+        @media (max-width:361px) {
+            .d-flex {
+               background-image: url(img/market/market_phone.jpg); 
+            }
+            
+            #qtri2 {
+              width: 21% !important;
+              top: 31% !important;
+              right: 0% !important;
+            }
+            
+            #q1 {
+                top: 10%  !important;
+                left: 3%  !important;
+                width: 37%  !important;
+            }
+            
+            #q2 {
+                top: 6%  !important;
+                left: 45%  !important;
+                width: 45%  !important;
+            }
+            
+            #q3 {
+                top: 61%  !important;
+                left: 60%  !important;
+                width: 32%  !important;
+            }
+            
+            #q4 {
+                top: 35%  !important;
+                left: 8%  !important;
+                width: 34%  !important;
+            }
+            
+            #q5 {
+                top: 32%  !important;
+                left: 55%  !important;
+                width: 36%  !important;
+            }
+            
+            #q6 {
+                top: 55%  !important;
+                left: 20%  !important;
+                width: 37%  !important;
+            }
+            
+            #q7 {
+                top: 75%  !important;
+                left: 10%  !important;
+                width: 40%  !important;
+            }
+            
+            .modal-content.row {
+                flex-direction: column !important;
+            }
+            
+            #marketmap {
+                width: 176%!important;
+                min-width: 240px;
+                min-height: 300px !important;
+                padding-left: 30px!important;
+            }
+            
+            #seeinfo {
+                top: auto !important;
+                left: auto !important;
+                bottom: 0% !important;
+                right: -95% !important;
+                margin: 0;
+                text-align: right;
+            }
+            
+            .marketcard {
+                width: 100%!important;
+                min-width: 180px;
+                min-height: 240px !important;
+                margin-top: -20%!important;
+                margin-right: -100%!important;
+            }
+            
+            #maptri1 {
+                top: 77% !important;
+                left: 108% !important;
+            }
+            
+            #maptri2 {
+                top: 60% !important;
+                left: 82% !important;
+            }
+            
+            #maptri3 {
+                top: 58% !important;
+                left: 120% !important;
+            }
+            
+            #maptri4 {
+                top: 40% !important;
+                left: 72% !important;
+            }
+            
+            #maptri5 {
+                top: 64% !important;
+                left: 70% !important;
+            }
+            
+            #maptri6 {
+                top: 49% !important;
+                left: 97% !important;
+            }
+            
+            #maptri7 {
+                top: 74% !important;
+                left: 71% !important;
+            }
+            
+            #maptri9 {
+                top: 99% !important;
+                left: 97% !important;
+            }
+            
+            #maptri8 {
+                top: 69% !important;
+                left: 37% !important;
+            }
+            
+            #maptri10 {
+                top: 95% !important;
+                left: 60% !important;
+            }
+            
+        }
+        
+        
 
         .trigger {
             position: absolute;
@@ -52,10 +237,18 @@
             background-color: transparent;
         }
 
-        #qtri {
+        #qtri1 {
             width: 13.6%;
             top: 16%;
             left: 67.8%;
+            opacity: 0;
+        }
+        
+        #qtri2 {
+            width: 13.6%;
+            top: 18%;
+            right: 0%;
+            opacity: 0;
         }
 
         /* The Modal (background) */
@@ -118,6 +311,7 @@
             float: right;
             font-size: 48px;
             font-weight: bold;
+            z-index: 999;
         }
 
         .close:hover,
@@ -136,7 +330,9 @@
 
         @media (max-width:992px) {
         .modal-content {
-        height: auto;
+            margin-top: 5vh;
+        height: 90vh;
+            width: 90vw;
 
         }
 
@@ -164,12 +360,14 @@
         .question {
             padding: 0px;
             margin: 10px auto;
-            border: 10px solid rgba(0,0,0,0);
-            height: 50%;
             transition: all 0.6s ease;
             overflow-y: hidden;
             color: white;
             cursor: pointer;
+            position: absolute;
+            z-index: 987;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+            
         }
         
         .question img {
@@ -233,9 +431,7 @@
             padding-left: -1rem;
         }
         
-        .d-flex {
-           background-image: url(img/market/market_web.jpg); 
-        }
+        
         
         #QModals {
             background-image: url(img/market/marketknows.jpg);
@@ -263,7 +459,8 @@
     <header class="d-flex" style=";background-position: center;background-size: cover">
         <div class="container text-center my-auto" style="">
             <a class="trigger" id="maptri"></a>
-            <img class="trigger" src="img/market/market_web_knows.png" id="qtri">
+            <img class="trigger m-hide" src="img/market/market_web_knows.png" id="qtri1">
+            <img class="trigger lg-hide" src="img/market/market_phone_knows.png" id="qtri2">
 
         </div>
         <div class="overlay">
@@ -278,7 +475,6 @@
             <span class="close" id="closeMap" style="position: absolute;top: 5%;right: 3%;z-index: 999">&times;</span>
             
             <div class="col-6" style="height: 100%;padding: 0">
-                
                 <a class="mappoint" style="top: 67%;left: 48%" id="maptri1"></a>
                 <a class="mappoint" style="top: 48%;left: 38%" id="maptri2"></a>
                 <a class="mappoint" style="top: 47%;left: 58%" id="maptri3"></a>
@@ -288,12 +484,12 @@
                 <a class="mappoint" style="top: 63%;left: 30%" id="maptri7"></a>
                 <a class="mappoint" style="top: 58%;left: 11%" id="maptri8"></a>
                 <a class="mappoint" style="top: 80%;left: 45%" id="maptri9"></a>
-                <a class="mappoint" style="top: 82%;left: 25%" id="maptri10"></a>
+                <a class="mappoint" style="top: 80%;left: 25%" id="maptri10"></a>
                 <img src="img/market/market_map.jpg" id="marketmap">
             </div>
             
             <div class="col-6 text-center" style="height: 100%;padding: 0">
-                <p style="position: absolute;z-index: 988;top: 5%;left: -3%">移動滑鼠，看介紹!</p>
+                <p id="seeinfo" style="position: absolute;z-index: 988;top: 5%;left:-3%">移動滑鼠，看介紹!</p>
                 <img src="img/market/bai-lan.png" class="marketcard collapse" id="map1">
                 <img src="img/market/bin-jiang.png" class="marketcard collapse" id="map2">
                 <img src="img/market/xi-hu.png" class="marketcard collapse" id="map3">
@@ -315,81 +511,74 @@
         <!-- Modal content -->
         <div class="modal-content" style="" id="QModals">
             <span class="close" id="closeQ">&times;</span>
-            <p style="color: white;text-align:right;padding-right: 10px;font-weight: bold">移動滑鼠，看答案</p>
-            <div class="row questions">
-                <div class="question col-lg-3 col-md-6" id="q1">
+            
+            <div class="questions">
+                <div class="question" id="q1" style="top:18%;left: 5%;width: 25%">
                     <div class="qz">
                         <img src="img/market/mq1.png">
                     </div>
                     <div class="as">
-                        <img src="img/market/ma1.png">
+                        <img src="img/market/ma-1.png">
                     </div>
                 </div>
 
-                <div class="question col-lg-3 col-md-6" id="q2">
+                <div class="question" id="q2" style="left: 38%;width: 30%;top:6%">
                     <div class="qz">
-                        <h3>問題</h3>
+                        <img src="img/market/mq2.png">
                     </div>
                     <div class="as">
-                        <h3>答案</h3>
+                        <img src="img/market/ma-2.png">
                     </div>
                 </div>
-                <div class="question col-lg-3 col-md-6" id="q3">
+                <div class="question" id="q3" style="left:78%;width: 19%;top:60%">
                     <div class="qz">
-                        <h3>問題</h3>
+                        <img src="img/market/mq3.png">
                     </div>
                     <div class="as">
-                        <h3>答案</h3>
+                        <img src="img/market/ma-3.png">
                     </div>
                 </div>
-                <div class="question col-lg-3 col-md-6" id="q4">
+                <div class="question" id="q4" style="left:69%;width: 25%;top:0%">
                     <div class="qz">
-                        <h3>問題</h3>
+                        <img src="img/market/mq4.png">
                     </div>
                     <div class="as">
-                        <h3>答案</h3>
+                        <img src="img/market/ma-4.png">
                     </div>
                 </div>
-                <div class="question col-lg-3 col-md-6" id="q5">
+                <div class="question" id="q5" style="left:1%;width: 26%;top:55%">
                     <div class="qz">
-                        <h3>問題</h3>
+                        <img src="img/market/mq5.png">
                     </div>
                     <div class="as">
-                        <h3>答案</h3>
+                        <img src="img/market/ma-5.png">
                     </div>
                 </div>
-                <div class="question col-lg-3 col-md-6" id="q6">
+                <div class="question" id="q6" style="left:28%;width: 23%;top:52%">
                     <div class="qz">
-                        <h3>問題</h3>
+                        <img src="img/market/mq6.png">
                     </div>
                     <div class="as">
-                        <h3>答案</h3>
+                        <img src="img/market/ma-6.png">
                     </div>
                 </div>
-                <div class="question col-lg-3 col-md-6" id="q7">
+                <div class="question" id="q7" style="left:52%;width: 26%;top:53%">
                     <div class="qz">
-                        <h3>問題</h3>
+                        <img src="img/market/mq7.png">
                     </div>
                     <div class="as">
-                        <h3>答案</h3>
-                    </div>
-                </div>
-                <div class="question col-lg-3 col-md-6" id="q8">
-                    <div class="qz">
-                        <h3>問題</h3>
-                    </div>
-                    <div class="as">
-                        <h3>答案</h3>
+                        <img src="img/market/ma-7.png">
                     </div>
                 </div>
             </div>
+            <p style="color: white;text-align:right;padding-right: 10px;font-weight: bold;position: absolute;bottom:0%;right: 3%">移動滑鼠，看答案</p>
         </div>
 
     </div>
 
-    <!-- 底圖 -->
+    <!-- 底層 -->
     <section class="content-section bg-light " id="event">
-        <div class="container text-center" style="height: 230vh;">
+        <div class="container text-center" style="height: 100vh;">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <article>
@@ -543,7 +732,36 @@
         var modal2 = document.getElementById("QModal");
 
         // Get the button that opens the modal
-        var btn2 = document.getElementById("qtri");
+        var btn2 = document.getElementById("qtri1");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementById("closeQ");
+
+        // When the user clicks on the button, open the modal
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event2) {
+            if (event2.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+        
+    
+    </script>
+    <script>
+        // Get the modal
+        var modal2 = document.getElementById("QModal");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("qtri2");
 
         // Get the <span> element that closes the modal
         var span2 = document.getElementById("closeQ");

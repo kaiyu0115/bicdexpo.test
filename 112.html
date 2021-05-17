@@ -28,14 +28,69 @@
         * {
             box-sizing: border-box;
         }
+        
+        .masthead .container-fluid h1,h2 {
+            text-align: right;
+            transition: all 0.6s ease;
+        }
+        
+        .masthead  .container-fluid:hover  h1, .container-fluid:hover h2 {
+            padding-right: 32%;
+            text-shadow: 3px 3px 8px rgba(30,30,30,0.2) ;
+        }
+        
+        .masthead h1 {
+            font-size: 80pt;
+            color: #f9c4ce;
+        }
+        
+        .masthead h2 {
+            font-size: 48pt;
+        }
         .cardo {
             text-align: center;
             margin: 0 auto;
-            height: 100vh;
+            height: 75vh;
+        }
+        
+        .cardo img {
+            width: 100%;
+            background-size: cover;
+        }
+        
+        .cardo .face h1 {
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        letter-spacing: 2px;
+        font-weight: 600;
+            text-align: justify;
+            display: flex
+        }
+        
+        .col-md-7.cardo:hover .face{
+            box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+            color: rgba(255,255,255,0.8);
+        }
+
+        .col-md-7.cardo .face {
+            width: 90%;
+            margin-left: 5%;
+            height: 95%;
+            transition: all 0.6s ease;
+            font-size: 36pt;
+            background-size: cover;
+            background-position: center;
+            color: rgba(255,255,255,0.2);
+            display: flex;
+            text-align: left;
+            align-items: flex-start;
+            justify-content: flex-start;
         }
         
         .cardo:hover .face{
-            box-shadow: 0px 0px 2px rgba(0,0,0,0.4)
+            box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+            color: rgba(255,255,255,0.8);
+            font-size: 24pt;
         }
 
         .cardo .face {
@@ -43,7 +98,11 @@
             margin-left: 5%;
             height: 95%;
             transition: all 0.6s ease;
-            font-size: 36pt;
+            font-size: 20pt;
+            background-size: cover;
+            background-position: center;
+            color: rgba(255,255,255,0.05);
+            display: flex;
         }
         
         .musicplayer {
@@ -96,32 +155,33 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead d-flex" style="height: 50vh;">
-        <div class="container text-center my-auto">
-            <h1 class="mb-1">112星球</h1>
-            <h3 class="mb-5">
-                <em>走進台大的想像與真實</em>
-            </h3>
-
+    <header class="masthead d-flex" style="height: 50vh;background-image: url(img/ntuplanet/cover.png);background-position: left;background-size: cover">
+        <div class="container-fluid my-auto px-4 sm-hide">
+            <h2 class="mb-0">
+                WELCOME <br>
+                TO <br>
+                PLANET
+            </h2>
+            <h1 class="mb-1">112</h1>
         </div>
         <div class="overlay"></div>
     </header>
 
     <!-- 簡介 -->
     <section class="content-section bg-light " id="main112" style="padding: 0">
-        <div class="container text-center py-5" style="height: 110vh;">
+        <div class="container text-center py-5" style="height: 80vh;">
             <div class="row">
                 <div class="col-3 cardo">
-                        <a class="face js-scroll-trigger btn" href="#A112">A</a>
+                    <a class="face js-scroll-trigger btn" href="#A112" style="background-image: url(img/ntuplanet/A.jpg)">雨林｜焦慮</a>
+                </div>
+                <div class="col-3 cardo" >
+                    <a class="face js-scroll-trigger btn" href="#B112" style="background-image: url(img/ntuplanet/B.jpg)" >深海｜迷惘</a>
                 </div>
                 <div class="col-3 cardo">
-                    <a class="face js-scroll-trigger btn" href="#B112">B</a>
+                    <a class="face js-scroll-trigger btn" href="#C112"  style="background-image: url(img/ntuplanet/C.jpg);">雪地｜退卻</a>
                 </div>
                 <div class="col-3 cardo">
-                    <a class="face js-scroll-trigger btn" href="#C112">C</a>
-                </div>
-                <div class="col-3 cardo">
-                    <a class="face js-scroll-trigger btn" href="#D112">D</a>
+                    <a class="face js-scroll-trigger btn" href="#D112"  style="background-image: url(img/ntuplanet/D.jpg)">荒野｜未知</a>
                 </div>
             </div>
         </div>
@@ -130,25 +190,29 @@
         
         <div class="container text-center py-5" style="height: 100vh;" id="A112">
             <div class="row" style="height: 100%">
-                <div class="col-md-6 cardo" style="height: 90%">
-                    <div class="face">
-                        <h1>A</h1>
+                <div class="col-md-7 cardo" style="height: 90%">
+                    <div class="face" style="background-image: url(img/ntuplanet/A.jpg)">
+                        <h1 class="m-0 p-4">雨林﹒ 焦慮</h1>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5 tittle">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
-                        <div class="musicplayer" style="height: 100%;width: 35%">
+                        <div class="musicplayer" style="height: 100%;width: 56%">
                             <audio controls class="audiplay" style="width: 100%;">
-                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                                <source src="/assets/A.mp3" type="audio/mp3">
                             </audio>
                         </div>
-                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
-                            <h2>標題文字</h2>
+                        <div class="pl-2 pr-1 ml-2" style="height: 100%;width: 42%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>雨林｜焦慮</h2>
                         </div>
                     </div>
-                    <div class="card" style="height: 50%;margin-top: 2rem">
-                        <p>
-                            內文
+                    <div class="card text-left" style="height: 50%;margin-top: 2rem">
+                        <p class="px-4">
+                            被課業壓得喘不過氣，煩躁與焦慮就像是熱帶雨林的黏膩膩潮濕、複雜混亂，隱性的競爭就如同林間的猛獸，躲在暗處蠢蠢欲動。大一的我們，感受著課業的壓力，努力的在這適者生存的世界裡，找到安身之處。
+                        </p>
+                        
+                        <p class="px-4 py-3" style="font-size: 10pt;margin: 0">
+                            （音樂來源：https://soundcloud.com/search/sounds?q=ocean](https://soundcloud.com/search/sounds?q=ocean）
                         </p>
                     </div>
                 </div>
@@ -159,87 +223,96 @@
         
         <div class="container text-center py-5" style="height: 100vh;" id="B112">
             <div class="row" style="height: 100%">
-                <div class="col-md-6 cardo" style="height: 90%">
-                    <div class="face">
-                        <h1>B</h1>
+                <div class="col-md-7 cardo" style="height: 90%">
+                    <div class="face" style="background-image: url(img/ntuplanet/B.jpg)">
+                        <h1 class="m-0 p-4">深海 ‧ 迷惘</h1>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5 tittle">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
-                        <div class="musicplayer" style="height: 100%;width: 35%">
+                        <div class="musicplayer" style="height: 100%;width: 56%">
                             <audio controls class="audiplay" style="width: 100%;">
-                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                                <source src="/assets/B.mp3" type="audio/mp3">
                             </audio>
                         </div>
-                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
-                            <h2>標題文字</h2>
+                        <div class="pl-2 pr-1 ml-2" style="height: 100%;width: 42%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>深海｜迷惘</h2>
                         </div>
                     </div>
-                    <div class="card" style="height: 50%;margin-top: 2rem">
-                        <p>
-                            內文
+                    <div class="card text-left" style="height: 50%;margin-top: 2rem">
+                        <p class="px-4 m-0">
+                            想像置身於大海之中，阻隔了外界的紛紛擾擾，靜下心來，只聽見自己。大二的我們，尋尋覓覓，想找到自己的定位，是有個性的？隨和的？熱情積極？又或者是冷靜被動的？迷惘如影隨形，我到底是誰？總是沒有答案。當下我們並不知道，每一次的迷惘，其實都是一次重新認識自己的機會。
+                        </p>
+                        
+                        <p class="px-4 py-3" style="font-size: 10pt;margin: 0">
+                            （音樂來源：https://soundcloud.com/6axis9/ocean](https://soundcloud.com/6axis9/ocean）
                         </p>
                     </div>
                 </div>
-                
             </div>
         </div>
         <hr>
         
         <div class="container text-center py-5" style="height: 100vh;" id="C112">
             <div class="row" style="height: 100%">
-                <div class="col-md-6 cardo" style="height: 90%">
-                    <div class="face">
-                        <h1>C</h1>
+                <div class="col-md-7 cardo" style="height: 90%">
+                    <div class="face" style="background-image: url(img/ntuplanet/C.jpg)">
+                        <h1 class="m-0 p-4">雪地 ‧ 退卻</h1>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5 tittle">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
-                        <div class="musicplayer" style="height: 100%;width: 35%">
+                        <div class="musicplayer" style="height: 100%;width: 56%">
                             <audio controls class="audiplay" style="width: 100%;">
-                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                                <source src="/assets/C.mp3" type="audio/mp3">
                             </audio>
                         </div>
-                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
-                            <h2>標題文字</h2>
+                        <div class="pl-2 pr-1 ml-2" style="height: 100%;width: 42%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>雪地｜退卻</h2>
                         </div>
                     </div>
-                    <div class="card" style="height: 50%;margin-top: 2rem">
-                        <p>
-                            內文
+                    <div class="card text-left" style="height: 50%;margin-top: 2rem">
+                        <p class="px-4 m-0 pt-3">
+                            最令人難忘的，都是在最低潮時伸出的那雙手；在全然的黑暗中，即使是最微小的光，也可以瞬間溫暖整個世界。大三的我們，以為自己足夠勇敢、足夠成熟，但在一次次挫折將我們打敗時，才發現自己還不夠勇敢、還不夠成熟，深深的陷進了冰冷的雪地中，寒冷無助的感受席捲而來。家人、朋友的鼓勵，點亮了我們的世界，小小的、暖暖的，支撐我們繼續往下走。
+                        </p>
+                        
+                        <p class="px-4 py-3" style="font-size: 10pt;margin: 0">
+                            （音樂來源：https://soundcloud.com/search/sounds?q=warm&filter.license=to_modify_commercially）
                         </p>
                     </div>
                 </div>
-                
             </div>
         </div>
         <hr>
         
         <div class="container text-center py-5" style="height: 100vh;" id="D112">
             <div class="row" style="height: 100%">
-                <div class="col-md-6 cardo" style="height: 90%">
-                    <div class="face">
-                        <h1>D</h1>
+                <div class="col-md-7 cardo" style="height: 90%">
+                    <div class="face" style="background-image: url(img/ntuplanet/D.jpg)">
+                        <h1 class="m-0 p-4">荒野 ‧ 未知</h1>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5 tittle">
                     <div class=" row mb-4" style="height: 30%;padding-top: 5px;margin: 0 auto">
-                        <div class="musicplayer" style="height: 100%;width: 35%">
+                        <div class="musicplayer" style="height: 100%;width: 56%">
                             <audio controls class="audiplay" style="width: 100%;">
-                                <source src="/img/New%20Recording.m4a" type="audio/mp3">
+                                <source src="/assets/D.mp3" type="audio/mp3">
                             </audio>
                         </div>
-                        <div class="pl-5 pr-3 ml-3" style="height: 100%;width: 60%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
-                            <h2>標題文字</h2>
+                        <div class="pl-2 pr-1 ml-2" style="height: 100%;width: 42%;text-align: end;display: flex;align-items: flex-end;justify-content: flex-end;">
+                            <h2>荒野｜未知</h2>
                         </div>
                     </div>
-                    <div class="card" style="height: 50%;margin-top: 2rem">
-                        <p>
-                            內文
+                    <div class="card text-left" style="height: 50%;margin-top: 2rem">
+                        <p class="px-4 m-0 pt-3">
+                            下一站，要去哪？大四的我們，面臨了每一個人都曾經歷過的未知迷惘。拎著行囊，我們站在荒野中，看著眼前茫茫世界，不知道往哪走。既便未知，我們知道，每每勇敢踏出的一步，都讓我們更接近理想；即便未知，我們仍要繼續往下走。
+                        </p>
+                        
+                        <p class="px-4 py-3" style="font-size: 10pt;margin: 0">
+                            （音樂來源：https://soundcloud.com/monawonderlick/new-day-vlog-music-no-copyright-free-download）
                         </p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
