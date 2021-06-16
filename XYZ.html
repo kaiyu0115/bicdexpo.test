@@ -5,14 +5,29 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="「面對壓力、接受壓力、處理壓力、放下壓力。」">
     <meta name="author" content="台大生傳 鄒凱宇">
+    <meta name="keywords" content="藝術,畢業製作,壓力,跨世代,物件展,共同創作,心理,生傳">
 
-    <title>台大生傳畢業製作</title>
+    <title>XYZ</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KMV7YNZJN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6KMV7YNZJN');
+    </script>
 
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -196,6 +211,7 @@
             .xyzstory img {
                 width: 60% !important;
                 max-height: 240px !important;
+                transform: translateY(10%);
             }
 
             .xyzstory:hover img {
@@ -213,6 +229,10 @@
                 transform: translateY(0%);
                 opacity: 1;
             }
+            
+            header {
+                background-image: url(img/xyz/PHONE_banner.png)!important;
+            }
 
 
         }
@@ -226,11 +246,59 @@
             header {
                 padding-top: 40px !important;
                 padding-bottom: 0px !important;
+                background-position: bottom!important;
+                background-repeat: no-repeat  !important;
+                background-color: black!important;
+                
+            }
+            
+            header h1 {
+                font-size: 36pt !important;
+                line-height: 96px!important;
+                margin-top: 30px !important;
+                padding-top: 5%!important;
+            }
+            
+             header h5.py-2 {
+                font-size: 9pt !important;
+                 padding-top: 15% !important;
+            }
+            
+            header .vline {
+                height: 140px!important;
+            }
+            
+            header #h-h5 {
+                padding-top: 2% !important;
+                margin: auto 0;
+            }
+            
+            .masthead  {
+                padding:  0  !important;
+                height: 48vh!important;
+                min-height: 30vh!important;
+            }
+            
+            
+            #slidedd p {
+                font-size: 11pt!important;
+            }
+            
+            .slides p {
+                font-size: 11pt!important;
+            }
+            
+            .xyz .col-lg-10 {
+                padding-bottom: 32px!important;
+            }
+            
+            .xyzstory img {
+                width: 80% !important;
+                max-height: 300px !important;
+                margin: auto 0 !important;
+                transform: translateY(10%);
             }
 
-            header h1 {
-                padding-top: 60px !important;
-            }
         }
 
         #modalbox {
@@ -436,7 +504,7 @@
                 說<br>
                 故事
             </h1>
-            <div style="height: 100%;width: 40px;flex-direction: column;display: flex;align-items: center">
+            <div id="h-h5" style="height: 100%;width: 40px;flex-direction: column;display: flex;align-items: center">
                 <h5 style="" class="v-text py-2">物件故事</h5>
                 <div class="vline" style="height: 160px;width: 1px;background-color: white"></div>
                 <h5 class="v-text py-2">共同創作</h5>
@@ -462,7 +530,7 @@
 
     <!-- 簡介 -->
     <section class="content-section bg-light xyz" id="xyzmain" style="padding-top: 0;padding-bottom: 0">
-        <div class="container-fliud text-center" style="height: 90vh;background-color:rgba(23,20,25,1);color: white">
+        <div class="container-fliud text-center" style="min-height:90vh;background-color:rgba(23,20,25,1);color: white">
             <div class="col-lg-10 mx-auto py-0">
                 <article class="py-5 " id="slidedd">
                     <p style="font-size: 14pt;font-weight: 300">
@@ -477,7 +545,7 @@
                     <div class="col-md-6 text-left ">
                         <h2 style="font-size: 36pt;font-weight:600">XYZ</h2>
                         <p style="border-left: 1px solid white;font-size: 15pt;line-height: 25pt;text-align: justify" class="pl-4 mt-3 ml-4 pr-5">
-                            分別代表三個不同世代出生的人，年齡從 20歲橫跨至60歲以上。每個人都有獨一無二的生命經驗，在不同的人生階段中也必須面臨各自的壓力。
+                            分別代表三個不同世代出生的人，年齡從 20 歲橫跨至 60 歲以上。每個人都有獨一無二的生命經驗，在不同的人生階段中也必須面臨各自的壓力。
                         </p>
                     </div>
                     <div class="col-md-6 text-left">
@@ -768,7 +836,7 @@
                                 <img src="img/xyz/xyz20.png" style="width: 100%">
                             </div>
                             <div class="col-md-6 mt-5">
-                                <h2>貧果飢蛋</h2>
+                                <h2>蘋果雞蛋</h2>
                                 <p style="padding: 8px;">
                                     我年輕時一直覺得自己不夠瘦，所以給了自己很多減肥壓力，為了盡快瘦下來我嘗試了一些比較偏激的飲食，例如餓了只吃蘋果和白煮蛋，那時還以為自己是「健康飲食」，現在回想起來覺得很不健康。
                                 </p>
@@ -900,7 +968,7 @@
                     <div class="xyzstory cardo col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="face btn" data-toggle="collapse" data-target="#caption20">
                             <img src="img/xyz/xyz20.png">
-                            <h1>貧果雞蛋</h1>
+                            <h1>蘋果雞蛋</h1>
                         </div>
                     </div>
                 </div>

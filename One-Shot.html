@@ -5,14 +5,29 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="用鏡頭走入在地">
+    <meta name="keywords" content="藝術,畢業製作,音樂,食農,微電影,在地,生傳">
     <meta name="author" content="台大生傳 鄒凱宇">
 
-    <title>台大生傳畢業製作</title>
+    <title>One-Shot微電影劇組</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KMV7YNZJN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6KMV7YNZJN');
+    </script>
 
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -31,6 +46,10 @@
             background-color: black;
             border: none;
         }
+        
+        #shadow {
+            background-image: url(img/one-shot/osbanner-02.jpg);
+        }
 
         .banner img {
             border: none;
@@ -46,6 +65,7 @@
             width: 33%;
             padding: 1px;
         }
+    
 
 
         @media (min-width:986px) {}
@@ -92,10 +112,28 @@
                 width: 49%;
                 padding: 1px;
             }
+            
+            section {
+                width: 100vw !important;
+                min-width: 100vw !important;
+            }
 
         }
 
-        @media (max-width:378px) {
+        @media (max-width:420px) {
+            
+            body {
+                width: 100vw !important;
+                max-width: 100vw !important;
+                padding: 0 !important;
+                border: 0 !important;
+            }
+            
+            
+            #shadow {
+            background-image: url(img/one-shot/osbanner-01.jpg)!important;
+        }
+            
             .mySlides img {
                 width: 100%;
                 padding: 4px;
@@ -115,23 +153,17 @@
                 opacity: 50%;
             }
 
-            .shadow {
-                height: 50vh;
-            }
 
             #shadows2 {
                 width: 100vw !important;
-                height: 20vh !important;
-                top: 40vh !important;
+                height: 100vh !important;
+                top: 0vh !important;
+                background-color: rgba(0,0,0,0.5) !important;
                 right: 0;
             }
 
             .shadow h1 {
                 padding-top: 50% !important;
-            }
-
-            header {
-                height: 60vh !important;
             }
 
             section {
@@ -141,13 +173,40 @@
             
             #logo {
                 width: 100%  !important;
-                transform: translateY(10%);
+                transform: translateY(-10%);
                 padding-left: 0  !important;
             }
             
             .carousel-item img {
             height: auto !important;
         }
+            
+            .filminfo {
+                margin: 0!important;
+            }
+            
+            #filmphoto {
+                transform: translateX(100%);
+                transform: translateY(100%);
+                padding-left: 69% !important;
+                padding-top: 15%!important;
+                
+            }
+            
+            .fluid {
+                height: 50vh!important;
+            }
+            
+            .fluid .notoserif {
+                font-size: 40pt!important;
+                padding-left: 69% !important;
+            }
+            
+            #musictittle {
+                font-size: 24pt;
+            }
+            
+            
 
 
         }
@@ -283,9 +342,10 @@
 
         .shadow {
             background-color: black;
-            width: 30%;
-            right: 0;
-            box-shadow: 0px 0px 8px 50px #000;
+            width:100%;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px 0px 8px 50px #000 inset;
             filter: drop-shadow(0px 0px 20px 20px #000);
         }
 
@@ -294,6 +354,7 @@
             height: 100%;
             right: 0;
             background-color: black;
+            opacity: 0;
             box-shadow: 0px 0px 50px 36px #000;
         }
 
@@ -301,11 +362,8 @@
             width: 100vw;
             height: 30vh;
             position: absolute;
-            top: 70vh;
-            background-color: #f8f9fa;
             z-index: 3;
-            right: 0;
-            box-shadow: 0px -10px 50px 36px #000;
+            box-shadow: 0px -10px 50px 36px #000 inset;
         }
 
         .hide {
@@ -446,6 +504,7 @@
 
     <!-- Header -->
     <header class="d-flex" style="height:100vh;background-color: black;color: white;">
+        <!-- 
         <div id="demo1" class="carousel slide" data-ride="carousel" data-interval="3000" style="position:fixed;z-index: 0">
             <ul class="carousel-indicators">
                 <li data-target="#demo1" data-slide-to="0" class="active"></li>
@@ -476,20 +535,14 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
-        <div class="shadow" style="position:fixed;z-index: 105;height: 100vh;text-align:right">
+-->
 
 
-            <h1 class="mr-5" style="position: relative;padding-top: 50vh;z-index: 3">One-Shot劇組</h1>
-            <h3 class="mr-5" style="position: relative;z-index: 4">
-                「從微電影走進在地。」
-            </h3>
-            <div id="shadows" style="position: absolute;height: 100%;top: 0;z-index: -10" class="m-hide"></div>
-            <div id="shadows2" style="z-index: -9;background-color: black" class="lg-hide"></div>
+        <div class="shadow" id="shadow" style="position:fixed;;height: 100vh;text-align:right">
+            <div id="shadows" style="position: absolute;height: 100%;top: 0;z-index:10" class="m-hide opa"></div>
+            <div id="shadows2" style="z-index: -9;background-color:rgba(0,0,0,0.1)" class="lg-hide opa"></div>
 
         </div>
-
-
-        <div class="overlay"></div>
     </header>
 
     <!-- 簡介 -->
@@ -499,20 +552,34 @@
                 <div class="col-lg-10 mx-auto row">
                     <article class="col-lg-5">
                         <h3>創作動機</h3>
-                        <p>
-                            這個劇本看起來是想講一個音樂人的故事，但重要的其實不是她的答案，而是她尋找答案的過程。用了很多鄉村、飲食、食農、風土等等的元素去包裝，主要是想傳達「用五感細細品味，能幫助深入了解，才能真正發現」，就像味覺不是單靠味道決定一樣，音樂也可以從飲食、生活、親情、回憶間尋找答案。即使主角最後說她在尋找的是愛上音樂的單純美好，但實際上她的答案無法一言以蔽之，也許那是交雜著親情、眷念、往日時光、家鄉味、堅持、妥協的複雜滋味，但是不需要特地去理解，因為同樣一道菜，每個人吃起來都不一樣。
+                        <p style="text-align: justify">
+                            在這個故事中，我們用了很多鄉村、飲食、食農、風土等等的元素去包裝，主要是想傳達「用五感細細品味，能幫助深入了解，才能真正發現」，就像味覺不是單靠味道決定一樣，音樂也可以從飲食、生活、親情、回憶間尋找答案。即使主角最後說她在尋找的是愛上音樂的單純美好，但實際上她的答案無法一言以蔽之，也許那是交雜著親情、眷念、往日時光、家鄉味、堅持、妥協的複雜滋味，但是不需要特地去理解，因為同樣一道菜，每個人吃起來都不一樣。
                         </p>
 
 
                     </article>
                     <div class="col-lg-7">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FNTUBICD.GPExpo%2Fvideos%2F1529026867304268%2F&show_text=false&width=560" style="border:none;overflow:hidden;width:100%;height:100%;margin: auto 0;padding-top:1px " scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        <!-- Load Facebook SDK for JavaScript -->
+                        <div id="fb-root"></div>
+                        <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+                        <!-- Your embedded video player code -->
+                        <div class="fb-video" data-href="https://business.facebook.com/NTUBICD.GPExpo/videos/1529026867304268/" data-width="500" data-show-text="false">
+                            <div class="fb-xfbml-parse-ignore">
+                                <blockquote cite="https://www.facebook.com/facebook/videos/10153231379946729/">
+                                    <a href="https://www.facebook.com/facebook/videos/10153231379946729/">How to Share With Just Friends</a>
+                                    <p>How to share with just friends.</p>
+                                    Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on Friday, December 5, 2014
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
                     <div class="pt-5 pl-3">
                         <h3>劇情簡介</h3>
                         <p>
                             這首歌中，到底少了哪一味？<br>
-                            曾經當紅一時的年輕創作歌手周曉，陷入創作的瓶頸，為了挽回聽眾，她勇敢嘗試各種曲風，無奈只換來更多差評。在看似沒有盡頭的黑夜中，她接到從鄉下老家打來的電話，意外地與身為料理職人的哥哥周朗，展開一場另類的「取材」之旅。
+                            曾經當紅一時的年輕創作歌手周曉，陷入創作的瓶頸，為了挽回聽眾，她勇敢嘗試各種曲風，無奈只換來更多差評......<br>
+                            在看似沒有盡頭的黑夜中，她接到從鄉下老家打來的電話，意外地與身為料理職人的哥哥周朗，展開一場另類的「取材」之旅。
                         </p>
                     </div>
 
@@ -573,17 +640,17 @@
                     </div>
                 </div>
 
-                <div class="px-0 container-fluid py-4" style="background-image: url(img/one-shot/fluid.jpg);background-position: bottom;background-size: cover;height:80vh;margin:24px auto">
+                <div class="px-0 container-fluid py-4 fluid" style="background-image: url(img/one-shot/fluid.jpg);background-position: bottom;background-size: cover;height:80vh;margin:24px auto">
                     <h1 class="ml-5 mb-3 notoserif" style="width: 60px;font-size:64pt;color: white;opacity: 0.7">專案介紹</h1>
                 </div>
 
                 <div class="col-lg-10 mx-auto row">
                     <div class="col-lg-12 mx-auto my-5 row osteam" style="">
-                        <div class="col-md-6" style="max-height:70vh">
+                        <div class="col-md-5" style="max-height:70vh">
                             <img src="img/one-shot/oslogo.png" style="width: 90%;margin: 0 auto;padding-left: 1%;" id="logo">
                         </div>
-                        <div class="col-md-6" style="height: 70vh;">
-                            <p>動態影像為現代社會廣泛使用的行銷工具與資訊傳播方式，生傳系為臺大校內少數與傳播領域有關的科系，可惜卻未有與動態影像相關的實務課程，因此專案小組集結不同專長的學生，成立了 One-Shot 劇組，透過自學的方式摸索微電影製作之領域。<br>
+                        <div class="col-md-7" style="height: 70vh;">
+                            <p class="py-4" style="text-align: justify">動態影像為現代社會廣泛使用的行銷工具與資訊傳播方式，生傳系為臺大校內少數與傳播領域有關的科系，可惜卻未有與動態影像相關的實務課程，因此專案小組集結不同專長的學生，成立了 One-Shot 劇組，透過自學的方式摸索微電影製作之領域。<br>
                                 <br>
                                 秉持著「做中學」的精神，期許在創作的過程中，挖掘更多與影視產業相關的知識與面貌、累積理論與實務操作之經驗，再透過分工合作與相互切磋，最佳化在專案中學習的成果。<br>
                                 <br>
@@ -659,8 +726,8 @@
                     </div>
                 </div>
 
-                <div class="px-0 container-fluid py-4" style="background-image: url(img/one-shot/fluid2.jpg);background-position: center;background-size: cover;height:80vh;margin:24px auto">
-                    <h1 class="ml-5 mb-3 notoserif" style="width: 60px;font-size:72pt;color: white;opacity: 0.7">劇照</h1>
+                <div class="px-0 container-fluid py-4 fluid" style="background-image: url(img/one-shot/fluid2.jpg);background-position: center;background-size: cover;height:80vh;margin:24px auto">
+                    <h1 class="ml-5 mb-3 notoserif" style="width: 60px;font-size:72pt;color: white;opacity: 0.7 " id="filmphoto">劇照</h1>
                 </div>
 
                 <div class="col-lg-12 mx-auto row">
@@ -726,21 +793,20 @@
         </div>
     </section>
 
-    <section class="filminfo" style="height: auto">
+    <section class="filminfo" style="height: auto;width: 100vw">
         <div class="col-lg-12 mx-auto row py-0 pl-0" style="min-height: 80vh">
             <div class="col-md-5" style="padding: 0;background-image: url(img/one-shot/OS4.jpg);background-position: right;background-clip: border-box;background-repeat: no-repeat;background-size: cover;min-height: 40vh">
 
             </div>
             <div class="col-md-7 py-5 pl-4">
-                <h1>播放資訊</h1>
+                <h1>首演成果</h1>
                 <p>
-                    時間 | 第一播放場次為10:30，間隔半小時排映一場 <br>
-                    片長 | 約25分鐘 <br>
-                    名額 | 每一播映場次的座位僅開放12個名額，採現場登記制，<br>
-                    欲觀影者請事先至微電影展區進行紙本登記，並於登記場次播映前5分鐘至等候區等候！<br>
-                    ※4/30、5/1 的最後場次時間為18:00，5/2 的最後場次時間為15:30。
+                    在2021 4/30 ~ 5/2 台大生傳第一屆畢製《吾感再噪》的展覽期間，<br>
+                    我們以半小時為一場，總共播放40場，累計約450名觀眾，<br>
+                    除了獲得廣大迴響及好評，更蒐集了約120則留言，且內容大多十分真摯誠懇，令我們非常感動。
 
                 </p>
+                <img src="img/one-shot/IMG_7532.jpg" style="width: 60%;transform: translateX(35%)" class="pt-3">
             </div>
         </div>
 
@@ -750,14 +816,14 @@
         <div class="col-lg-12 mx-auto row py-0 pl-0" style="min-height: 60vh">
 
             <div class="col-md-7 py-5 px-5">
-                <h1>主題曲｜回味</h1>
+                <h1 id="musictittle">主題曲｜回味</h1>
                 <p>
                     詞／曲／錄音／混音製作：周天全<br>
                     後期製作：梧明基爾<br>
                     主唱：頸鹿 Lenox<br>
-                    貝斯：KT
+                    貝斯：KT 鄒凱宇
                 </p>
-                <p style="font-size: 11pt">
+                <p style="font-size: 11pt;text-align: justify">
                     《味Way》微電影的主題曲是我們為了這部電影特別製作的。在故事中，這首歌設定是女主角周曉苦惱許久的新歌，並且在返鄉之旅最後完成。作為全劇的重點，除了在接近尾聲時的獻唱，歌詞與旋律劇情依據主角的情緒起伏變化，同時也呼應了前後整段劇情，每段歌詞都體現了人生百味。
                     <br>
                     <br>
@@ -870,7 +936,7 @@
             $(".opa").each(function() {
                 var opRange = $(this).parent().height() / 3;
                 $(this).css({
-                    "opacity": ($(this).data("seq") * opRange - scrolled) / opRange
+                    "opacity": scrolled/winh
                 });
             });
         });
